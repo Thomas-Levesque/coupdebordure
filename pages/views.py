@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.utils.translation import get_language
+from django.http import HttpResponse
 
 def home_view(request):
     return render(request, "pages/home.html")
@@ -10,6 +11,9 @@ def offline_view(request):
 def cgu_view(request):
     lang = (get_language() or "fr")[:2]
     return render(request, f"legal/cgu_{lang}.html")
+
+def healthz_view(request):
+    return HttpResponse("ok", content_type="text/plain")
 
 
 def privacy_view(request):
