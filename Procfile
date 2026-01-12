@@ -1,0 +1,1 @@
+web: gunicorn coupdebordure.wsgi:application
