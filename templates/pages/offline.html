@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Hors connexion · Coup de Bordure{% endblock %}
+{% block content %}
+  <div class="card">
+    <div class="card-title">{% trans "Hors connexion" %}</div>
+    <div class="card-sub">{% trans "Impossible de contacter le serveur. Réessaie quand tu as du réseau." %}</div>
+  </div>
+{% endblock %}

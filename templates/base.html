@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  {% load i18n %}
+  {% load static %}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% block title %}Coup de Bordure{% endblock %}</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="{% static 'pwa/manifest.webmanifest' %}">
+  <meta name="theme-color" content="#111111">
+  <link rel="apple-touch-icon" href="{% static 'pwa/apple-touch-icon.png' %}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="CDB">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+
+<body>
+<div class="container">
+
+  <!-- ===================== -->
+  <!-- Top navigation bar -->
+  <!-- ===================== -->
+  <div class="nav">
+    <div class="brand">
+      <a href="{% url 'dashboard' %}"
+         style="display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit;">
+        <img src="{% static 'pwa/icon-192.png' %}"
+             alt="Coup de Bordure"
+             style="width:48px;height:48px;border-radius:12px;object-fit:cover;border:1px solid var(--border);">
+        <div>
+          <div style="font-weight:900;">Coup de Bordure</div>
+          <div style="color:var(--muted); font-size:.9rem;">
+            {% trans "Jeu de pronostics cyclistes (points)" %}
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="nav-links">
+      {% if user.is_authenticated %}
+        <a class="pill" href="{% url 'dashboard' %}">🏠 {% trans "Tableau de bord" %}</a>
+        <a class="pill" href="{% url 'races_list' %}">📅 {% trans "Courses" %}</a>
+        <a class="pill" href="{% url 'leaderboards_hub' %}">🏆 {% trans "Classements" %}</a>
+        <a class="pill" href="{% url 'leagues_home' %}">👥 {% trans "Ligues" %}</a>
+        <a class="pill" href="{% url 'account' %}">⚙️ {% trans "Compte" %}</a>
+
+        <span class="pill" style="gap:10px;">
+          <img src="{{ user.profile.avatar_url }}"
+               alt="avatar"
+               style="width:28px;height:28px;border-radius:10px;object-fit:cover;border:1px solid var(--border);">
+          <strong>{{ user.username }}</strong>
+
+          <form method="post" action="{% url 'logout' %}" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit"
+                    style="background:none;border:none;padding:0;margin:0;color:inherit;cursor:pointer;font-weight:800;">
+              🚪 {% trans "Déconnexion" %}
+            </button>
+          </form>
+        </span>
+      {% else %}
+        <a class="pill" href="{% url 'login' %}">{% trans "Connexion" %}</a>
+        <a class="btn" href="{% url 'signup' %}">{% trans "Inscription" %}</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <!-- ===================== -->
+  <!-- Flash messages -->
+  <!-- ===================== -->
+  {% if messages %}
+    <div class="grid" style="margin-bottom:14px;">
+      {% for m in messages %}
+        <div class="card" style="padding:10px 12px;">
+          {{ m }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- ===================== -->
+  <!-- Layout -->
+  <!-- ===================== -->
+  <div class="grid grid-2" style="align-items:start;">
+
+    {% if user.is_authenticated %}
+      <!-- Sidebar -->
+      <aside class="card" style="position:sticky; top:16px;">
+
+        <div class="grid" style="gap:10px;">
+          <a class="pill" href="{% url 'dashboard' %}">🏁 {% trans "Tableau de bord" %}</a>
+          <a class="pill" href="{% url 'races_list' %}">📅 {% trans "Courses" %}</a>
+          <a class="pill" href="{% url 'leaderboards_hub' %}">🏆 {% trans "Classements" %}</a>
+          <a class="pill" href="{% url 'leagues_home' %}">👥 {% trans "Ligues" %}</a>
+          <a class="pill" href="{% url 'account' %}">⚙️ {% trans "Compte" %}</a>
+          <a class="pill" href="{% url 'my_stats' %}">📈 {% trans "Stats" %}</a>
+        </div>
+
+        <hr class="sep">
+
+        <!-- Infos -->
+        <div>
+          <div style="font-weight:900; margin-bottom:8px;">{% trans "Infos" %}</div>
+          <div class="grid" style="gap:8px;">
+            <a class="btn2" href="{% url 'cgu' %}">{% trans "Conditions d’utilisation" %}</a>
+            <a class="btn2" href="{% url 'privacy' %}">{% trans "Politique de confidentialité" %}</a>
+            <a class="btn2" href="#">{% trans "Règlement" %}</a>
+            <a class="btn2" href="#">{% trans "FAQ" %}</a>
+            <a class="btn2" href="#">{% trans "Contact" %}</a>
+            <a class="btn2" href="{% url 'mentions_legales' %}">{% trans "Mentions légales" %}</a>
+            <button class="btn2" type="button"
+                    onclick="window.CDBCookies && window.CDBCookies.reset()">
+              🍪 {% trans "Gérer les cookies" %}
+            </button>
+          </div>
+        </div>
+
+        <hr class="sep">
+
+        <!-- Sidebar ad (affichée seulement si cookie pub accepté) -->
+        <div class="cdb-ad cdb-ad-sidebar"
+             {% if not cookie_ads_allowed %}style="display:none;"{% endif %}>
+          {% block ad_sidebar %}
+            {% if ads.sidebar and ads.sidebar.image %}
+              <a href="{{ ads.sidebar.target_url|default:'#' }}" target="_blank" rel="noopener">
+                <img src="{{ ads.sidebar.image.url }}"
+                     alt="{{ ads.sidebar.title|default:'Publicité' }}"
+                     style="width:100%; border-radius:14px; border:1px solid var(--border);">
+              </a>
+            {% else %}
+              <div class="card" style="background: rgba(255,255,255,.04); border-style:dashed;">
+                {% trans "Emplacement pub (sidebar)" %}
+              </div>
+            {% endif %}
+          {% endblock %}
+        </div>
+
+      </aside>
+    {% endif %}
+
+    <!-- ===================== -->
+    <!-- Main content -->
+    <!-- ===================== -->
+    <main class="card">
+
+      <!-- Top ad -->
+      <div class="cdb-ad cdb-ad-top"
+           {% if not cookie_ads_allowed %}style="display:none;"{% endif %}>
+        {% block ad_top %}
+          {% if ads.top and ads.top.image %}
+            <a href="{{ ads.top.target_url|default:'#' }}" target="_blank" rel="noopener">
+              <img src="{{ ads.top.image.url }}"
+                   alt="{{ ads.top.title|default:'Publicité' }}"
+                   style="width:100%; max-height:120px; object-fit:cover;
+                          border-radius:14px; border:1px solid var(--border);">
+            </a>
+          {% else %}
+            <div class="card" style="background: rgba(255,255,255,.04);
+                                     border-style:dashed; margin-bottom:14px;">
+              {% trans "Emplacement pub (haut)" %}
+            </div>
+          {% endif %}
+        {% endblock %}
+      </div>
+
+      {% block content %}{% endblock %}
+
+      <!-- Bottom ad -->
+      <div class="cdb-ad cdb-ad-bottom" style="margin-top:16px;"
+           {% if not cookie_ads_allowed %}style="margin-top:16px; display:none;"{% endif %}>
+        {% block ad_bottom %}
+          {% if ads.bottom and ads.bottom.image %}
+            <a href="{{ ads.bottom.target_url|default:'#' }}" target="_blank" rel="noopener">
+              <img src="{{ ads.bottom.image.url }}"
+                   alt="{{ ads.bottom.title|default:'Publicité' }}"
+                   style="width:100%; max-height:140px; object-fit:cover;
+                          border-radius:14px; border:1px solid var(--border);">
+            </a>
+          {% else %}
+            <div class="card" style="background: rgba(255,255,255,.04); border-style:dashed;">
+              {% trans "Emplacement pub (bas)" %}
+            </div>
+          {% endif %}
+        {% endblock %}
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Cookies -->
+{% include "partials/_cookie_banner.html" %}
+<script src="{% static 'js/cookies.js' %}"></script>
+
+<script>
+/**
+ * Affiche/masque les pubs quand le consentement change (accept/reject/save).
+ * cookies.js émet déjà l'event "cdb:cookie-consent".
+ */
+(function () {
+  function setAdsVisible(isAllowed) {
+    document.querySelectorAll(".cdb-ad").forEach((el) => {
+      el.style.display = isAllowed ? "" : "none";
+    });
+  }
+
+  // Au chargement, si cookies.js a déjà un état, on l’applique
+  if (window.CDBCookies && typeof window.CDBCookies.get === "function") {
+    const cur = window.CDBCookies.get();
+    if (cur && typeof cur.ads !== "undefined") setAdsVisible(!!cur.ads);
+  }
+
+  // Quand l'utilisateur change son choix
+  window.addEventListener("cdb:cookie-consent", (e) => {
+    const consent = (e && e.detail) ? e.detail : null;
+    if (!consent) return;
+    setAdsVisible(!!consent.ads);
+  });
+})();
+</script>
+
+<!-- PWA -->
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("{% static 'pwa/sw.js' %}");
+  }
+</script>
+
+</body>
+</html>

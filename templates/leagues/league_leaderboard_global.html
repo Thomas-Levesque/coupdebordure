@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<div class="card" style="margin-bottom:14px;">
+  <div class="card-title">
+    {% blocktrans with league_name=league.name year=season.year %}
+      Classement — {{ league_name }} — Saison {{ year }}
+    {% endblocktrans %}
+  </div>
+  <div class="card-sub">{% trans "Somme des scores des membres de la ligue" %}</div>
+</div>
+
+{% if rows_full|length >= 3 %}
+  <div class="grid grid-3" style="margin-bottom:14px;">
+
+    <div class="card" style="text-align:center;">
+      <div class="badge">{% trans "🥈 2e" %}</div>
+      <div style="margin-top:10px; display:flex; justify-content:center;">
+        {% include "accounts/_user_chip.html" with size=44 avatar_url=rows_full.1.avatar_url username=rows_full.1.username flag_url=rows_full.1.flag_url badge_icon_url=rows_full.1.badge_icon_url %}
+      </div>
+      <div style="color:var(--muted); margin-top:6px;">{{ rows_full.1.total|floatformat:4 }}</div>
+    </div>
+
+    <div class="card" style="text-align:center; border-color: rgba(124,92,255,.45);">
+      <div class="badge success">{% trans "🥇 1er" %}</div>
+      <div style="margin-top:10px; display:flex; justify-content:center;">
+        {% include "accounts/_user_chip.html" with size=52 avatar_url=rows_full.0.avatar_url username=rows_full.0.username flag_url=rows_full.0.flag_url badge_icon_url=rows_full.0.badge_icon_url %}
+      </div>
+      <div style="margin-top:10px;">
+        <span class="badge">
+          {% trans "Total" %} : <strong>{{ rows_full.0.total|floatformat:4 }}</strong>
+        </span>
+      </div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <div class="badge">{% trans "🥉 3e" %}</div>
+      <div style="margin-top:10px; display:flex; justify-content:center;">
+        {% include "accounts/_user_chip.html" with size=44 avatar_url=rows_full.2.avatar_url username=rows_full.2.username flag_url=rows_full.2.flag_url badge_icon_url=rows_full.2.badge_icon_url %}
+      </div>
+      <div style="color:var(--muted); margin-top:6px;">{{ rows_full.2.total|floatformat:4 }}</div>
+    </div>
+
+  </div>
+{% endif %}
+
+{% include "bets/_leaderboard_table_compact.html" with rows=rows %}
+
+<div style="margin-top:12px;">
+  <a class="btn2" href="{% url 'league_detail' league.id %}">← {% trans "Retour ligue" %}</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Courses" %} · Coup de Bordure{% endblock %}
+
+{% block content %}
+<h2>{% trans "Courses" %}</h2>
+
+<h3>{% trans "Courses d’un jour" %}</h3>
+<ul>
+  {% for r in one_days %}
+    <li>
+      <a href="{% url 'one_day_detail' r.id %}">{{ r.name }}</a>
+      — {{ r.start_datetime|date:"d/m/Y H:i" }}
+    </li>
+  {% empty %}
+    <li>{% trans "Aucune course d’un jour." %}</li>
+  {% endfor %}
+</ul>
+
+<h3>{% trans "Tours (courses à étapes)" %}</h3>
+
+{% for t in tours %}
+  <div style="padding:10px; border:1px solid #eee; border-radius:12px; margin-bottom:12px;">
+    <div style="font-weight:800;">
+      {{ t.name }} ({{ t.season.year }})
+    </div>
+
+    <div style="color:#666;">
+      {% blocktrans with start=t.start_datetime|date:"d/m/Y H:i" %}
+        Début : {{ start }}
+      {% endblocktrans %}
+    </div>
+
+    <div style="margin-top:8px;">
+      <div style="font-weight:700; margin-bottom:6px;">
+        {% trans "Étapes" %}
+      </div>
+
+      <ul>
+        {% for s in t.stages.all %}
+          <li>
+            <a href="{% url 'stage_detail' s.id %}">
+              {% blocktrans with num=s.number name=s.name %}
+                Étape {{ num }} — {{ name }}
+              {% endblocktrans %}
+            </a>
+            ({{ s.stage_type }}) — {{ s.start_datetime|date:"d/m/Y H:i" }}
+          </li>
+        {% empty %}
+          <li>{% trans "Aucune étape." %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% empty %}
+  <p>{% trans "Aucun tour." %}</p>
+{% endfor %}
+
+{% endblock %}

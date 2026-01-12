@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<h2>{% trans "Rejoindre une ligue" %}</h2>
+<form method="post">
+  {% csrf_token %}
+  <div class="field"><label>{% trans "Code d’invitation" %}</label>{{ form.invite_code }}</div>
+  <button class="btn" type="submit">{% trans "Rejoindre" %}</button>
+</form>
+{% endblock %}

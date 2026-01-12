@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="28" fill="#f3e6ff" stroke="#2b2b2b" stroke-width="2"/>
+  <path d="M22 44V28l10-8 10 8v16" fill="#fff" opacity=".95" stroke="#2b2b2b" stroke-width="2"/>
+  <path d="M28 44V34h8v10" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+  <text x="32" y="18" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="800" fill="#2b2b2b">MON</text>
+</svg>

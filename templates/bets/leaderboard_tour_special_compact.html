@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="card" style="margin-bottom:14px;">
+  <div class="card-title">
+    {% blocktrans with title_text=title tour_name=tour.name %}{{ title_text }} — {{ tour_name }}{% endblocktrans %}
+  </div>
+
+  <div class="card-sub">
+    {% blocktrans with types=stage_types|join:", " %}Étapes prises en compte : {{ types }} (tie-break : username){% endblocktrans %}
+  </div>
+
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn2" href="{% url 'lb_tour' tour.id %}">{% trans "Général" %}</a>
+    <a class="btn2" href="{% url 'lb_tour_special' tour.id 'sprinteur' %}">{% trans "Sprinteur" %}</a>
+    <a class="btn2" href="{% url 'lb_tour_special' tour.id 'grimpeur' %}">{% trans "Grimpeur" %}</a>
+    <a class="btn2" href="{% url 'lb_tour_special' tour.id 'baroudeur' %}">{% trans "Baroudeur" %}</a>
+  </div>
+</div>
+
+{% if rows_full|length >= 3 %}
+  <div class="grid grid-3" style="margin-bottom:14px;">
+
+    <!-- 2e -->
+    <div class="card" style="text-align:center;">
+      <div class="badge">{% trans "🥈 2e" %}</div>
+
+      {% if rows_full.1.avatar_url %}
+        <img src="{{ rows_full.1.avatar_url }}" alt="{% trans 'avatar' %}"
+             style="margin-top:10px;width:44px;height:44px;border-radius:14px;object-fit:cover;border:1px solid var(--border);">
+      {% endif %}
+
+      <div style="margin-top:10px; font-weight:900;">{{ rows_full.1.username }}</div>
+
+      {% if rows_full.1.badge_icon_url %}
+        <img src="{{ rows_full.1.badge_icon_url }}" alt="{% trans 'badge' %}"
+             style="margin-top:6px;width:18px;height:18px;object-fit:contain;">
+      {% endif %}
+
+      <div style="color:var(--muted); margin-top:6px;">{{ rows_full.1.total|floatformat:4 }}</div>
+    </div>
+
+    <!-- 1er -->
+    <div class="card" style="text-align:center; border-color: rgba(124,92,255,.45);">
+      <div class="badge success">{% trans "🥇 1er" %}</div>
+
+      {% if rows_full.0.avatar_url %}
+        <img src="{{ rows_full.0.avatar_url }}" alt="{% trans 'avatar' %}"
+             style="margin-top:10px;width:52px;height:52px;border-radius:16px;object-fit:cover;border:1px solid var(--border);">
+      {% endif %}
+
+      <div style="margin-top:10px; font-weight:900; font-size:1.15rem;">{{ rows_full.0.username }}</div>
+
+      {% if rows_full.0.badge_icon_url %}
+        <img src="{{ rows_full.0.badge_icon_url }}" alt="{% trans 'badge' %}"
+             style="margin-top:6px;width:20px;height:20px;object-fit:contain;">
+      {% endif %}
+
+      <div style="margin-top:6px;">
+        <span class="badge">
+          {% trans "Total" %} : <strong>{{ rows_full.0.total|floatformat:4 }}</strong>
+        </span>
+      </div>
+    </div>
+
+    <!-- 3e -->
+    <div class="card" style="text-align:center;">
+      <div class="badge">{% trans "🥉 3e" %}</div>
+
+      {% if rows_full.2.avatar_url %}
+        <img src="{{ rows_full.2.avatar_url }}" alt="{% trans 'avatar' %}"
+             style="margin-top:10px;width:44px;height:44px;border-radius:14px;object-fit:cover;border:1px solid var(--border);">
+      {% endif %}
+
+      <div style="margin-top:10px; font-weight:900;">{{ rows_full.2.username }}</div>
+
+      {% if rows_full.2.badge_icon_url %}
+        <img src="{{ rows_full.2.badge_icon_url }}" alt="{% trans 'badge' %}"
+             style="margin-top:6px;width:18px;height:18px;object-fit:contain;">
+      {% endif %}
+
+      <div style="color:var(--muted); margin-top:6px;">{{ rows_full.2.total|floatformat:4 }}</div>
+    </div>
+
+  </div>
+{% endif %}
+
+{% include "bets/_leaderboard_table_compact.html" with rows=rows %}
+
+{% endblock %}

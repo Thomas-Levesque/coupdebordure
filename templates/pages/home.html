@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Accueil · Coup de Bordure{% endblock %}
+{% block content %}
+  <h2>{% trans "Bienvenue sur" %} Coup de Bordure</h2>
+  <p>{% trans "Jeu gratuit de pronostics cyclistes : compose ton top 5 avant le départ et grimpe au classement !" %}</p>
+
+  <div style="margin-top:14px;">
+    <a class="btn2" href="{% url 'login' %}">{% trans "Se connecter" %}</a>
+    <a class="btn" href="{% url 'signup' %}">{% trans "S’inscrire" %}</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Mon Top 5 · Coup de Bordure{% endblock %}
+{% block content %}
+<h2>Mon Top 5 — {{ unit_name }}</h2>
+
+<form method="post">
+  {% csrf_token %}
+  {% if form.non_field_errors %}
+    <div style="color:#b00020;">{{ form.non_field_errors }}</div>
+  {% endif %}
+
+  <div class="grid2">
+    <div class="field"><label>1er</label>{{ form.pick1 }}</div>
+    <div class="field"><label>2e</label>{{ form.pick2 }}</div>
+    <div class="field"><label>3e</label>{{ form.pick3 }}</div>
+    <div class="field"><label>4e</label>{{ form.pick4 }}</div>
+    <div class="field"><label>5e</label>{{ form.pick5 }}</div>
+  </div>
+
+  <button class="btn" type="submit">{%trans "Valider mon prono" %}</button>
+</form>
+{% endblock %}

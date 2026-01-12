@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Dashboard · Coup de Bordure{% endblock %}
+
+{% block content %}
+<h2>{% trans "Tableau de bord" %}</h2>
+
+<div style="border:1px solid #eee; padding:14px; border-radius:14px; margin-bottom:16px;">
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+    <div>
+      <h3 style="margin:0;">👋 {% trans "Bonjour" %} {{ user.username }}</h3>
+      <p style="margin:6px 0 0;">{% trans "Score total" %} : <strong>{{ total_score|floatformat:4 }}</strong></p>
+    </div>
+
+    {% include "accounts/_user_chip.html" with avatar_url=me_avatar_url username=user.username flag_url=me_flag_url badge_icon_url=me_badge_icon_url size=44 %}
+  </div>
+
+  <div style="margin-top:12px;">
+    <p style="margin:0 0 6px;">{% trans "Badges récents" %} :</p>
+    <ul style="margin:0; padding-left:0; list-style:none;">
+      {% for b in badges_recent %}
+        <li style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+          {% if b.badge_icon_url %}
+            <img
+              src="{{ b.badge_icon_url }}"
+              alt="{{ b.badge.name }}"
+              style="width:22px; height:22px; object-fit:contain;"
+            >
+          {% else %}
+            <span style="font-size:18px;">🏅</span>
+          {% endif %}
+          <span>{{ b.badge.name }}</span>
+        </li>
+      {% empty %}
+        <li>{% trans "Aucun badge pour le moment" %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<a class="btn2" href="{% url 'races_list' %}">📅 {% trans "Toutes les courses" %}</a>
+
+<p style="color:#666;">{% trans "À venir / Verrouillées / Terminées — avec ton statut de Top5 et tes scores." %}</p>
+
+<h3>✅ {% trans "À venir" %}</h3>
+{% translate "Aucune course/étape à venir." as msg_upcoming %}
+{% include "accounts/_units_list.html" with units=upcoming empty_msg=msg_upcoming %}
+
+<h3 style="margin-top:16px;">🔒 {% trans "Verrouillées" %}</h3>
+{% translate "Aucune course/étape verrouillée." as msg_locked %}
+{% include "accounts/_units_list.html" with units=locked empty_msg=msg_locked %}
+
+<h3 style="margin-top:16px;">🏁 {% trans "Terminées" %}</h3>
+{% translate "Aucune course/étape terminée." as msg_finished %}
+{% include "accounts/_units_list.html" with units=finished empty_msg=msg_finished %}
+
+{% endblock %}

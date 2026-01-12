@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<h2>{{ league.name }}</h2>
+<p style="color:#666;">{% trans "Code d’invitation" %} : <strong>{{ league.invite_code }}</strong></p>
+
+<h3>{% trans "Membres" %}</h3>
+<div class="card">
+  <table class="table">
+    <tr><th>{% trans "Utilisateur" %}</th></tr>
+    {% for m in members %}
+      <tr>
+        <td>
+          {% include "accounts/_user_chip.html" with avatar_url=m.user.profile.avatar_url username=m.user.username flag_url=m.user.profile.flag_url badge_icon_url=m.user.profile.featured_badge.icon %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<h3>💬 {% trans "Conversation" %}</h3>
+
+<form method="post" style="margin-bottom:12px;">
+  {% csrf_token %}
+  {{ form.content }}
+  <button class="btn" type="submit" style="margin-top:8px;">{% trans "Envoyer" %}</button>
+</form>
+
+<div class="card">
+  <div class="grid" style="gap:10px;">
+    {% for m in page_obj %}
+      <div style="border:1px solid var(--border); border-radius:12px; padding:10px;">
+        <div style="display:flex; justify-content:space-between; gap:10px; align-items:center;">
+          <strong>{{ m.author.username }}</strong>
+          <span style="color:var(--muted); font-size:.9rem;">{{ m.created_at|date:"d/m/Y H:i" }}</span>
+        </div>
+        <div style="margin-top:6px; white-space:pre-wrap;">{{ m.content }}</div>
+      </div>
+    {% empty %}
+      <div style="color:var(--muted);"> {% trans "Aucun message pour le moment" %}.</div>
+    {% endfor %}
+  </div>
+
+  {% if page_obj.has_next %}
+    <div style="margin-top:12px; display:flex; justify-content:center;">
+      <a class="btn2" href="?page={{ page_obj.next_page_number }}">{% trans "Voir plus" %}</a>
+    </div>
+  {% endif %}
+</div>
+
+<h3> {% trans "Classement" %}</h3>
+<ul>
+  {% for s in seasons %}
+    <li><a href="{% url 'league_lb_global' league.id s.year %}"> Global — Saison {{ s.year }}</a></li>
+  {% empty %}
+    <li> {% trans "Aucune saison" %}.</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

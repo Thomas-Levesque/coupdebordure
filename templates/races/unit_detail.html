@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ unit }} · Coup de Bordure{% endblock %}
+
+{% block content %}
+
+<h2>{{ unit }}</h2>
+
+{% if unit_type == "stage" %}
+  <p style="color:#666;">
+    {% blocktrans with tour_name=tour.name stage_type=unit.stage_type %}
+      Tour : {{ tour_name }} — Type : {{ stage_type }}
+    {% endblocktrans %}
+  </p>
+{% endif %}
+
+<p>
+  <strong>{% trans "Départ" %} :</strong>
+  {{ start_datetime|date:"d/m/Y H:i" }}
+</p>
+
+<!-- COUNTDOWN -->
+<div class="ad" style="margin-top:10px;">
+  <div style="font-weight:700;">{% trans "Départ dans" %} :</div>
+  <div id="countdown" data-start="{{ start_datetime|date:'c' }}" style="font-size:1.1rem; margin-top:4px;">
+    …
+  </div>
+  <div id="countdown_status" style="color:#666; font-size:0.9rem; margin-top:4px;"></div>
+</div>
+
+{% if profile_text_display or unit.profile_image %}
+  <div class="card" style="margin-top:12px;">
+    <h3 style="margin-top:0;">🧾 {% trans "Profil" %}</h3>
+
+    {% if unit.profile_image %}
+      <img src="{{ unit.profile_image.url }}" alt="{% trans 'profil' %}"
+           style="width:100%; max-height:320px; object-fit:cover; border-radius:14px; border:1px solid var(--border); margin-bottom:10px;">
+    {% endif %}
+
+    {% if profile_text_display %}
+      <div style="color:var(--text); line-height:1.5; white-space:pre-line;">
+        {{ profile_text_display }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+<!-- ACTIONS -->
+<div style="margin-top:12px;">
+  {% if is_locked %}
+    <div class="ad">{% trans "Pronostics verrouillés ✅ (course/étape commencée)" %}</div>
+  {% else %}
+    <a class="btn" href="{% if unit_type == 'one_day' %}{% url 'bet_one_day' unit.id %}{% else %}{% url 'bet_stage' unit.id %}{% endif %}">
+      {% if bet %}
+        {% trans "Modifier mon Top 5" %}
+      {% else %}
+        {% trans "Faire mon Top 5" %}
+      {% endif %}
+    </a>
+  {% endif %}
+</div>
+
+<!-- MON PRONO -->
+<h3 style="margin-top:16px;">{% trans "Mon prono (Top 5)" %}</h3>
+
+{% if bet and bet.pick1 and bet.pick2 and bet.pick3 and bet.pick4 and bet.pick5 %}
+  <ol style="padding-left:18px;">
+    <li style="display:flex; align-items:center; gap:8px;">
+      <img src="{{ bet.pick1.flag_url }}" alt="{{ bet.pick1.country }}"
+           style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+      <span>{{ bet.pick1 }}</span>
+    </li>
+    <li style="display:flex; align-items:center; gap:8px;">
+      <img src="{{ bet.pick2.flag_url }}" alt="{{ bet.pick2.country }}"
+           style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+      <span>{{ bet.pick2 }}</span>
+    </li>
+    <li style="display:flex; align-items:center; gap:8px;">
+      <img src="{{ bet.pick3.flag_url }}" alt="{{ bet.pick3.country }}"
+           style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+      <span>{{ bet.pick3 }}</span>
+    </li>
+    <li style="display:flex; align-items:center; gap:8px;">
+      <img src="{{ bet.pick4.flag_url }}" alt="{{ bet.pick4.country }}"
+           style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+      <span>{{ bet.pick4 }}</span>
+    </li>
+    <li style="display:flex; align-items:center; gap:8px;">
+      <img src="{{ bet.pick5.flag_url }}" alt="{{ bet.pick5.country }}"
+           style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+      <span>{{ bet.pick5 }}</span>
+    </li>
+  </ol>
+
+  <p style="color:#666;">
+    {% trans "Validé le" %} : {{ bet.submitted_at|date:"d/m/Y H:i" }}
+    {% if bet_score %}
+      — {% trans "Score actuel" %} : <strong>{{ bet_score.score|floatformat:4 }}</strong>
+    {% endif %}
+  </p>
+{% else %}
+  <p style="color:#666;">{% trans "Aucun prono validé pour le moment." %}</p>
+{% endif %}
+
+<!-- ENTRIES -->
+<h3 style="margin-top:16px;">{% trans "Coureurs engagés (Top 10 cotes)" %}</h3>
+
+{% if entries %}
+  <ul id="entries-top10" style="padding-left:0; list-style:none; margin:0;">
+    {% for e in entries|slice:":10" %}
+      <li style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px;">
+        <img src="{{ e.rider.flag_url }}" alt="{{ e.rider.country }}"
+             style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+        <span>{{ e.rider }}</span>
+        <span style="color:#666;">— {% trans "cote" %} {{ e.odds }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% with entries_count=entries|length %}
+    {% if entries_count > 10 %}
+      <details style="margin-top:8px;">
+        <summary class="btn2" style="display:inline-block; cursor:pointer;">
+          {% blocktrans count n=entries_count %}
+            Voir tous les coureurs ({{ n }})
+          {% plural %}
+            Voir tous les coureurs ({{ n }})
+          {% endblocktrans %}
+        </summary>
+
+        <ul style="margin-top:10px; padding-left:0; list-style:none;">
+          {% for e in entries %}
+            <li style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px;">
+              <img src="{{ e.rider.flag_url }}" alt="{{ e.rider.country }}"
+                   style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+              <span>{{ e.rider }}</span>
+              <span style="color:#666;">— {% trans "cote" %} {{ e.odds }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+  {% endwith %}
+{% else %}
+  <p style="color:#666;">{% trans "Aucun engagé." %}</p>
+{% endif %}
+
+<!-- RESULTS -->
+<h3 style="margin-top:16px;">{% trans "Résultats" %}</h3>
+
+{% if results %}
+  <ol style="padding-left:18px;">
+    {% for r in results %}
+      <li style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px;">
+        <span style="min-width:42px;">#{{ r.position }}</span>
+        <img src="{{ r.rider.flag_url }}" alt="{{ r.rider.country }}"
+             style="width:18px; height:18px; object-fit:contain; border-radius:3px;">
+        <span>{{ r.rider }}</span>
+      </li>
+    {% endfor %}
+  </ol>
+
+  <div style="margin-top:10px;">
+    <a class="btn2" href="{% if unit_type == 'one_day' %}{% url 'lb_one_day' unit.id %}{% else %}{% url 'lb_stage' unit.id %}{% endif %}">
+      {% trans "Voir le classement de cette" %}
+      {% if unit_type == "one_day" %}
+        {% trans "course" %}
+      {% else %}
+        {% trans "étape" %}
+      {% endif %}
+    </a>
+  </div>
+{% else %}
+  <p>{% trans "Résultat non disponible." %}</p>
+{% endif %}
+
+<script>
+(function() {
+  const el = document.getElementById("countdown");
+  const statusEl = document.getElementById("countdown_status");
+  if (!el) return;
+
+  const TXT_INVALID_DATE = "{% trans 'Date invalide' %}";
+  const TXT_STARTED = "{% trans 'Course/étape commencée (pronostics verrouillés).' %}";
+  const TXT_CAN_EDIT = "{% trans 'Tu peux encore modifier ton prono avant le départ.' %}";
+
+  const startStr = el.dataset.start;
+  const start = new Date(startStr);
+  if (isNaN(start.getTime())) {
+    el.textContent = TXT_INVALID_DATE;
+    return;
+  }
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+
+  function tick() {
+    const now = new Date();
+    const diffMs = start - now;
+
+    if (diffMs <= 0) {
+      el.textContent = "00:00:00";
+      statusEl.textContent = TXT_STARTED;
+      return;
+    }
+
+    const totalSeconds = Math.floor(diffMs / 1000);
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const mins = Math.floor((totalSeconds % 3600) / 60);
+    const secs = totalSeconds % 60;
+
+    el.textContent = (days > 0 ? (days + "j ") : "") + pad(hours) + ":" + pad(mins) + ":" + pad(secs);
+    statusEl.textContent = TXT_CAN_EDIT;
+    setTimeout(tick, 1000);
+  }
+
+  tick();
+})();
+</script>
+
+{% endblock %}

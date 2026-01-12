@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<h2>{% trans "Créer une ligue" %}</h2>
+<form method="post">
+  {% csrf_token %}
+  <div class="field"><label>{% trans "Nom" %}</label>{{ form.name }}</div>
+  <div class="field"><label>{% trans "Privée"%}</label>{{ form.is_private }}</div>
+  <button class="btn" type="submit">{% trans "Créer" %}</button>
+</form>
+{% endblock %}

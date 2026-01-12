@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Classements" %} · Coup de Bordure{% endblock %}
+
+{% block content %}
+<h2>{% trans "Classements" %}</h2>
+
+<h3>{% trans "Global par saison" %}</h3>
+<ul>
+  {% for s in seasons %}
+    <li>
+      <a href="{% url 'lb_global' s.year %}">
+        {% blocktrans with year=s.year %}Classement global — Saison {{ year }}{% endblocktrans %}
+      </a>
+    </li>
+  {% empty %}
+    <li>{% trans "Aucune saison." %}</li>
+  {% endfor %}
+</ul>
+
+<h3>{% trans "Par course (1 jour)" %}</h3>
+<ul>
+  {% for r in one_days %}
+    <li>
+      <a href="{% url 'lb_one_day' r.id %}">{{ r.name }}</a>
+      <span style="color:#666;">({{ r.start_datetime|date:"d/m/Y" }})</span>
+    </li>
+  {% empty %}
+    <li>{% trans "Aucune course." %}</li>
+  {% endfor %}
+</ul>
+
+<h3>{% trans "Par tour" %}</h3>
+<ul>
+  {% for t in tours %}
+    <li>
+      <a href="{% url 'lb_tour' t.id %}">{{ t.name }}</a>
+      <span style="color:#666;">({{ t.season.year }})</span>
+      — <a href="{% url 'lb_tour_special' t.id 'sprinteur' %}">{% trans "Sprinteur" %}</a>
+      · <a href="{% url 'lb_tour_special' t.id 'grimpeur' %}">{% trans "Grimpeur" %}</a>
+      · <a href="{% url 'lb_tour_special' t.id 'baroudeur' %}">{% trans "Baroudeur" %}</a>
+    </li>
+  {% empty %}
+    <li>{% trans "Aucun tour." %}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

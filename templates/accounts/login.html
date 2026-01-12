@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Connexion" %} · Coup de Bordure{% endblock %}
+{% block content %}
+
+<h2>{% trans "Connexion" %}</h2>
+
+{% if form.non_field_errors %}
+  <div style="color:#b00020; margin-bottom:10px;">
+    {% for err in form.non_field_errors %}{{ err }}<br>{% endfor %}
+  </div>
+{% endif %}
+
+<form method="post">
+  {% csrf_token %}
+
+  <div class="field">
+    <label>{% trans "Pseudo" %}</label>
+    {{ form.username }}
+    {% for err in form.username.errors %}
+      <div style="color:#b00020;">{{ err }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="field">
+    <label>{% trans "Mot de passe" %}</label>
+    {{ form.password }}
+    {% for err in form.password.errors %}
+      <div style="color:#b00020;">{{ err }}</div>
+    {% endfor %}
+  </div>
+
+  <button class="btn" type="submit">{% trans "Se connecter" %}</button>
+</form>
+
+{% endblock %}

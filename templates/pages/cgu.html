@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Conditions Générales d’Utilisation" %} · Coup de Bordure{% endblock %}
+
+{% block content %}
+  {% get_current_language as LANG %}
+  {% with tpl="legal/cgu_"|add:LANG|add:".html" %}
+    {% include tpl ignore missing %}
+  {% endwith %}
+
+  {# fallback FR si la langue n'existe pas #}
+  {% get_current_language as LANG %}
+  {% if LANG != "fr" %}
+    {% include "legal/cgu_fr.html" %}
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,892 @@
+# Spanish translations for Coup de Bordure.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Coup de Bordure\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-07 10:32+0100\n"
+"PO-Revision-Date: 2026-01-07 10:32+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: accounts/views.py:30
+msgid "Bienvenue sur Coup de Bordure !"
+msgstr "¡Bienvenido/a a Coup de Bordure!"
+
+#: accounts/views.py:32
+#, python-format
+msgid ""
+"Bonjour %(username)s,\n"
+"\n"
+"Bienvenue sur Coup de Bordure 🎉\n"
+"Confirme ton email pour activer ton compte.\n"
+"\n"
+"À bientôt !"
+msgstr ""
+"Hola %(username)s,\n"
+"\n"
+"¡Bienvenido/a a Coup de Bordure 🎉!\n"
+"Confirma tu correo electrónico para activar tu cuenta.\n"
+"\n"
+"¡Hasta pronto!"
+
+#: accounts/views.py:50
+msgid "Confirme ton email — Coup de Bordure"
+msgstr "Confirma tu correo — Coup de Bordure"
+
+#: accounts/views.py:52
+#, python-format
+msgid ""
+"Bonjour %(username)s,\n"
+"\n"
+"Clique sur ce lien pour confirmer ton email :\n"
+msgstr ""
+"Hola %(username)s,\n"
+"\n"
+"Haz clic en este enlace para confirmar tu correo electrónico:\n"
+
+#: accounts/views.py:62
+msgid "Compte créé ✅ Confirme ton email (voir console) puis connecte-toi."
+msgstr "Cuenta creada ✅ Confirma tu correo (ver consola) y luego inicia sesión."
+
+#: coupdebordure/settings.py:86
+msgid "Français"
+msgstr "Francés"
+
+#: coupdebordure/settings.py:87
+msgid "English"
+msgstr "Inglés"
+
+#: coupdebordure/settings.py:88
+msgid "Español"
+msgstr "Español"
+
+#: coupdebordure/settings.py:89
+msgid "Nederlands"
+msgstr "Neerlandés"
+
+#: coupdebordure/settings.py:90
+msgid "Deutsch"
+msgstr "Alemán"
+
+#: templates/accounts/_units_list.html:14
+msgid "Étape"
+msgstr "Etapa"
+
+#: templates/accounts/_units_list.html:19 templates/races/unit_detail.html:19
+#: templates/stats/my_stats.html:19
+msgid "Départ"
+msgstr "Salida"
+
+#: templates/accounts/_units_list.html:27
+msgid "Terminée"
+msgstr "Finalizada"
+
+#: templates/accounts/_units_list.html:29
+msgid "Verrouillée"
+msgstr "Bloqueada"
+
+#: templates/accounts/_units_list.html:31 templates/accounts/dashboard.html:35
+msgid "À venir"
+msgstr "Próximamente"
+
+#: templates/accounts/_units_list.html:35
+msgid "Top5 validé"
+msgstr "Top 5 validado"
+
+#: templates/accounts/_units_list.html:40
+msgid "Top5 manquant"
+msgstr "Falta el Top 5"
+
+#: templates/accounts/_units_list.html:45
+msgid "Score"
+msgstr "Puntuación"
+
+#: templates/accounts/_units_list.html:52
+msgid "Voir"
+msgstr "Ver"
+
+#: templates/accounts/_units_list.html:56
+msgid "Modifier"
+msgstr "Modificar"
+
+#: templates/accounts/_units_list.html:56
+msgid "Top5"
+msgstr "Top 5"
+
+#: templates/accounts/_units_list.html:61
+#: templates/leagues/league_detail.html:52
+msgid "Classement"
+msgstr "Clasificación"
+
+#: templates/accounts/_units_list.html:64
+msgid "Tour"
+msgstr "Vuelta"
+
+#: templates/accounts/_units_list.html:65
+#: templates/bets/leaderboard_tour_special_compact.html:17
+#: templates/bets/leaderboards_hub.html:40
+msgid "Sprinteur"
+msgstr "Sprinter"
+
+#: templates/accounts/_units_list.html:66
+#: templates/bets/leaderboard_tour_special_compact.html:18
+#: templates/bets/leaderboards_hub.html:41
+msgid "Grimpeur"
+msgstr "Escalador"
+
+#: templates/accounts/_units_list.html:67
+#: templates/bets/leaderboard_tour_special_compact.html:19
+#: templates/bets/leaderboards_hub.html:42
+msgid "Baroudeur"
+msgstr "Aventurero"
+
+#: templates/accounts/_units_list.html:75
+msgid "Pense à valider ton Top5 avant le départ."
+msgstr "Recuerda validar tu Top 5 antes de la salida."
+
+#: templates/accounts/account.html:3 templates/base.html:52
+#: templates/base.html:104
+msgid "Compte"
+msgstr "Cuenta"
+
+#: templates/accounts/account.html:6
+msgid "Mon compte"
+msgstr "Mi cuenta"
+
+#: templates/accounts/account.html:12 templates/races/unit_detail.html:34
+#: templates/stats/my_stats.html:34
+msgid "Profil"
+msgstr "Perfil"
+
+#: templates/accounts/account.html:14
+msgid "Pseudo (non modifiable) :"
+msgstr "Nombre de usuario (no modificable):"
+
+#: templates/accounts/account.html:26 templates/accounts/signup.html:20
+msgid "Date de naissance"
+msgstr "Fecha de nacimiento"
+
+#: templates/accounts/account.html:27 templates/accounts/signup.html:43
+msgid "Pays"
+msgstr "País"
+
+#: templates/accounts/account.html:29 templates/accounts/signup.html:48
+msgid "Langue"
+msgstr "Idioma"
+
+#: templates/accounts/account.html:30 templates/accounts/signup.html:53
+msgid "Équipe préférée"
+msgstr "Equipo favorito"
+
+#: templates/accounts/account.html:32 templates/accounts/signup.html:58
+msgid "Coureur préféré"
+msgstr "Corredor favorito"
+
+#: templates/accounts/account.html:33 templates/accounts/signup.html:63
+msgid "Marque de vélo"
+msgstr "Marca de bicicleta"
+
+#: templates/accounts/account.html:35 templates/accounts/signup.html:68
+msgid "Avatar (liste)"
+msgstr "Avatar (lista)"
+
+#: templates/accounts/account.html:36
+msgid "Photo (upload)"
+msgstr "Foto (subir)"
+
+#: templates/accounts/account.html:37
+msgid "Badge affiché"
+msgstr "Insignia mostrada"
+
+#: templates/accounts/account.html:40 templates/accounts/account.html:78
+#: templates/partials/_cookie_banner.html:67
+msgid "Enregistrer"
+msgstr "Guardar"
+
+#: templates/accounts/account.html:46
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: templates/accounts/account.html:50 templates/accounts/signup.html:35
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: templates/accounts/account.html:84
+msgid "Push (PWA)"
+msgstr "Push (PWA)"
+
+#: templates/accounts/account.html:86
+msgid ""
+"Active les notifications push sur cet appareil (nécessite l’installation PWA "
+"+ permission navigateur)."
+msgstr ""
+"Activa las notificaciones push en este dispositivo (requiere instalar la PWA "
+"y permiso del navegador)."
+
+#: templates/accounts/account.html:89
+msgid "Activer notifications push"
+msgstr "Activar notificaciones push"
+
+#: templates/accounts/account.html:96
+msgid "Ma photo"
+msgstr "Mi foto"
+
+#: templates/accounts/account.html:105 templates/leagues/leagues_home.html:11
+msgid "Mes ligues"
+msgstr "Mis ligas"
+
+#: templates/accounts/account.html:110
+msgid "Aucune ligue."
+msgstr "Ninguna liga."
+
+#: templates/accounts/account.html:114
+msgid "Mes badges"
+msgstr "Mis insignias"
+
+#: templates/accounts/account.html:127
+msgid "Aucun badge pour le moment."
+msgstr "Aún no tienes insignias."
+
+#: templates/accounts/dashboard.html:7 templates/base.html:48
+#: templates/base.html:100
+msgid "Tableau de bord"
+msgstr "Panel"
+
+#: templates/accounts/dashboard.html:12
+msgid "Bonjour"
+msgstr "Hola"
+
+#: templates/accounts/dashboard.html:13
+msgid "Score total"
+msgstr "Puntuación total"
+
+#: templates/accounts/dashboard.html:20
+msgid "Badges récents"
+msgstr "Insignias recientes"
+
+#: templates/accounts/dashboard.html:25
+msgid "Aucun badge pour le moment"
+msgstr "Aún no hay insignias"
+
+#: templates/accounts/dashboard.html:31
+msgid "Toutes les courses"
+msgstr "Todas las carreras"
+
+#: templates/accounts/dashboard.html:33
+msgid ""
+"À venir / Verrouillées / Terminées — avec ton statut de Top5 et tes scores."
+msgstr ""
+"Próximas / Bloqueadas / Finalizadas — con tu estado de Top 5 y tus puntuaciones."
+
+#: templates/accounts/dashboard.html:36
+msgid "Aucune course/étape à venir."
+msgstr "No hay carreras/etapas próximas."
+
+#: templates/accounts/dashboard.html:39
+msgid "Verrouillées"
+msgstr "Bloqueadas"
+
+#: templates/accounts/dashboard.html:40
+msgid "Aucune course/étape verrouillée."
+msgstr "No hay carreras/etapas bloqueadas."
+
+#: templates/accounts/dashboard.html:43
+msgid "Terminées"
+msgstr "Finalizadas"
+
+#: templates/accounts/dashboard.html:44
+msgid "Aucune course/étape terminée."
+msgstr "No hay carreras/etapas finalizadas."
+
+#: templates/accounts/login.html:3 templates/accounts/login.html:6
+#: templates/base.html:69
+msgid "Connexion"
+msgstr "Iniciar sesión"
+
+#: templates/accounts/login.html:18
+msgid "Pseudo"
+msgstr "Nombre de usuario"
+
+#: templates/accounts/login.html:26 templates/accounts/signup.html:78
+msgid "Mot de passe"
+msgstr "Contraseña"
+
+#: templates/accounts/login.html:33 templates/pages/home.html:9
+msgid "Se connecter"
+msgstr "Iniciar sesión"
+
+#: templates/accounts/signup.html:3 templates/accounts/signup.html:6
+#: templates/base.html:70
+msgid "Inscription"
+msgstr "Registro"
+
+#: templates/accounts/signup.html:7
+msgid "Pseudo unique + profil + avatar (liste ou upload)."
+msgstr "Nombre de usuario único + perfil + avatar (lista o subida)."
+
+#: templates/accounts/signup.html:14
+msgid "Pseudo (unique)"
+msgstr "Nombre de usuario (único)"
+
+#: templates/accounts/signup.html:25
+msgid "Prénom"
+msgstr "Nombre"
+
+#: templates/accounts/signup.html:30 templates/leagues/league_create.html:7
+msgid "Nom"
+msgstr "Apellido"
+
+#: templates/accounts/signup.html:73
+msgid "Photo de profil (upload)"
+msgstr "Foto de perfil (subir)"
+
+#: templates/accounts/signup.html:84
+msgid "Confirmer le mot de passe"
+msgstr "Confirmar contraseña"
+
+#: templates/accounts/signup.html:90
+msgid "Créer mon compte"
+msgstr "Crear mi cuenta"
+
+#: templates/base.html:40
+msgid "Jeu de pronostics cyclistes (points)"
+msgstr "Juego de pronósticos ciclistas (puntos)"
+
+#: templates/base.html:49 templates/base.html:101
+#: templates/races/races_list.html:4 templates/races/races_list.html:7
+msgid "Courses"
+msgstr "Carreras"
+
+#: templates/base.html:50 templates/base.html:102
+#: templates/bets/leaderboards_hub.html:4
+#: templates/bets/leaderboards_hub.html:7
+msgid "Classements"
+msgstr "Clasificaciones"
+
+#: templates/base.html:51 templates/base.html:103
+msgid "Ligues"
+msgstr "Ligas"
+
+#: templates/base.html:64
+msgid "Déconnexion"
+msgstr "Cerrar sesión"
+
+#: templates/base.html:105
+msgid "Stats"
+msgstr "Estadísticas"
+
+#: templates/base.html:112
+msgid "Infos"
+msgstr "Información"
+
+#: templates/base.html:114
+msgid "Conditions d’utilisation"
+msgstr "Condiciones de uso"
+
+#: templates/base.html:115 templates/pages/privacy.html:3
+msgid "Politique de confidentialité"
+msgstr "Política de privacidad"
+
+#: templates/base.html:116
+msgid "Règlement"
+msgstr "Reglamento"
+
+#: templates/base.html:117
+msgid "FAQ"
+msgstr "Preguntas frecuentes"
+
+#: templates/base.html:118
+msgid "Contact"
+msgstr "Contacto"
+
+#: templates/base.html:119 templates/pages/mentions_legales.html:3
+msgid "Mentions légales"
+msgstr "Aviso legal"
+
+#: templates/base.html:122
+msgid "Gérer les cookies"
+msgstr "Gestionar cookies"
+
+#: templates/base.html:139
+msgid "Emplacement pub (sidebar)"
+msgstr "Espacio publicitario (barra lateral)"
+
+#: templates/base.html:163
+msgid "Emplacement pub (haut)"
+msgstr "Espacio publicitario (arriba)"
+
+#: templates/base.html:181
+msgid "Emplacement pub (bas)"
+msgstr "Espacio publicitario (abajo)"
+
+#: templates/bets/_leaderboard_table_compact.html:8
+#: templates/leagues/league_detail.html:11
+msgid "Utilisateur"
+msgstr "Usuario"
+
+#: templates/bets/_leaderboard_table_compact.html:9
+#: templates/bets/leaderboard_global.html:41
+#: templates/bets/leaderboard_tour_compact.html:61
+#: templates/bets/leaderboard_tour_special_compact.html:63
+#: templates/bets/leaderboard_unit_compact.html:33
+#: templates/leagues/league_leaderboard_global.html:32
+msgid "Total"
+msgstr "Total"
+
+#: templates/bets/_leaderboard_table_compact.html:31
+msgid "toi"
+msgstr "tú"
+
+#: templates/bets/bet_form.html:21
+msgid "Valider mon prono"
+msgstr "Confirmar mi pronóstico"
+
+#: templates/bets/leaderboard_global.html:8
+#: templates/bets/leaderboards_hub.html:14
+#, python-format
+msgid "Classement global — Saison %(year)s"
+msgstr "Clasificación general — Temporada %(year)s"
+
+#: templates/bets/leaderboard_global.html:11
+msgid "Somme des scores sur toutes les unités de la saison"
+msgstr "Suma de puntuaciones de todas las unidades de la temporada"
+
+#: templates/bets/leaderboard_global.html:20
+#: templates/bets/leaderboard_tour_compact.html:20
+#: templates/bets/leaderboard_tour_special_compact.html:28
+#: templates/bets/leaderboard_unit_compact.html:12
+#: templates/leagues/league_leaderboard_global.html:18
+msgid "🥈 2e"
+msgstr "🥈 2.º"
+
+#: templates/bets/leaderboard_global.html:33
+#: templates/bets/leaderboard_tour_compact.html:43
+#: templates/bets/leaderboard_tour_special_compact.html:47
+#: templates/bets/leaderboard_unit_compact.html:25
+#: templates/leagues/league_leaderboard_global.html:26
+msgid "🥇 1er"
+msgstr "🥇 1.º"
+
+#: templates/bets/leaderboard_global.html:48
+#: templates/bets/leaderboard_tour_compact.html:68
+#: templates/bets/leaderboard_tour_special_compact.html:70
+#: templates/bets/leaderboard_unit_compact.html:40
+#: templates/leagues/league_leaderboard_global.html:38
+msgid "🥉 3e"
+msgstr "🥉 3.º"
+
+#: templates/bets/leaderboard_tour_compact.html:8
+#, python-format
+msgid "Classement — %(tour_name)s"
+msgstr "Clasificación — %(tour_name)s"
+
+#: templates/bets/leaderboard_tour_compact.html:11
+msgid "Somme des scores sur toutes les étapes"
+msgstr "Suma de puntuaciones de todas las etapas"
+
+#: templates/bets/leaderboard_tour_compact.html:23
+#: templates/bets/leaderboard_tour_compact.html:46
+#: templates/bets/leaderboard_tour_compact.html:71
+#: templates/bets/leaderboard_tour_special_compact.html:31
+#: templates/bets/leaderboard_tour_special_compact.html:50
+#: templates/bets/leaderboard_tour_special_compact.html:73
+msgid "avatar"
+msgstr "avatar"
+
+#: templates/bets/leaderboard_tour_compact.html:32
+#: templates/bets/leaderboard_tour_compact.html:55
+#: templates/bets/leaderboard_tour_compact.html:80
+#: templates/bets/leaderboard_tour_special_compact.html:38
+#: templates/bets/leaderboard_tour_special_compact.html:57
+#: templates/bets/leaderboard_tour_special_compact.html:80
+msgid "badge"
+msgstr "insignia"
+
+#: templates/bets/leaderboard_tour_special_compact.html:8
+#, python-format
+msgid "%(title_text)s — %(tour_name)s"
+msgstr "%(title_text)s — %(tour_name)s"
+
+#: templates/bets/leaderboard_tour_special_compact.html:12
+#, python-format
+msgid "Étapes prises en compte : %(types)s (tie-break : username)"
+msgstr "Etapas tenidas en cuenta: %(types)s (desempate: nombre de usuario)"
+
+#: templates/bets/leaderboard_tour_special_compact.html:16
+msgid "Général"
+msgstr "General"
+
+#: templates/bets/leaderboards_hub.html:9
+msgid "Global par saison"
+msgstr "General por temporada"
+
+#: templates/bets/leaderboards_hub.html:18
+msgid "Aucune saison."
+msgstr "No hay temporadas."
+
+#: templates/bets/leaderboards_hub.html:22
+msgid "Par course (1 jour)"
+msgstr "Por carrera (1 día)"
+
+#: templates/bets/leaderboards_hub.html:30
+msgid "Aucune course."
+msgstr "No hay carreras."
+
+#: templates/bets/leaderboards_hub.html:34
+msgid "Par tour"
+msgstr "Por vuelta"
+
+#: templates/bets/leaderboards_hub.html:45 templates/races/races_list.html:57
+msgid "Aucun tour."
+msgstr "No hay vueltas."
+
+#: templates/leagues/league_create.html:4 templates/leagues/leagues_home.html:7
+msgid "Créer une ligue"
+msgstr "Crear una liga"
+
+#: templates/leagues/league_create.html:8
+msgid "Privée"
+msgstr "Privada"
+
+#: templates/leagues/league_create.html:9
+msgid "Créer"
+msgstr "Crear"
+
+#: templates/leagues/league_detail.html:6 templates/leagues/league_join.html:7
+msgid "Code d’invitation"
+msgstr "Código de invitación"
+
+#: templates/leagues/league_detail.html:8
+msgid "Membres"
+msgstr "Miembros"
+
+#: templates/leagues/league_detail.html:22
+msgid "Conversation"
+msgstr "Conversación"
+
+#: templates/leagues/league_detail.html:27
+msgid "Envoyer"
+msgstr "Enviar"
+
+#: templates/leagues/league_detail.html:41
+msgid "Aucun message pour le moment"
+msgstr "Aún no hay mensajes"
+
+#: templates/leagues/league_detail.html:47
+msgid "Voir plus"
+msgstr "Ver más"
+
+#: templates/leagues/league_detail.html:57
+msgid "Aucune saison"
+msgstr "Sin temporada"
+
+#: templates/leagues/league_join.html:4
+msgid "Rejoindre une ligue"
+msgstr "Unirse a una liga"
+
+#: templates/leagues/league_join.html:8
+msgid "Rejoindre"
+msgstr "Unirse"
+
+#: templates/leagues/league_leaderboard_global.html:7
+#, python-format
+msgid ""
+"\n"
+"      Classement — %(league_name)s — Saison %(year)s\n"
+"    "
+msgstr ""
+"\n"
+"      Clasificación — %(league_name)s — Temporada %(year)s\n"
+"    "
+
+#: templates/leagues/league_leaderboard_global.html:11
+msgid "Somme des scores des membres de la ligue"
+msgstr "Suma de puntuaciones de los miembros de la liga"
+
+#: templates/leagues/league_leaderboard_global.html:51
+msgid "Retour ligue"
+msgstr "Volver a la liga"
+
+#: templates/leagues/leagues_home.html:8
+msgid "Rejoindre avec un code"
+msgstr "Unirse con un código"
+
+#: templates/leagues/leagues_home.html:19
+msgid "Aucune ligue"
+msgstr "Ninguna liga"
+
+#: templates/pages/cgu.html:3
+msgid "Conditions Générales d’Utilisation"
+msgstr "Condiciones generales de uso"
+
+#: templates/pages/home.html:5
+msgid "Bienvenue sur"
+msgstr "Bienvenido/a a"
+
+#: templates/pages/home.html:6
+msgid ""
+"Jeu gratuit de pronostics cyclistes : compose ton top 5 avant le départ et "
+"grimpe au classement !"
+msgstr ""
+"Juego gratuito de pronósticos ciclistas: crea tu Top 5 antes de la salida y "
+"¡sube en la clasificación!"
+
+#: templates/pages/home.html:10
+msgid "S’inscrire"
+msgstr "Registrarse"
+
+#: templates/pages/offline.html:6
+msgid "Hors connexion"
+msgstr "Sin conexión"
+
+#: templates/pages/offline.html:7
+msgid "Impossible de contacter le serveur. Réessaie quand tu as du réseau."
+msgstr "No se puede contactar con el servidor. Inténtalo de nuevo cuando tengas conexión."
+
+#: templates/partials/_cookie_banner.html:10
+msgid "Cookies & confidentialité"
+msgstr "Cookies y privacidad"
+
+#: templates/partials/_cookie_banner.html:14
+msgid ""
+"\n"
+"            Nous utilisons des cookies nécessaires au fonctionnement du "
+"site.\n"
+"            Avec votre accord, nous pouvons aussi utiliser des cookies de "
+"mesure d’audience\n"
+"            et/ou publicitaires.\n"
+"          "
+msgstr ""
+"\n"
+"            Utilizamos cookies necesarias para el funcionamiento del sitio.\n"
+"            Con tu consentimiento, también podemos usar cookies de medición de audiencia\n"
+"            y/o publicitarias.\n"
+"          "
+
+#: templates/partials/_cookie_banner.html:20
+msgid "En savoir plus"
+msgstr "Saber más"
+
+#: templates/partials/_cookie_banner.html:29
+msgid "Essentiels"
+msgstr "Esenciales"
+
+#: templates/partials/_cookie_banner.html:30
+msgid "(obligatoires) — session, sécurité, préférences"
+msgstr "(obligatorias) — sesión, seguridad, preferencias"
+
+#: templates/partials/_cookie_banner.html:37
+msgid "Mesure d’audience"
+msgstr "Medición de audiencia"
+
+#: templates/partials/_cookie_banner.html:38
+msgid "— améliorer l’expérience (ex : analytics)"
+msgstr "— mejorar la experiencia (p. ej., analítica)"
+
+#: templates/partials/_cookie_banner.html:45
+msgid "Publicité"
+msgstr "Publicidad"
+
+#: templates/partials/_cookie_banner.html:46
+msgid "— annonces et mesure (ciblage si activé)"
+msgstr "— anuncios y medición (segmentación si está activada)"
+
+#: templates/partials/_cookie_banner.html:55
+msgid "Personnaliser"
+msgstr "Personalizar"
+
+#: templates/partials/_cookie_banner.html:59
+msgid "Tout refuser"
+msgstr "Rechazar todo"
+
+#: templates/partials/_cookie_banner.html:63
+msgid "Tout accepter"
+msgstr "Aceptar todo"
+
+#: templates/races/races_list.html:9
+msgid "Courses d’un jour"
+msgstr "Carreras de un día"
+
+#: templates/races/races_list.html:17
+msgid "Aucune course d’un jour."
+msgstr "No hay carreras de un día."
+
+#: templates/races/races_list.html:21
+msgid "Tours (courses à étapes)"
+msgstr "Vueltas (carreras por etapas)"
+
+#: templates/races/races_list.html:30
+#, python-format
+msgid ""
+"\n"
+"        Début : %(start)s\n"
+"      "
+msgstr ""
+"\n"
+"        Inicio: %(start)s\n"
+"      "
+
+#: templates/races/races_list.html:37
+msgid "Étapes"
+msgstr "Etapas"
+
+#: templates/races/races_list.html:44
+#, python-format
+msgid ""
+"\n"
+"                Étape %(num)s — %(name)s\n"
+"              "
+msgstr ""
+"\n"
+"                Etapa %(num)s — %(name)s\n"
+"              "
+
+#: templates/races/races_list.html:51
+msgid "Aucune étape."
+msgstr "No hay etapas."
+
+#: templates/races/unit_detail.html:12 templates/stats/my_stats.html:12
+#, python-format
+msgid ""
+"\n"
+"      Tour : %(tour_name)s — Type : %(stage_type)s\n"
+"    "
+msgstr ""
+"\n"
+"      Vuelta: %(tour_name)s — Tipo: %(stage_type)s\n"
+"    "
+
+#: templates/races/unit_detail.html:25 templates/stats/my_stats.html:25
+msgid "Départ dans"
+msgstr "Salida en"
+
+#: templates/races/unit_detail.html:37 templates/stats/my_stats.html:37
+msgid "profil"
+msgstr "perfil"
+
+#: templates/races/unit_detail.html:52 templates/stats/my_stats.html:52
+msgid "Pronostics verrouillés ✅ (course/étape commencée)"
+msgstr "Pronósticos bloqueados ✅ (carrera/etapa iniciada)"
+
+#: templates/races/unit_detail.html:56 templates/stats/my_stats.html:56
+msgid "Modifier mon Top 5"
+msgstr "Modificar mi Top 5"
+
+#: templates/races/unit_detail.html:58 templates/stats/my_stats.html:58
+msgid "Faire mon Top 5"
+msgstr "Hacer mi Top 5"
+
+#: templates/races/unit_detail.html:65 templates/stats/my_stats.html:65
+msgid "Mon prono (Top 5)"
+msgstr "Mi pronóstico (Top 5)"
+
+#: templates/races/unit_detail.html:77 templates/stats/my_stats.html:77
+#, python-format
+msgid ""
+"\n"
+"      Validé le : %(submitted)s\n"
+"    "
+msgstr ""
+"\n"
+"      Validado el: %(submitted)s\n"
+"    "
+
+#: templates/races/unit_detail.html:81 templates/stats/my_stats.html:81
+msgid "Score actuel"
+msgstr "Puntuación actual"
+
+#: templates/races/unit_detail.html:85 templates/stats/my_stats.html:85
+msgid "Aucun prono validé pour le moment."
+msgstr "Aún no hay pronóstico validado."
+
+#: templates/races/unit_detail.html:88 templates/stats/my_stats.html:88
+msgid "Coureurs engagés (Top 10 cotes)"
+msgstr "Corredores participantes (Top 10 cuotas)"
+
+#: templates/races/unit_detail.html:95 templates/stats/my_stats.html:95
+#, python-format
+msgid ""
+"\n"
+"          %(rider)s — cote %(odds)s\n"
+"        "
+msgstr ""
+"\n"
+"          %(rider)s — cuota %(odds)s\n"
+"        "
+
+#: templates/races/unit_detail.html:105 templates/stats/my_stats.html:105
+#, python-format
+msgid ""
+"\n"
+"          Voir tous les coureurs (%(n)s)\n"
+"        "
+msgstr ""
+"\n"
+"          Ver todos los corredores (%(n)s)\n"
+"        "
+
+#: templates/races/unit_detail.html:113 templates/stats/my_stats.html:113
+#, python-format
+msgid ""
+"\n"
+"              %(rider)s — cote %(odds)s\n"
+"            "
+msgstr ""
+"\n"
+"              %(rider)s — cuota %(odds)s\n"
+"            "
+
+#: templates/races/unit_detail.html:123 templates/stats/my_stats.html:123
+msgid "Aucun engagé."
+msgstr "No hay participantes."
+
+#: templates/races/unit_detail.html:126 templates/stats/my_stats.html:126
+msgid "Résultats"
+msgstr "Resultados"
+
+#: templates/races/unit_detail.html:132 templates/stats/my_stats.html:132
+#, python-format
+msgid ""
+"\n"
+"          #%(pos)s — %(rider)s\n"
+"        "
+msgstr ""
+"\n"
+"          #%(pos)s — %(rider)s\n"
+"        "
+
+#: templates/races/unit_detail.html:141 templates/stats/my_stats.html:141
+msgid "Voir le classement de cette"
+msgstr "Ver la clasificación de esta"
+
+#: templates/races/unit_detail.html:143 templates/stats/my_stats.html:143
+msgid "course"
+msgstr "carrera"
+
+#: templates/races/unit_detail.html:145 templates/stats/my_stats.html:145
+msgid "étape"
+msgstr "etapa"
+
+#: templates/races/unit_detail.html:150 templates/stats/my_stats.html:150
+msgid "Résultat non disponible."
+msgstr "Resultado no disponible."
+
+#: templates/races/unit_detail.html:160 templates/stats/my_stats.html:160
+msgid "Date invalide"
+msgstr "Fecha no válida"
+
+#: templates/races/unit_detail.html:161 templates/stats/my_stats.html:161
+msgid "Course/étape commencée (pronostics verrouillés)."
+msgstr "Carrera/etapa iniciada (pronósticos bloqueados)."
+
+#: templates/races/unit_detail.html:162 templates/stats/my_stats.html:162
+msgid "Tu peux encore modifier ton prono avant le départ."
+msgstr "Aún puedes modificar tu pronóstico antes de la salida."

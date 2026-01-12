@@ -1,0 +1,80 @@
+{# templates/accounts/_user_chip.html #}
+{% load static %}
+
+{% with s=size|default:28 %}
+{% with mode=layout|default:"inline" %}
+<div
+  style="
+    display:flex;
+    {% if mode == 'stack' %}
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:6px;
+    {% else %}
+      flex-direction:row;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    {% endif %}
+  "
+>
+
+  {# Avatar #}
+  {% if avatar_url %}
+    <img src="{{ avatar_url }}" alt="avatar" loading="lazy"
+         style="
+           width:{{ s }}px;
+           height:{{ s }}px;
+           border-radius:{{ s|add:'-8' }}px;
+           object-fit:cover;
+           border:1px solid var(--border);
+         ">
+  {% endif %}
+
+  {# Texte + icônes #}
+  <div
+    style="
+      display:flex;
+      {% if mode == 'stack' %}
+        flex-direction:column;
+        align-items:center;
+        gap:4px;
+      {% else %}
+        flex-direction:row;
+        align-items:center;
+        gap:8px;
+        min-width:0;
+      {% endif %}
+    "
+  >
+
+    {# Username #}
+    {% if truncate == 0 or mode == 'stack' %}
+      <span style="font-weight:900; white-space:normal;">
+        {{ username }}
+      </span>
+    {% else %}
+      <span style="font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;">
+        {{ username }}
+      </span>
+    {% endif %}
+
+    {# Icônes (drapeau + badge) #}
+    <div style="display:flex; gap:6px; align-items:center;">
+      {% if flag_url %}
+        <img src="{{ flag_url }}" alt="pays" loading="lazy"
+             onerror="this.onerror=null;this.src='{% static 'flags/_unknown.svg' %}';"
+             style="width:18px;height:13px;border-radius:3px;object-fit:cover;border:1px solid var(--border);">
+      {% endif %}
+
+      {% if badge_icon_url %}
+        <img src="{{ badge_icon_url }}" alt="badge" loading="lazy"
+             style="width:18px;height:18px;object-fit:contain;">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+{% endwith %}
+{% endwith %}

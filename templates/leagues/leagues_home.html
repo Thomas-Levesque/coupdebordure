@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<h2>Ligues</h2>
+
+<div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+  <a class="btn" href="{% url 'league_create' %}">{% trans "Créer une ligue" %}</a>
+  <a class="btn2" href="{% url 'league_join' %}">{% trans "Rejoindre avec un code" %}</a>
+</div>
+
+<h3>{% trans "Mes ligues" %}</h3>
+<ul>
+  {% for l in my_leagues %}
+    <li>
+      <a href="{% url 'league_detail' l.id %}">{{ l.name }}</a>
+      <span style="color:#666;">(code : {{ l.invite_code }})</span>
+    </li>
+  {% empty %}
+    <li>{% trans "Aucune ligue" %}.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

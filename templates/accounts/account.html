@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Compte" %} · Coup de Bordure{% endblock %}
+{% block content %}
+
+<h2>{% trans "Mon compte" %}</h2>
+
+<div style="display:flex; gap:16px; flex-wrap:wrap; align-items:flex-start;">
+
+  <!-- COL 1 : Profil -->
+  <div style="flex:1 1 320px; min-width:280px;">
+    <h3>{% trans "Profil" %}</h3>
+    <p style="color:#666;">
+      {% trans "Pseudo (non modifiable) :" %} <strong>{{ user.username }}</strong>
+    </p>
+
+    <form method="post" enctype="multipart/form-data" id="profile-form">
+      {% csrf_token %}
+      <input type="hidden" name="form_type" value="profile">
+
+      {% if form.non_field_errors %}
+        <div style="color:#b00020;">{{ form.non_field_errors }}</div>
+      {% endif %}
+
+      <div class="grid2">
+        <div class="field"><label>{% trans "Date de naissance" %}</label>{{ form.birth_date }}</div>
+        <div class="field"><label>{% trans "Pays" %}</label>{{ form.country }}</div>
+
+        {# ✅ Langue unique (profil) + appli immédiate “pro” #}
+        <div class="field">
+          <label>Language choice</label>
+          {{ form.language }}
+          <div style="color:var(--muted); margin-top:6px; line-height:1.35;">
+          </div>
+        </div>
+
+        <div class="field"><label>{% trans "Équipe préférée" %}</label>{{ form.favorite_team }}</div>
+
+        <div class="field"><label>{% trans "Coureur préféré" %}</label>{{ form.favorite_rider_name }}</div>
+        <div class="field"><label>{% trans "Marque de vélo" %}</label>{{ form.favorite_bike_brand }}</div>
+
+        <div class="field"><label>{% trans "Avatar (liste)" %}</label>{{ form.avatar_choice }}</div>
+        <div class="field"><label>{% trans "Photo (upload)" %}</label>{{ form.avatar_upload }}</div>
+        <div class="field"><label>{% trans "Badge affiché" %}</label>{{ form.featured_badge }}</div>
+      </div>
+
+      <button class="btn" type="submit">{% trans "Enregistrer" %}</button>
+    </form>
+  </div>
+
+  <!-- COL 2 : Notifications -->
+  <div style="flex:1 1 320px; min-width:280px;">
+    <h3>🔔 {% trans "Notifications" %}</h3>
+
+    <!-- EMAIL -->
+    <div style="border:1px solid #eee; padding:12px; border-radius:14px; margin-bottom:12px;">
+      <div style="font-weight:900; margin-bottom:8px;">📧 {% trans "Email" %}</div>
+
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="form_type" value="notifications">
+
+        <div class="field">
+          <label style="display:flex; gap:10px; align-items:flex-start; line-height:1.25;">
+            <span style="flex:0 0 auto; padding-top:2px;">
+              {{ notif_form.email_results }}
+            </span>
+            <span style="flex:1 1 auto; min-width:0; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">
+              {{ notif_form.email_results.label }}
+            </span>
+          </label>
+        </div>
+
+        <div class="field">
+          <label style="display:flex; gap:10px; align-items:flex-start; line-height:1.25;">
+            <span style="flex:0 0 auto; padding-top:2px;">
+              {{ notif_form.email_reminders }}
+            </span>
+            <span style="flex:1 1 auto; min-width:0; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">
+              {{ notif_form.email_reminders.label }}
+            </span>
+          </label>
+        </div>
+
+        <button class="btn" type="submit">{% trans "Enregistrer" %}</button>
+      </form>
+    </div>
+
+    <!-- PUSH -->
+    <div style="border:1px solid #eee; padding:12px; border-radius:14px;">
+      <div style="font-weight:900; margin-bottom:8px;">📲 {% trans "Push (PWA)" %}</div>
+      <p style="color:#666; margin-top:0; line-height:1.35; overflow-wrap:anywhere;">
+        {% trans "Active les notifications push sur cet appareil (nécessite l’installation PWA + permission navigateur)." %}
+      </p>
+
+      <button class="btn2" id="enable-push" type="button">{% trans "Activer notifications push" %}</button>
+      <p id="push-status" style="color:#666; margin-top:8px; overflow-wrap:anywhere;"></p>
+    </div>
+  </div>
+
+  <!-- COL 3 : Résumé -->
+  <div style="flex:1 1 320px; min-width:280px;">
+    <h3>{% trans "Ma photo" %}</h3>
+
+    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+      {% include "accounts/_user_chip.html" with avatar_url=user.profile.avatar_url username=user.username flag_url=user.profile.flag_url badge_icon_url=user.profile.featured_badge_icon_url size=44 %}
+      {% if user.profile.featured_badge %}
+        <strong>{{ user.profile.featured_badge.name }}</strong>
+      {% endif %}
+    </div>
+
+    <h3 style="margin-top:16px;">{% trans "Mes ligues" %}</h3>
+    <ul style="padding-left:18px; margin:0;">
+      {% for l in my_leagues %}
+        <li><a href="{% url 'league_detail' l.id %}">{{ l.name }}</a></li>
+      {% empty %}
+        <li>{% trans "Aucune ligue." %}</li>
+      {% endfor %}
+    </ul>
+
+    <h3 style="margin-top:16px;">{% trans "Mes badges" %}</h3>
+    <ul style="padding-left:18px; margin:0;">
+      {% for ub in my_badges %}
+        <li style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+          <img src="{{ ub.badge.icon_url }}" alt="" style="width:22px;height:22px;object-fit:contain;">
+          <span>{{ ub.badge.name }}</span>
+          <span style="color:#666;">({{ ub.awarded_at|date:"d/m/Y" }})</span>
+        </li>
+      {% empty %}
+        <li>{% trans "Aucun badge pour le moment." %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+
+{# ✅ “Pro”: après sauvegarde profil, on applique la langue immédiatement via set_language_pro #}
+<script>
+(function () {
+  const form = document.getElementById("profile-form");
+  if (!form) return;
+
+  // id Django typique : id_language
+  const langSelect = form.querySelector("#id_language") || form.querySelector("[name='language']");
+  if (!langSelect) return;
+
+  form.addEventListener("submit", function () {
+    // On laisse le POST profil se faire normalement.
+    // Si la langue a changé, on applique juste après en repostant vers set_language_pro.
+    const chosen = langSelect.value;
+    sessionStorage.setItem("pending_lang_apply", chosen);
+  });
+
+  // Au rechargement (après POST réussi), on applique si besoin.
+  const pending = sessionStorage.getItem("pending_lang_apply");
+  if (pending) {
+    sessionStorage.removeItem("pending_lang_apply");
+
+    const f = document.createElement("form");
+    f.method = "POST";
+    f.action = "{% url 'set_language_pro' %}";
+
+    const csrf = document.querySelector("input[name='csrfmiddlewaretoken']");
+    if (csrf) {
+      const c = document.createElement("input");
+      c.type = "hidden";
+      c.name = "csrfmiddlewaretoken";
+      c.value = csrf.value;
+      f.appendChild(c);
+    }
+
+    const next = document.createElement("input");
+    next.type = "hidden";
+    next.name = "next";
+    next.value = window.location.pathname + window.location.search;
+    f.appendChild(next);
+
+    const lang = document.createElement("input");
+    lang.type = "hidden";
+    lang.name = "language";
+    lang.value = pending;
+    f.appendChild(lang);
+
+    document.body.appendChild(f);
+    f.submit();
+  }
+})();
+</script>
+
+<script>
+(async function () {
+  const btn = document.getElementById("enable-push");
+  const status = document.getElementById("push-status");
+  if (!btn) return;
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = "=".repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+    const rawData = atob(base64);
+    const outputArray = new Uint8Array(rawData.length);
+    for (let i = 0; i < rawData.length; ++i) outputArray[i] = rawData.charCodeAt(i);
+    return outputArray;
+  }
+
+  function getCSRFToken() {
+    const m = document.cookie.match(/csrftoken=([^;]+)/);
+    return m ? m[1] : "";
+  }
+
+  btn.addEventListener("click", async () => {
+    try {
+      if (!("serviceWorker" in navigator)) { status.textContent = "Service Worker non disponible."; return; }
+      if (!("PushManager" in window)) { status.textContent = "Push non supporté sur ce navigateur."; return; }
+
+      const perm = await Notification.requestPermission();
+      if (perm !== "granted") { status.textContent = "Permission refusée."; return; }
+
+      const reg = await navigator.serviceWorker.ready;
+
+      const r = await fetch("/push/public-key/");
+      const { publicKey } = await r.json();
+
+      const sub = await reg.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(publicKey),
+      });
+
+      const csrf = getCSRFToken();
+      const resp = await fetch("/push/subscribe/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "X-CSRFToken": csrf },
+        body: JSON.stringify({ subscription: sub.toJSON() }),
+      });
+
+      if (!resp.ok) throw new Error("Subscribe failed");
+      status.textContent = "✅ Notifications push activées.";
+    } catch (e) {
+      console.error(e);
+      status.textContent = "Erreur activation push.";
+    }
+  });
+})();
+</script>
+
+{% endblock %}

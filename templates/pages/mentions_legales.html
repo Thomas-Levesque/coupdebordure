@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Mentions légales" %} · Coup de Bordure{% endblock %}
+
+{% block content %}
+  {% get_current_language as LANG %}
+  {% with tpl="legal/mentions_legales_"|add:LANG|add:".html" %}
+    {% include tpl ignore missing %}
+  {% endwith %}
+
+  {# fallback FR si traduction manquante #}
+  {% if LANG != "fr" %}
+    {% include "legal/mentions_legales_fr.html" %}
+  {% endif %}
+{% endblock %}

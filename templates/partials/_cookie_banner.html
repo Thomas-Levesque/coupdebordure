@@ -1,0 +1,73 @@
+{% load i18n %}
+
+<div id="cookie-banner"
+     style="display:none; position:fixed; left:16px; right:16px; bottom:16px; z-index:9999;">
+  <div class="card" style="max-width:980px; margin:0 auto; padding:14px; border:1px solid var(--border);">
+    <div style="display:flex; gap:14px; align-items:flex-start; flex-wrap:wrap;">
+
+      <div style="flex:1 1 420px; min-width:260px;">
+        <div style="font-weight:900; font-size:1.05rem;">
+          🍪 {% trans "Cookies & confidentialité" %}
+        </div>
+
+        <div style="color:var(--muted); margin-top:6px; line-height:1.35;">
+          {% blocktrans %}
+            Nous utilisons des cookies nécessaires au fonctionnement du site.
+            Avec votre accord, nous pouvons aussi utiliser des cookies de mesure d’audience
+            et/ou publicitaires.
+          {% endblocktrans %}
+          <a href="{% url 'privacy' %}" style="font-weight:800;">
+            {% trans "En savoir plus" %}
+          </a>.
+        </div>
+
+        <div id="cookie-details" style="display:none; margin-top:10px;">
+
+          <label style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+            <input type="checkbox" checked disabled>
+            <span>
+              <strong>{% trans "Essentiels" %}</strong>
+              {% trans "(obligatoires) — session, sécurité, préférences" %}
+            </span>
+          </label>
+
+          <label style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+            <input id="cookie-analytics" type="checkbox">
+            <span>
+              <strong>{% trans "Mesure d’audience" %}</strong>
+              {% trans "— améliorer l’expérience (ex : analytics)" %}
+            </span>
+          </label>
+
+          <label style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+            <input id="cookie-ads" type="checkbox">
+            <span>
+              <strong>{% trans "Publicité" %}</strong>
+              {% trans "— annonces et mesure (ciblage si activé)" %}
+            </span>
+          </label>
+
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:flex-end;">
+        <button class="btn2" id="cookie-customize" type="button">
+          {% trans "Personnaliser" %}
+        </button>
+
+        <button class="btn2" id="cookie-reject" type="button">
+          {% trans "Tout refuser" %}
+        </button>
+
+        <button class="btn" id="cookie-accept" type="button">
+          {% trans "Tout accepter" %}
+        </button>
+
+        <button class="btn" id="cookie-save" type="button" style="display:none;">
+          {% trans "Enregistrer" %}
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

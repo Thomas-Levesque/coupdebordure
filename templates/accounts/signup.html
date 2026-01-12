@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Inscription" %} · Coup de Bordure{% endblock %}
+{% block content %}
+
+<h2>{% trans "Inscription" %}</h2>
+<p style="color:#666;">{% trans "Pseudo unique + profil + avatar (liste ou upload)." %}</p>
+
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+  <div class="grid2">
+    <div class="field">
+      <label>{% trans "Pseudo (unique)" %}</label>
+      {{ form.username }}
+      {% for e in form.username.errors %}<div style="color:#b00020">{{ e }}</div>{% endfor %}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Date de naissance" %}</label>
+      {{ form.birth_date }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Prénom" %}</label>
+      {{ form.first_name }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Nom" %}</label>
+      {{ form.last_name }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Email" %}</label>
+      {{ form.email }}
+      {% for err in form.email.errors %}
+        <div style="color:var(--danger);">{{ err }}</div>
+      {% endfor %}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Pays" %}</label>
+      {{ form.country }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Langue" %}</label>
+      {{ form.language }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Équipe préférée" %}</label>
+      {{ form.favorite_team }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Coureur préféré" %}</label>
+      {{ form.favorite_rider_name }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Marque de vélo" %}</label>
+      {{ form.favorite_bike_brand }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Avatar (liste)" %}</label>
+      {{ form.avatar_choice }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Photo de profil (upload)" %}</label>
+      {{ form.avatar_upload }}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Mot de passe" %}</label>
+      {{ form.password1 }}
+      {% for e in form.password1.errors %}<div style="color:#b00020">{{ e }}</div>{% endfor %}
+    </div>
+
+    <div class="field">
+      <label>{% trans "Confirmer le mot de passe" %}</label>
+      {{ form.password2 }}
+      {% for e in form.password2.errors %}<div style="color:#b00020">{{ e }}</div>{% endfor %}
+    </div>
+  </div>
+
+  <button class="btn" type="submit">{% trans "Créer mon compte" %}</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{# templates/bets/_leaderboard_table_compact.html #}
+{% load i18n %}
+
+<div class="card">
+  <table class="table">
+    <tr>
+      <th>#</th>
+      <th>{% trans "Utilisateur" %}</th>
+      <th>{% trans "Total" %}</th>
+    </tr>
+
+    {% for r in rows %}
+      {% if r.ellipsis %}
+        <tr>
+          <td colspan="3" style="color:var(--muted); text-align:center; font-weight:900; letter-spacing:.08em;">…</td>
+        </tr>
+      {% else %}
+        <tr
+          {% if r.is_me %}
+            style="background: rgba(124,92,255,.14); border-left:6px solid rgba(124,92,255,.70);"
+          {% endif %}
+        >
+          <td style="font-weight:900; width:52px;">
+            {% if r.rank == 1 %}🥇{% elif r.rank == 2 %}🥈{% elif r.rank == 3 %}🥉{% else %}{{ r.rank }}{% endif %}
+          </td>
+
+          <td style="font-weight:800;">
+            {% include "accounts/_user_chip.html" with avatar_url=r.avatar_url username=r.username flag_url=r.flag_url badge_icon_url=r.badge_icon_url %}
+            {% if r.is_me %}
+              <div style="margin-top:2px; color:var(--muted); font-weight:900; font-size:.9rem;">
+                ({% trans "toi" %})
+              </div>
+            {% endif %}
+          </td>
+
+          <td style="width:140px;">
+            <strong>{{ r.total|floatformat:4 }}</strong>
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </table>
+</div>

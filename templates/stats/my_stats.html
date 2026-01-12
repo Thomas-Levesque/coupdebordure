@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Stats" %} · Coup de Bordure{% endblock %}
+
+{% block content %}
+<h2>{% trans "Stats" %}</h2>
+
+<div class="card" style="margin-top:12px;">
+  <h3 style="margin-top:0;">📊 {% trans "Participation" %}</h3>
+  <p>
+    <strong>{% trans "Pronostics joués" %} :</strong> {{ played_total }}<br>
+    <strong>{% trans "Unités totales" %} :</strong> {{ total_units }}<br>
+    <strong>{% trans "Taux de participation" %} :</strong> {{ participation_rate|floatformat:1 }}%
+  </p>
+</div>
+
+<div class="card" style="margin-top:12px;">
+  <h3 style="margin-top:0;">🏁 {% trans "Scores" %}</h3>
+  <p>
+    <strong>{% trans "Score total" %} :</strong> {{ score_total|floatformat:4 }}<br>
+    <strong>{% trans "Score moyen" %} :</strong> {{ score_avg|floatformat:4 }}
+  </p>
+</div>
+
+<div class="card" style="margin-top:12px;">
+  <h3 style="margin-top:0;">🎯 {% trans "Réussite (sur unités avec résultats)" %}</h3>
+  <p>
+    <strong>{% trans "Unités avec résultats" %} :</strong> {{ units_with_results }}<br><br>
+
+    <strong>{% trans "Pick #1 dans le Top 3" %} :</strong>
+    {{ pick1_in_top3 }} ({{ rate_pick1_in_top3|floatformat:1 }}%)<br>
+
+    <strong>{% trans "Au moins un pick dans le Top 3" %} :</strong>
+    {{ any_pick_in_top3 }} ({{ rate_any_pick_in_top3|floatformat:1 }}%)<br>
+
+    <strong>{% trans "Vainqueur exact (pick #1)" %} :</strong>
+    {{ win_exact }} ({{ rate_win_exact|floatformat:1 }}%)<br>
+
+    <strong>{% trans "Vainqueur dans ton Top 5" %} :</strong>
+    {{ win_in_top5 }} ({{ rate_win_in_top5|floatformat:1 }}%)
+  </p>
+</div>
+
+<div class="card" style="margin-top:12px;">
+  <h3 style="margin-top:0;">⭐ {% trans "Favori (odds max) gagnant" %}</h3>
+  <p>
+    <strong>{% trans "Unités analysées" %} :</strong> {{ fav_total }}<br>
+    <strong>{% trans "Favori gagnant" %} :</strong> {{ fav_wins }}<br>
+    <strong>{% trans "Taux" %} :</strong> {{ fav_win_rate|floatformat:1 }}%<br><br>
+    <strong>{% trans "Tu avais le favori dans ton Top 5" %} :</strong> {{ user_had_fav }}
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,85 @@
+{# templates/accounts/_units_list.html #}
+{% load i18n %}
+
+{% if units %}
+  <div class="grid">
+    {% for u in units %}
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">
+              {% if u.kind == "one_day" %}
+                🗓️ {{ u.obj.name }}
+              {% else %}
+                🧩 {{ u.obj.tour.name }} — {% trans "Étape" %} {{ u.obj.number }}
+              {% endif %}
+            </div>
+
+            <div class="card-sub">
+              {% trans "Départ" %} : {{ u.start_dt|date:"d/m/Y H:i" }}
+              {% if u.kind == "stage" %}
+                — {{ u.obj.name }} ({{ u.obj.stage_type }})
+              {% endif %}
+            </div>
+
+            <div class="kpi">
+              {% if u.results_ok %}
+                <span class="badge success">🏁 {% trans "Terminée" %}</span>
+              {% elif u.locked %}
+                <span class="badge warn">🔒 {% trans "Verrouillée" %}</span>
+              {% else %}
+                <span class="badge">✅ {% trans "À venir" %}</span>
+              {% endif %}
+
+              {% if u.has_top5 %}
+                <span class="badge success">✅ {% trans "Top5 validé" %}</span>
+                {% if u.submitted_at %}
+                  <span class="badge">🕒 {{ u.submitted_at|date:"d/m/Y H:i" }}</span>
+                {% endif %}
+              {% else %}
+                <span class="badge danger">⚠️ {% trans "Top5 manquant" %}</span>
+              {% endif %}
+
+              {% if u.score != None %}
+                <span class="badge">
+                  ⭐ {% trans "Score" %} : <strong>{{ u.score|floatformat:4 }}</strong>
+                </span>
+              {% endif %}
+            </div>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:flex-start;">
+            <a class="btn2" href="{% url u.url_detail.0 u.url_detail.1 %}">{% trans "Voir" %}</a>
+
+            {% if not u.locked %}
+              <a class="btn" href="{% url u.url_bet.0 u.url_bet.1 %}">
+                {% if u.has_top5 %}{% trans "Modifier" %}{% else %}{% trans "Top5" %}{% endif %}
+              </a>
+            {% endif %}
+
+            {% if u.results_ok %}
+              <a class="btn2" href="{% url u.url_lb.0 u.url_lb.1 %}">{% trans "Classement" %}</a>
+
+              {% if u.kind == "stage" %}
+                <a class="btn2" href="{% url 'lb_tour' u.obj.tour.id %}">{% trans "Tour" %}</a>
+                <a class="btn2" href="{% url 'lb_tour_special' u.obj.tour.id 'sprinteur' %}">{% trans "Sprinteur" %}</a>
+                <a class="btn2" href="{% url 'lb_tour_special' u.obj.tour.id 'grimpeur' %}">{% trans "Grimpeur" %}</a>
+                <a class="btn2" href="{% url 'lb_tour_special' u.obj.tour.id 'baroudeur' %}">{% trans "Baroudeur" %}</a>
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
+
+        {% if not u.has_top5 and not u.locked %}
+          <div style="margin-top:10px; color: var(--danger); font-weight:800;">
+            ⏰ {% trans "Pense à valider ton Top5 avant le départ." %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="card" style="color:var(--muted);">
+    {{ empty_msg }}
+  </div>
+{% endif %}

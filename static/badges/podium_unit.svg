@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="28" fill="#cfd8ff" stroke="#2b2b2b" stroke-width="2"/>
+  <rect x="16" y="34" width="10" height="14" rx="2" fill="#fff"/>
+  <rect x="27" y="28" width="10" height="20" rx="2" fill="#fff"/>
+  <rect x="38" y="36" width="10" height="12" rx="2" fill="#fff"/>
+  <text x="32" y="24" text-anchor="middle" font-size="14" font-family="system-ui" font-weight="800" fill="#2b2b2b">TOP</text>
+</svg>
