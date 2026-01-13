@@ -1,0 +1,9639 @@
+[
+{
+  "model": "races.season",
+  "pk": 1,
+  "fields": {
+    "year": 2026
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 1,
+  "fields": {
+    "season": 1,
+    "name": "Tour Down Under",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "end_datetime": "2026-01-25T17:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 2,
+  "fields": {
+    "season": 1,
+    "name": "Tour des Émirats arabes unis",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "end_datetime": "2026-02-22T17:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 3,
+  "fields": {
+    "season": 1,
+    "name": "Paris-Nice",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "end_datetime": "2026-03-15T17:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 4,
+  "fields": {
+    "season": 1,
+    "name": "Tirreno-Adriatico",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "end_datetime": "2026-03-15T17:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 5,
+  "fields": {
+    "season": 1,
+    "name": "Tour de Catalogne",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "end_datetime": "2026-03-29T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 6,
+  "fields": {
+    "season": 1,
+    "name": "Tour du Pays basque",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "end_datetime": "2026-04-11T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 7,
+  "fields": {
+    "season": 1,
+    "name": "Tour de Romandie",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "end_datetime": "2026-05-03T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 8,
+  "fields": {
+    "season": 1,
+    "name": "Tour d'Italie",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "end_datetime": "2026-05-31T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 9,
+  "fields": {
+    "season": 1,
+    "name": "Tour Auvergne-Rhône-Alpes",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "end_datetime": "2026-06-14T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 10,
+  "fields": {
+    "season": 1,
+    "name": "Tour de Suisse",
+    "start_datetime": "2026-06-17T10:00:00Z",
+    "end_datetime": "2026-06-21T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 11,
+  "fields": {
+    "season": 1,
+    "name": "Tour de France",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "end_datetime": "2026-07-26T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 12,
+  "fields": {
+    "season": 1,
+    "name": "Tour de Pologne",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "end_datetime": "2026-08-09T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 13,
+  "fields": {
+    "season": 1,
+    "name": "Renewi Tour",
+    "start_datetime": "2026-08-19T10:00:00Z",
+    "end_datetime": "2026-08-23T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 14,
+  "fields": {
+    "season": 1,
+    "name": "Tour d'Espagne",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "end_datetime": "2026-09-13T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.tour",
+  "pk": 15,
+  "fields": {
+    "season": 1,
+    "name": "Tour du Guangxi",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "end_datetime": "2026-10-18T16:00:00Z",
+    "image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 1,
+  "fields": {
+    "tour": 1,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 2,
+  "fields": {
+    "tour": 1,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 3,
+  "fields": {
+    "tour": 1,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 4,
+  "fields": {
+    "tour": 1,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 5,
+  "fields": {
+    "tour": 1,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 6,
+  "fields": {
+    "tour": 1,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-01-20T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 7,
+  "fields": {
+    "tour": 2,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 8,
+  "fields": {
+    "tour": 2,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 9,
+  "fields": {
+    "tour": 2,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 10,
+  "fields": {
+    "tour": 2,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 11,
+  "fields": {
+    "tour": 2,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 12,
+  "fields": {
+    "tour": 2,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 13,
+  "fields": {
+    "tour": 2,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-02-16T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 14,
+  "fields": {
+    "tour": 3,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 15,
+  "fields": {
+    "tour": 3,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 16,
+  "fields": {
+    "tour": 3,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 17,
+  "fields": {
+    "tour": 3,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 18,
+  "fields": {
+    "tour": 3,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 19,
+  "fields": {
+    "tour": 3,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 20,
+  "fields": {
+    "tour": 3,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 21,
+  "fields": {
+    "tour": 3,
+    "number": 8,
+    "name": "Étape 8",
+    "start_datetime": "2026-03-08T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 22,
+  "fields": {
+    "tour": 4,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 23,
+  "fields": {
+    "tour": 4,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 24,
+  "fields": {
+    "tour": 4,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 25,
+  "fields": {
+    "tour": 4,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 26,
+  "fields": {
+    "tour": 4,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 27,
+  "fields": {
+    "tour": 4,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 28,
+  "fields": {
+    "tour": 4,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-03-09T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 29,
+  "fields": {
+    "tour": 5,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 30,
+  "fields": {
+    "tour": 5,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 31,
+  "fields": {
+    "tour": 5,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 32,
+  "fields": {
+    "tour": 5,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 33,
+  "fields": {
+    "tour": 5,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 34,
+  "fields": {
+    "tour": 5,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 35,
+  "fields": {
+    "tour": 5,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-03-23T11:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 36,
+  "fields": {
+    "tour": 6,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 37,
+  "fields": {
+    "tour": 6,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 38,
+  "fields": {
+    "tour": 6,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 39,
+  "fields": {
+    "tour": 6,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 40,
+  "fields": {
+    "tour": 6,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 41,
+  "fields": {
+    "tour": 6,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-04-06T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 42,
+  "fields": {
+    "tour": 7,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 43,
+  "fields": {
+    "tour": 7,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 44,
+  "fields": {
+    "tour": 7,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 45,
+  "fields": {
+    "tour": 7,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 46,
+  "fields": {
+    "tour": 7,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 47,
+  "fields": {
+    "tour": 7,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-04-28T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 48,
+  "fields": {
+    "tour": 8,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 49,
+  "fields": {
+    "tour": 8,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 50,
+  "fields": {
+    "tour": 8,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 51,
+  "fields": {
+    "tour": 8,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 52,
+  "fields": {
+    "tour": 8,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 53,
+  "fields": {
+    "tour": 8,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 54,
+  "fields": {
+    "tour": 8,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 55,
+  "fields": {
+    "tour": 8,
+    "number": 8,
+    "name": "Étape 8",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 56,
+  "fields": {
+    "tour": 8,
+    "number": 9,
+    "name": "Étape 9",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 57,
+  "fields": {
+    "tour": 8,
+    "number": 10,
+    "name": "Étape 10",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 58,
+  "fields": {
+    "tour": 8,
+    "number": 11,
+    "name": "Étape 11",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 59,
+  "fields": {
+    "tour": 8,
+    "number": 12,
+    "name": "Étape 12",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 60,
+  "fields": {
+    "tour": 8,
+    "number": 13,
+    "name": "Étape 13",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 61,
+  "fields": {
+    "tour": 8,
+    "number": 14,
+    "name": "Étape 14",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 62,
+  "fields": {
+    "tour": 8,
+    "number": 15,
+    "name": "Étape 15",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 63,
+  "fields": {
+    "tour": 8,
+    "number": 16,
+    "name": "Étape 16",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 64,
+  "fields": {
+    "tour": 8,
+    "number": 17,
+    "name": "Étape 17",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 65,
+  "fields": {
+    "tour": 8,
+    "number": 18,
+    "name": "Étape 18",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 66,
+  "fields": {
+    "tour": 8,
+    "number": 19,
+    "name": "Étape 19",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 67,
+  "fields": {
+    "tour": 8,
+    "number": 20,
+    "name": "Étape 20",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 68,
+  "fields": {
+    "tour": 8,
+    "number": 21,
+    "name": "Étape 21",
+    "start_datetime": "2026-05-09T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 69,
+  "fields": {
+    "tour": 9,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 70,
+  "fields": {
+    "tour": 9,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 71,
+  "fields": {
+    "tour": 9,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 72,
+  "fields": {
+    "tour": 9,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 73,
+  "fields": {
+    "tour": 9,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 74,
+  "fields": {
+    "tour": 9,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 75,
+  "fields": {
+    "tour": 9,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 76,
+  "fields": {
+    "tour": 9,
+    "number": 8,
+    "name": "Étape 8",
+    "start_datetime": "2026-06-07T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 77,
+  "fields": {
+    "tour": 10,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-06-17T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 78,
+  "fields": {
+    "tour": 10,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-06-17T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 79,
+  "fields": {
+    "tour": 10,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-06-17T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 80,
+  "fields": {
+    "tour": 10,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-06-17T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 81,
+  "fields": {
+    "tour": 10,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-06-17T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 82,
+  "fields": {
+    "tour": 11,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 83,
+  "fields": {
+    "tour": 11,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 84,
+  "fields": {
+    "tour": 11,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 85,
+  "fields": {
+    "tour": 11,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 86,
+  "fields": {
+    "tour": 11,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 87,
+  "fields": {
+    "tour": 11,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 88,
+  "fields": {
+    "tour": 11,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 89,
+  "fields": {
+    "tour": 11,
+    "number": 8,
+    "name": "Étape 8",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 90,
+  "fields": {
+    "tour": 11,
+    "number": 9,
+    "name": "Étape 9",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 91,
+  "fields": {
+    "tour": 11,
+    "number": 10,
+    "name": "Étape 10",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 92,
+  "fields": {
+    "tour": 11,
+    "number": 11,
+    "name": "Étape 11",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 93,
+  "fields": {
+    "tour": 11,
+    "number": 12,
+    "name": "Étape 12",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 94,
+  "fields": {
+    "tour": 11,
+    "number": 13,
+    "name": "Étape 13",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 95,
+  "fields": {
+    "tour": 11,
+    "number": 14,
+    "name": "Étape 14",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 96,
+  "fields": {
+    "tour": 11,
+    "number": 15,
+    "name": "Étape 15",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 97,
+  "fields": {
+    "tour": 11,
+    "number": 16,
+    "name": "Étape 16",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 98,
+  "fields": {
+    "tour": 11,
+    "number": 17,
+    "name": "Étape 17",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 99,
+  "fields": {
+    "tour": 11,
+    "number": 18,
+    "name": "Étape 18",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 100,
+  "fields": {
+    "tour": 11,
+    "number": 19,
+    "name": "Étape 19",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 101,
+  "fields": {
+    "tour": 11,
+    "number": 20,
+    "name": "Étape 20",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 102,
+  "fields": {
+    "tour": 11,
+    "number": 21,
+    "name": "Étape 21",
+    "start_datetime": "2026-07-04T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 103,
+  "fields": {
+    "tour": 12,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 104,
+  "fields": {
+    "tour": 12,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 105,
+  "fields": {
+    "tour": 12,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 106,
+  "fields": {
+    "tour": 12,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 107,
+  "fields": {
+    "tour": 12,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 108,
+  "fields": {
+    "tour": 12,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 109,
+  "fields": {
+    "tour": 12,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-08-03T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 110,
+  "fields": {
+    "tour": 13,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-08-19T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 111,
+  "fields": {
+    "tour": 13,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-08-19T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 112,
+  "fields": {
+    "tour": 13,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-08-19T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 113,
+  "fields": {
+    "tour": 13,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-08-19T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 114,
+  "fields": {
+    "tour": 13,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-08-19T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 115,
+  "fields": {
+    "tour": 14,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 116,
+  "fields": {
+    "tour": 14,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 117,
+  "fields": {
+    "tour": 14,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 118,
+  "fields": {
+    "tour": 14,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 119,
+  "fields": {
+    "tour": 14,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 120,
+  "fields": {
+    "tour": 14,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 121,
+  "fields": {
+    "tour": 14,
+    "number": 7,
+    "name": "Étape 7",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 122,
+  "fields": {
+    "tour": 14,
+    "number": 8,
+    "name": "Étape 8",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 123,
+  "fields": {
+    "tour": 14,
+    "number": 9,
+    "name": "Étape 9",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 124,
+  "fields": {
+    "tour": 14,
+    "number": 10,
+    "name": "Étape 10",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 125,
+  "fields": {
+    "tour": 14,
+    "number": 11,
+    "name": "Étape 11",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 126,
+  "fields": {
+    "tour": 14,
+    "number": 12,
+    "name": "Étape 12",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 127,
+  "fields": {
+    "tour": 14,
+    "number": 13,
+    "name": "Étape 13",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 128,
+  "fields": {
+    "tour": 14,
+    "number": 14,
+    "name": "Étape 14",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 129,
+  "fields": {
+    "tour": 14,
+    "number": 15,
+    "name": "Étape 15",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 130,
+  "fields": {
+    "tour": 14,
+    "number": 16,
+    "name": "Étape 16",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 131,
+  "fields": {
+    "tour": 14,
+    "number": 17,
+    "name": "Étape 17",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 132,
+  "fields": {
+    "tour": 14,
+    "number": 18,
+    "name": "Étape 18",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 133,
+  "fields": {
+    "tour": 14,
+    "number": 19,
+    "name": "Étape 19",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 134,
+  "fields": {
+    "tour": 14,
+    "number": 20,
+    "name": "Étape 20",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 135,
+  "fields": {
+    "tour": 14,
+    "number": 21,
+    "name": "Étape 21",
+    "start_datetime": "2026-08-22T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 136,
+  "fields": {
+    "tour": 15,
+    "number": 1,
+    "name": "Étape 1",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 137,
+  "fields": {
+    "tour": 15,
+    "number": 2,
+    "name": "Étape 2",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 138,
+  "fields": {
+    "tour": 15,
+    "number": 3,
+    "name": "Étape 3",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 139,
+  "fields": {
+    "tour": 15,
+    "number": 4,
+    "name": "Étape 4",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 140,
+  "fields": {
+    "tour": 15,
+    "number": 5,
+    "name": "Étape 5",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.stage",
+  "pk": 141,
+  "fields": {
+    "tour": 15,
+    "number": 6,
+    "name": "Étape 6",
+    "start_datetime": "2026-10-13T10:00:00Z",
+    "stage_type": "FLAT",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 1,
+  "fields": {
+    "season": 1,
+    "name": "Great Ocean Road Race",
+    "start_datetime": "2026-02-01T11:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 2,
+  "fields": {
+    "season": 1,
+    "name": "Circuit Het Nieuwsblad",
+    "start_datetime": "2026-02-28T11:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 3,
+  "fields": {
+    "season": 1,
+    "name": "Strade Bianche",
+    "start_datetime": "2026-03-07T11:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 4,
+  "fields": {
+    "season": 1,
+    "name": "Milan-San Remo",
+    "start_datetime": "2026-03-21T11:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 5,
+  "fields": {
+    "season": 1,
+    "name": "Tour de Bruges",
+    "start_datetime": "2026-03-25T11:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 6,
+  "fields": {
+    "season": 1,
+    "name": "E3 Saxo Classic",
+    "start_datetime": "2026-03-27T11:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 7,
+  "fields": {
+    "season": 1,
+    "name": "In Flanders Fields",
+    "start_datetime": "2026-03-29T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 8,
+  "fields": {
+    "season": 1,
+    "name": "À travers les Flandres",
+    "start_datetime": "2026-04-01T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 9,
+  "fields": {
+    "season": 1,
+    "name": "Tour des Flandres",
+    "start_datetime": "2026-04-05T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 10,
+  "fields": {
+    "season": 1,
+    "name": "Paris-Roubaix",
+    "start_datetime": "2026-04-12T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 11,
+  "fields": {
+    "season": 1,
+    "name": "Amstel Gold Race",
+    "start_datetime": "2026-04-19T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 12,
+  "fields": {
+    "season": 1,
+    "name": "Flèche wallonne",
+    "start_datetime": "2026-04-22T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 13,
+  "fields": {
+    "season": 1,
+    "name": "Liège-Bastogne-Liège",
+    "start_datetime": "2026-04-26T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 14,
+  "fields": {
+    "season": 1,
+    "name": "Eschborn-Francfort",
+    "start_datetime": "2026-05-01T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 15,
+  "fields": {
+    "season": 1,
+    "name": "Copenhagen Sprint",
+    "start_datetime": "2026-06-14T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 16,
+  "fields": {
+    "season": 1,
+    "name": "Classique de Saint-Sébastien",
+    "start_datetime": "2026-08-01T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 17,
+  "fields": {
+    "season": 1,
+    "name": "Cyclassics Hambourg",
+    "start_datetime": "2026-08-16T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 18,
+  "fields": {
+    "season": 1,
+    "name": "Bretagne Classic",
+    "start_datetime": "2026-08-30T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 19,
+  "fields": {
+    "season": 1,
+    "name": "Grand Prix cycliste de Québec",
+    "start_datetime": "2026-09-11T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 20,
+  "fields": {
+    "season": 1,
+    "name": "Grand Prix cycliste de Montréal",
+    "start_datetime": "2026-09-13T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.onedayrace",
+  "pk": 21,
+  "fields": {
+    "season": 1,
+    "name": "Tour de Lombardie",
+    "start_datetime": "2026-10-10T10:00:00Z",
+    "image": "",
+    "profile_text": "",
+    "profile_image": ""
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 1,
+  "fields": {
+    "first_name": "Maurice",
+    "last_name": "Ballerstedt",
+    "country": "DE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2001-01-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 2,
+  "fields": {
+    "first_name": "Tobias",
+    "last_name": "Bayer",
+    "country": "AT",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1999-11-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 3,
+  "fields": {
+    "first_name": "Lennert",
+    "last_name": "Belmans",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2002-02-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 4,
+  "fields": {
+    "first_name": "Francesco",
+    "last_name": "Busatto",
+    "country": "IT",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2002-11-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 5,
+  "fields": {
+    "first_name": "Lindsay",
+    "last_name": "De Vylder",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1995-05-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 6,
+  "fields": {
+    "first_name": "Ramses",
+    "last_name": "Debruyne",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2002-08-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 7,
+  "fields": {
+    "first_name": "Simon",
+    "last_name": "Dehairs",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2001-06-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 8,
+  "fields": {
+    "first_name": "Tibor",
+    "last_name": "Del Grosso",
+    "country": "NL",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2003-07-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 9,
+  "fields": {
+    "first_name": "Silvan",
+    "last_name": "Dillier",
+    "country": "CH",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1990-08-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 10,
+  "fields": {
+    "first_name": "Aaron",
+    "last_name": "Dockx",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2004-06-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 11,
+  "fields": {
+    "first_name": "Jonas",
+    "last_name": "Geens",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1999-01-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 12,
+  "fields": {
+    "first_name": "Gal",
+    "last_name": "Glivar",
+    "country": "SI",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2002-05-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 13,
+  "fields": {
+    "first_name": "Michael",
+    "last_name": "Gogl",
+    "country": "AT",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1993-11-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 14,
+  "fields": {
+    "first_name": "Kaden",
+    "last_name": "Groves",
+    "country": "AU",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1998-12-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 15,
+  "fields": {
+    "first_name": "Hugo",
+    "last_name": "Houle",
+    "country": "CA",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1990-09-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 16,
+  "fields": {
+    "first_name": "Tim",
+    "last_name": "Marsman",
+    "country": "NL",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2000-10-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 17,
+  "fields": {
+    "first_name": "Jasper",
+    "last_name": "Philipsen",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1998-03-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 18,
+  "fields": {
+    "first_name": "Edward",
+    "last_name": "Planckaert",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1995-02-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 19,
+  "fields": {
+    "first_name": "Jensen",
+    "last_name": "Plowright",
+    "country": "AU",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2000-05-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 20,
+  "fields": {
+    "first_name": "Johan",
+    "last_name": "Price-Pejtersen",
+    "country": "DK",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1999-05-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 21,
+  "fields": {
+    "first_name": "Senna",
+    "last_name": "Remijn",
+    "country": "NL",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2006-01-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 22,
+  "fields": {
+    "first_name": "Jonas",
+    "last_name": "Rickaert",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1994-02-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 23,
+  "fields": {
+    "first_name": "Oscar",
+    "last_name": "Riesebeek",
+    "country": "NL",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1992-12-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 24,
+  "fields": {
+    "first_name": "Florian",
+    "last_name": "Sénéchal",
+    "country": "FR",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1993-07-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 25,
+  "fields": {
+    "first_name": "Sente",
+    "last_name": "Sentjens",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2005-09-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 26,
+  "fields": {
+    "first_name": "Gerben",
+    "last_name": "Thijssen",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1998-06-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 27,
+  "fields": {
+    "first_name": "Henri",
+    "last_name": "Uhlig",
+    "country": "DE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2001-08-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 28,
+  "fields": {
+    "first_name": "Mathieu",
+    "last_name": "van der Poel",
+    "country": "NL",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1995-01-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 29,
+  "fields": {
+    "first_name": "Luca",
+    "last_name": "Vergallito",
+    "country": "IT",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "1997-09-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 30,
+  "fields": {
+    "first_name": "Emiel",
+    "last_name": "Verstrynge",
+    "country": "BE",
+    "team": "Alpecin–Premier Tech",
+    "birth_date": "2002-02-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 31,
+  "fields": {
+    "first_name": "Nikias",
+    "last_name": "Arndt",
+    "country": "DE",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1991-11-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 32,
+  "fields": {
+    "first_name": "Phil",
+    "last_name": "Bauhaus",
+    "country": "DE",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1994-07-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 33,
+  "fields": {
+    "first_name": "Pello",
+    "last_name": "Bilbao",
+    "country": "ES",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1990-02-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 34,
+  "fields": {
+    "first_name": "Alessandro",
+    "last_name": "Borgo",
+    "country": "IT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2005-02-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 35,
+  "fields": {
+    "first_name": "Alberto",
+    "last_name": "Bruttomesso",
+    "country": "IT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2003-10-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 36,
+  "fields": {
+    "first_name": "Santiago",
+    "last_name": "Buitrago",
+    "country": "CO",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1999-09-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 37,
+  "fields": {
+    "first_name": "Damiano",
+    "last_name": "Caruso",
+    "country": "IT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1987-10-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 38,
+  "fields": {
+    "first_name": "Roman",
+    "last_name": "Ermakov",
+    "country": "RU",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2004-10-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 39,
+  "fields": {
+    "first_name": "Žak",
+    "last_name": "Eržen",
+    "country": "SI",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2005-10-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 40,
+  "fields": {
+    "first_name": "Afonso",
+    "last_name": "Eulálio",
+    "country": "PT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2001-09-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 41,
+  "fields": {
+    "first_name": "Matevž",
+    "last_name": "Govekar",
+    "country": "SI",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2000-04-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 42,
+  "fields": {
+    "first_name": "Kamil",
+    "last_name": "Gradek",
+    "country": "PL",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1990-09-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 43,
+  "fields": {
+    "first_name": "Rainer",
+    "last_name": "Kepplinger",
+    "country": "AT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1997-08-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 44,
+  "fields": {
+    "first_name": "Lenny",
+    "last_name": "Martinez",
+    "country": "FR",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2003-07-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 45,
+  "fields": {
+    "first_name": "Fran",
+    "last_name": "Miholjević",
+    "country": "HR",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2002-08-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 46,
+  "fields": {
+    "first_name": "Pau",
+    "last_name": "Miquel",
+    "country": "ES",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2000-08-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 47,
+  "fields": {
+    "first_name": "Matej",
+    "last_name": "Mohorič",
+    "country": "SI",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1994-10-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 48,
+  "fields": {
+    "first_name": "Jakob",
+    "last_name": "Omrzel",
+    "country": "SI",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2006-03-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 49,
+  "fields": {
+    "first_name": "Mathijs",
+    "last_name": "Paasschens",
+    "country": "NL",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1996-03-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 50,
+  "fields": {
+    "first_name": "Alec",
+    "last_name": "Segaert",
+    "country": "BE",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2003-01-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 51,
+  "fields": {
+    "first_name": "Daniel",
+    "last_name": "Skerl",
+    "country": "IT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2003-03-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 52,
+  "fields": {
+    "first_name": "Robert",
+    "last_name": "Stannard",
+    "country": "AU",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1998-09-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 53,
+  "fields": {
+    "first_name": "Oliver",
+    "last_name": "Stockwell",
+    "country": "GB",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2002-06-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 54,
+  "fields": {
+    "first_name": "Antonio",
+    "last_name": "Tiberi",
+    "country": "IT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2001-06-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 55,
+  "fields": {
+    "first_name": "Attila",
+    "last_name": "Valter",
+    "country": "HU",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "1998-06-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 56,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "van der Meulen",
+    "country": "NL",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2004-01-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 57,
+  "fields": {
+    "first_name": "Vlad",
+    "last_name": "Van Mechelen",
+    "country": "BE",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2004-06-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 58,
+  "fields": {
+    "first_name": "Edoardo",
+    "last_name": "Zambanini",
+    "country": "IT",
+    "team": "Team Bahrain Victorious",
+    "birth_date": "2001-04-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 59,
+  "fields": {
+    "first_name": "Tobias",
+    "last_name": "Lund Andresen",
+    "country": "DK",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2002-08-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 60,
+  "fields": {
+    "first_name": "Tiesj",
+    "last_name": "Benoot",
+    "country": "BE",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1994-03-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 61,
+  "fields": {
+    "first_name": "Léo",
+    "last_name": "Bisiaux",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2005-02-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 62,
+  "fields": {
+    "first_name": "Stefan",
+    "last_name": "Bissegger",
+    "country": "CH",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1998-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 63,
+  "fields": {
+    "first_name": "Cees",
+    "last_name": "Bol",
+    "country": "NL",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1995-07-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 64,
+  "fields": {
+    "first_name": "Oscar",
+    "last_name": "Chamberlain",
+    "country": "AU",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2005-01-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 65,
+  "fields": {
+    "first_name": "Sander",
+    "last_name": "De Pestel",
+    "country": "BE",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1998-10-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 66,
+  "fields": {
+    "first_name": "Stan",
+    "last_name": "Dewulf",
+    "country": "BE",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1997-12-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 67,
+  "fields": {
+    "first_name": "Felix",
+    "last_name": "Gall",
+    "country": "AT",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1998-02-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 68,
+  "fields": {
+    "first_name": "Pierre",
+    "last_name": "Gautherat",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2003-01-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 69,
+  "fields": {
+    "first_name": "Robbe",
+    "last_name": "Ghys",
+    "country": "BE",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1997-01-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 70,
+  "fields": {
+    "first_name": "Tord",
+    "last_name": "Gudmestad",
+    "country": "NO",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2001-05-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 71,
+  "fields": {
+    "first_name": "Daan",
+    "last_name": "Hoole",
+    "country": "NL",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1999-02-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 72,
+  "fields": {
+    "first_name": "Noa",
+    "last_name": "Isidore",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2004-09-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 73,
+  "fields": {
+    "first_name": "Olav",
+    "last_name": "Kooij",
+    "country": "NL",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2001-10-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 74,
+  "fields": {
+    "first_name": "Antoine",
+    "last_name": "L'Hote",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2005-05-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 75,
+  "fields": {
+    "first_name": "Jordan",
+    "last_name": "Labrosse",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2002-09-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 76,
+  "fields": {
+    "first_name": "Paul",
+    "last_name": "Lapeira",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2000-05-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 77,
+  "fields": {
+    "first_name": "Gregor",
+    "last_name": "Mühlberger",
+    "country": "AT",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1994-04-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 78,
+  "fields": {
+    "first_name": "Oliver",
+    "last_name": "Naesen",
+    "country": "BE",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1990-09-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 79,
+  "fields": {
+    "first_name": "Aurélien",
+    "last_name": "Paret-Peintre",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1996-02-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 80,
+  "fields": {
+    "first_name": "Rasmus",
+    "last_name": "Søjberg Pedersen",
+    "country": "DK",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2002-07-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 81,
+  "fields": {
+    "first_name": "Gianluca",
+    "last_name": "Pollefliet",
+    "country": "BE",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2002-01-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 82,
+  "fields": {
+    "first_name": "Nicolas",
+    "last_name": "Prodhomme",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1997-02-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 83,
+  "fields": {
+    "first_name": "Matthew",
+    "last_name": "Riccitello",
+    "country": "US",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2002-03-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 84,
+  "fields": {
+    "first_name": "Callum",
+    "last_name": "Scotson",
+    "country": "AU",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "1996-08-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 85,
+  "fields": {
+    "first_name": "Paul",
+    "last_name": "Seixas",
+    "country": "FR",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2006-09-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 86,
+  "fields": {
+    "first_name": "Johannes",
+    "last_name": "Staune-Mittet",
+    "country": "NO",
+    "team": "Decathlon–CMA CGM",
+    "birth_date": "2002-01-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 87,
+  "fields": {
+    "first_name": "Juan",
+    "last_name": "Ayuso",
+    "country": "ES",
+    "team": "Lidl–Trek",
+    "birth_date": "2002-09-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 88,
+  "fields": {
+    "first_name": "Andrea",
+    "last_name": "Bagioli",
+    "country": "IT",
+    "team": "Lidl–Trek",
+    "birth_date": "1999-03-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 89,
+  "fields": {
+    "first_name": "Julien",
+    "last_name": "Bernard",
+    "country": "FR",
+    "team": "Lidl–Trek",
+    "birth_date": "1992-03-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 90,
+  "fields": {
+    "first_name": "Giulio",
+    "last_name": "Ciccone",
+    "country": "IT",
+    "team": "Lidl–Trek",
+    "birth_date": "1994-12-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 91,
+  "fields": {
+    "first_name": "Simone",
+    "last_name": "Consonni",
+    "country": "IT",
+    "team": "Lidl–Trek",
+    "birth_date": "1994-09-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 92,
+  "fields": {
+    "first_name": "Tao",
+    "last_name": "Geoghegan Hart",
+    "country": "GB",
+    "team": "Lidl–Trek",
+    "birth_date": "1995-03-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 93,
+  "fields": {
+    "first_name": "Amanuel",
+    "last_name": "Ghebreigzabhier",
+    "country": "ER",
+    "team": "Lidl–Trek",
+    "birth_date": "1994-08-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 94,
+  "fields": {
+    "first_name": "Lennard",
+    "last_name": "Kämna",
+    "country": "DE",
+    "team": "Lidl–Trek",
+    "birth_date": "1996-09-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 95,
+  "fields": {
+    "first_name": "Patrick",
+    "last_name": "Konrad",
+    "country": "AT",
+    "team": "Lidl–Trek",
+    "birth_date": "1991-10-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 96,
+  "fields": {
+    "first_name": "Søren Kragh",
+    "last_name": "Andersen",
+    "country": "DK",
+    "team": "Lidl–Trek",
+    "birth_date": "1994-08-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 97,
+  "fields": {
+    "first_name": "Jonathan",
+    "last_name": "Milan",
+    "country": "IT",
+    "team": "Lidl–Trek",
+    "birth_date": "2000-10-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 98,
+  "fields": {
+    "first_name": "Bauke",
+    "last_name": "Mollema",
+    "country": "NL",
+    "team": "Lidl–Trek",
+    "birth_date": "1986-11-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 99,
+  "fields": {
+    "first_name": "Jacopo",
+    "last_name": "Mosca",
+    "country": "IT",
+    "team": "Lidl–Trek",
+    "birth_date": "1993-08-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 100,
+  "fields": {
+    "first_name": "Mathias",
+    "last_name": "Norsgaard",
+    "country": "DK",
+    "team": "Lidl–Trek",
+    "birth_date": "1997-05-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 101,
+  "fields": {
+    "first_name": "Thibau",
+    "last_name": "Nys",
+    "country": "BE",
+    "team": "Lidl–Trek",
+    "birth_date": "2002-11-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 102,
+  "fields": {
+    "first_name": "Sam",
+    "last_name": "Oomen",
+    "country": "NL",
+    "team": "Lidl–Trek",
+    "birth_date": "1995-08-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 103,
+  "fields": {
+    "first_name": "Mads",
+    "last_name": "Pedersen",
+    "country": "DK",
+    "team": "Lidl–Trek",
+    "birth_date": "1995-12-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 104,
+  "fields": {
+    "first_name": "Quinn",
+    "last_name": "Simmons",
+    "country": "US",
+    "team": "Lidl–Trek",
+    "birth_date": "2001-05-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 105,
+  "fields": {
+    "first_name": "Mattias",
+    "last_name": "Skjelmose",
+    "country": "DK",
+    "team": "Lidl–Trek",
+    "birth_date": "2000-09-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 106,
+  "fields": {
+    "first_name": "Toms",
+    "last_name": "Skujiņš",
+    "country": "LV",
+    "team": "Lidl–Trek",
+    "birth_date": "1991-06-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 107,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Sobrero",
+    "country": "IT",
+    "team": "Lidl–Trek",
+    "birth_date": "1997-05-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 108,
+  "fields": {
+    "first_name": "Jakob",
+    "last_name": "Söderqvist",
+    "country": "SE",
+    "team": "Lidl–Trek",
+    "birth_date": "2003-05-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 109,
+  "fields": {
+    "first_name": "Tim Torn",
+    "last_name": "Teutenberg",
+    "country": "DE",
+    "team": "Lidl–Trek",
+    "birth_date": "2002-06-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 110,
+  "fields": {
+    "first_name": "Edward",
+    "last_name": "Theuns",
+    "country": "BE",
+    "team": "Lidl–Trek",
+    "birth_date": "1991-04-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 111,
+  "fields": {
+    "first_name": "Mathias",
+    "last_name": "Vacek",
+    "country": "CZ",
+    "team": "Lidl–Trek",
+    "birth_date": "2002-06-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 112,
+  "fields": {
+    "first_name": "Otto",
+    "last_name": "Vergaerde",
+    "country": "BE",
+    "team": "Lidl–Trek",
+    "birth_date": "1994-07-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 113,
+  "fields": {
+    "first_name": "Carlos",
+    "last_name": "Verona",
+    "country": "ES",
+    "team": "Lidl–Trek",
+    "birth_date": "1992-11-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 114,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "Walscheid",
+    "country": "DE",
+    "team": "Lidl–Trek",
+    "birth_date": "1993-06-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 115,
+  "fields": {
+    "first_name": "Albert Withen",
+    "last_name": "Philipsen",
+    "country": "DK",
+    "team": "Lidl–Trek",
+    "birth_date": "2006-09-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 116,
+  "fields": {
+    "first_name": "Toon",
+    "last_name": "Aerts",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1993-10-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 117,
+  "fields": {
+    "first_name": "Huub",
+    "last_name": "Artz",
+    "country": "NL",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2002-05-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 118,
+  "fields": {
+    "first_name": "Jenno",
+    "last_name": "Berckmoes",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2001-02-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 119,
+  "fields": {
+    "first_name": "Cedric",
+    "last_name": "Beullens",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1997-01-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 120,
+  "fields": {
+    "first_name": "Vito",
+    "last_name": "Braet",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2000-11-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 121,
+  "fields": {
+    "first_name": "Lars",
+    "last_name": "Craps",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2001-10-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 122,
+  "fields": {
+    "first_name": "Jasper",
+    "last_name": "De Buyst",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1993-11-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 123,
+  "fields": {
+    "first_name": "Arnaud",
+    "last_name": "De Lie",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2002-03-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 124,
+  "fields": {
+    "first_name": "Steffen",
+    "last_name": "De Schuyteneer",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2005-02-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 125,
+  "fields": {
+    "first_name": "Matthew",
+    "last_name": "Fox",
+    "country": "AU",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2002-09-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 126,
+  "fields": {
+    "first_name": "Joshua",
+    "last_name": "Giddings",
+    "country": "GB",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2003-07-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 127,
+  "fields": {
+    "first_name": "Sébastien",
+    "last_name": "Grignard",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1999-04-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 128,
+  "fields": {
+    "first_name": "Matys",
+    "last_name": "Grisel",
+    "country": "FR",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2005-07-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 129,
+  "fields": {
+    "first_name": "Simone",
+    "last_name": "Gualdi",
+    "country": "IT",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2005-04-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 130,
+  "fields": {
+    "first_name": "Mathieu",
+    "last_name": "Kockelmann",
+    "country": "LU",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2004-01-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 131,
+  "fields": {
+    "first_name": "Milan",
+    "last_name": "Menten",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1996-10-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 132,
+  "fields": {
+    "first_name": "Robin",
+    "last_name": "Orins",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2002-03-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 133,
+  "fields": {
+    "first_name": "Lorenzo",
+    "last_name": "Rota",
+    "country": "IT",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1995-05-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 134,
+  "fields": {
+    "first_name": "Jonas",
+    "last_name": "Rutsch",
+    "country": "DE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1998-01-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 135,
+  "fields": {
+    "first_name": "Liam",
+    "last_name": "Slock",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2000-09-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 136,
+  "fields": {
+    "first_name": "Lionel",
+    "last_name": "Taminiaux",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1996-05-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 137,
+  "fields": {
+    "first_name": "Reuben",
+    "last_name": "Thompson",
+    "country": "NZ",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2001-02-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 138,
+  "fields": {
+    "first_name": "Luca",
+    "last_name": "Van Boven",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2000-01-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 139,
+  "fields": {
+    "first_name": "Taco",
+    "last_name": "van der Hoorn",
+    "country": "NL",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1993-12-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 140,
+  "fields": {
+    "first_name": "Lennert",
+    "last_name": "Van Eetvelt",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2001-07-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 141,
+  "fields": {
+    "first_name": "Roel",
+    "last_name": "van Sintmaartensdijk",
+    "country": "NL",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2001-05-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 142,
+  "fields": {
+    "first_name": "Baptiste",
+    "last_name": "Veistroffer",
+    "country": "FR",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2000-05-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 143,
+  "fields": {
+    "first_name": "Jarno",
+    "last_name": "Widar",
+    "country": "BE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2005-11-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 144,
+  "fields": {
+    "first_name": "Georg",
+    "last_name": "Zimmermann",
+    "country": "DE",
+    "team": "Lotto–Intermarché",
+    "birth_date": "1997-10-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 145,
+  "fields": {
+    "first_name": "Felix",
+    "last_name": "Ørn-Kristoff",
+    "country": "NO",
+    "team": "Lotto–Intermarché",
+    "birth_date": "2006-03-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 146,
+  "fields": {
+    "first_name": "Roger",
+    "last_name": "Adrià",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1998-04-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 147,
+  "fields": {
+    "first_name": "Jorge",
+    "last_name": "Arcas",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1992-07-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 148,
+  "fields": {
+    "first_name": "Orluis",
+    "last_name": "Aular",
+    "country": "VE",
+    "team": "Movistar Team",
+    "birth_date": "1996-11-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 149,
+  "fields": {
+    "first_name": "Jon",
+    "last_name": "Barrenetxea",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "2000-04-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 150,
+  "fields": {
+    "first_name": "Carlos",
+    "last_name": "Canal",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "2001-06-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 151,
+  "fields": {
+    "first_name": "Pablo",
+    "last_name": "Castrillo",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "2001-01-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 152,
+  "fields": {
+    "first_name": "Jefferson Alveiro",
+    "last_name": "Cepeda",
+    "country": "EC",
+    "team": "Movistar Team",
+    "birth_date": "1996-03-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 153,
+  "fields": {
+    "first_name": "Davide",
+    "last_name": "Formolo",
+    "country": "IT",
+    "team": "Movistar Team",
+    "birth_date": "1992-10-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 154,
+  "fields": {
+    "first_name": "Iván",
+    "last_name": "García Cortina",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1995-11-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 155,
+  "fields": {
+    "first_name": "Raúl",
+    "last_name": "García Pierna",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "2001-02-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 156,
+  "fields": {
+    "first_name": "Michel",
+    "last_name": "Hessmann",
+    "country": "DE",
+    "team": "Movistar Team",
+    "birth_date": "2001-04-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 157,
+  "fields": {
+    "first_name": "Juan Pedro",
+    "last_name": "López",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1997-07-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 158,
+  "fields": {
+    "first_name": "Enric",
+    "last_name": "Mas",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1995-01-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 159,
+  "fields": {
+    "first_name": "Lorenzo",
+    "last_name": "Milesi",
+    "country": "IT",
+    "team": "Movistar Team",
+    "birth_date": "2002-03-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 160,
+  "fields": {
+    "first_name": "Manlio",
+    "last_name": "Moro",
+    "country": "IT",
+    "team": "Movistar Team",
+    "birth_date": "2002-03-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 161,
+  "fields": {
+    "first_name": "Pavel",
+    "last_name": "Novák",
+    "country": "CZ",
+    "team": "Movistar Team",
+    "birth_date": "2004-12-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 162,
+  "fields": {
+    "first_name": "Nelson",
+    "last_name": "Oliveira",
+    "country": "PT",
+    "team": "Movistar Team",
+    "birth_date": "1989-03-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 163,
+  "fields": {
+    "first_name": "Diego",
+    "last_name": "Pescador",
+    "country": "CO",
+    "team": "Movistar Team",
+    "birth_date": "2004-12-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 164,
+  "fields": {
+    "first_name": "Nairo",
+    "last_name": "Quintana",
+    "country": "CO",
+    "team": "Movistar Team",
+    "birth_date": "1990-02-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 165,
+  "fields": {
+    "first_name": "Iván",
+    "last_name": "Romeo",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "2003-08-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 166,
+  "fields": {
+    "first_name": "Javier",
+    "last_name": "Romo",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1999-01-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 167,
+  "fields": {
+    "first_name": "Einer",
+    "last_name": "Rubio",
+    "country": "CO",
+    "team": "Movistar Team",
+    "birth_date": "1998-02-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 168,
+  "fields": {
+    "first_name": "Pelayo",
+    "last_name": "Sánchez",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "2000-03-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 169,
+  "fields": {
+    "first_name": "Gonzalo",
+    "last_name": "Serrano",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1994-08-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 170,
+  "fields": {
+    "first_name": "Natnael",
+    "last_name": "Tesfatsion",
+    "country": "ER",
+    "team": "Movistar Team",
+    "birth_date": "1999-05-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 171,
+  "fields": {
+    "first_name": "Albert",
+    "last_name": "Torres",
+    "country": "ES",
+    "team": "Movistar Team",
+    "birth_date": "1990-04-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 172,
+  "fields": {
+    "first_name": "Cian",
+    "last_name": "Uijtdebroeks",
+    "country": "BE",
+    "team": "Movistar Team",
+    "birth_date": "2003-02-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 173,
+  "fields": {
+    "first_name": "Lewis",
+    "last_name": "Askey",
+    "country": "GB",
+    "team": "NSN Cycling Team",
+    "birth_date": "2001-05-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 174,
+  "fields": {
+    "first_name": "George",
+    "last_name": "Bennett",
+    "country": "NZ",
+    "team": "NSN Cycling Team",
+    "birth_date": "1990-04-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 175,
+  "fields": {
+    "first_name": "Joseph",
+    "last_name": "Blackmore",
+    "country": "GB",
+    "team": "NSN Cycling Team",
+    "birth_date": "2003-02-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 176,
+  "fields": {
+    "first_name": "Guillaume",
+    "last_name": "Boivin",
+    "country": "CA",
+    "team": "NSN Cycling Team",
+    "birth_date": "1989-05-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 177,
+  "fields": {
+    "first_name": "Simon",
+    "last_name": "Clarke",
+    "country": "AU",
+    "team": "NSN Cycling Team",
+    "birth_date": "1986-07-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 178,
+  "fields": {
+    "first_name": "Pier-André",
+    "last_name": "Côté",
+    "country": "CA",
+    "team": "NSN Cycling Team",
+    "birth_date": "1997-04-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 179,
+  "fields": {
+    "first_name": "Itamar",
+    "last_name": "Einhorn",
+    "country": "IL",
+    "team": "NSN Cycling Team",
+    "birth_date": "1997-09-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 180,
+  "fields": {
+    "first_name": "Marco",
+    "last_name": "Frigo",
+    "country": "IT",
+    "team": "NSN Cycling Team",
+    "birth_date": "2000-03-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 181,
+  "fields": {
+    "first_name": "Brady",
+    "last_name": "Gilmore",
+    "country": "AU",
+    "team": "NSN Cycling Team",
+    "birth_date": "2001-04-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 182,
+  "fields": {
+    "first_name": "Biniam",
+    "last_name": "Girmay",
+    "country": "ER",
+    "team": "NSN Cycling Team",
+    "birth_date": "2000-04-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 183,
+  "fields": {
+    "first_name": "Jan",
+    "last_name": "Hirt",
+    "country": "CZ",
+    "team": "NSN Cycling Team",
+    "birth_date": "1991-01-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 184,
+  "fields": {
+    "first_name": "Hugo",
+    "last_name": "Hofstetter",
+    "country": "FR",
+    "team": "NSN Cycling Team",
+    "birth_date": "1994-02-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 185,
+  "fields": {
+    "first_name": "Oded",
+    "last_name": "Kogut",
+    "country": "IL",
+    "team": "NSN Cycling Team",
+    "birth_date": "2001-02-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 186,
+  "fields": {
+    "first_name": "Matis",
+    "last_name": "Louvel",
+    "country": "FR",
+    "team": "NSN Cycling Team",
+    "birth_date": "1999-07-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 187,
+  "fields": {
+    "first_name": "Alexey",
+    "last_name": "Lutsenko",
+    "country": "KZ",
+    "team": "NSN Cycling Team",
+    "birth_date": "1992-09-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 188,
+  "fields": {
+    "first_name": "Pau",
+    "last_name": "Martí",
+    "country": "ES",
+    "team": "NSN Cycling Team",
+    "birth_date": "2004-11-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 189,
+  "fields": {
+    "first_name": "Ryan",
+    "last_name": "Mullen",
+    "country": "IE",
+    "team": "NSN Cycling Team",
+    "birth_date": "1994-08-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 190,
+  "fields": {
+    "first_name": "Krists",
+    "last_name": "Neilands",
+    "country": "LV",
+    "team": "NSN Cycling Team",
+    "birth_date": "1994-08-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 191,
+  "fields": {
+    "first_name": "Alessandro",
+    "last_name": "Pinarello",
+    "country": "IT",
+    "team": "NSN Cycling Team",
+    "birth_date": "2003-07-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 192,
+  "fields": {
+    "first_name": "Nadav",
+    "last_name": "Raisberg",
+    "country": "IL",
+    "team": "NSN Cycling Team",
+    "birth_date": "2001-03-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 193,
+  "fields": {
+    "first_name": "Nick",
+    "last_name": "Schultz",
+    "country": "AU",
+    "team": "NSN Cycling Team",
+    "birth_date": "1994-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 194,
+  "fields": {
+    "first_name": "Riley",
+    "last_name": "Sheehan",
+    "country": "US",
+    "team": "NSN Cycling Team",
+    "birth_date": "2000-06-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 195,
+  "fields": {
+    "first_name": "Jake",
+    "last_name": "Stewart",
+    "country": "GB",
+    "team": "NSN Cycling Team",
+    "birth_date": "1999-10-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 196,
+  "fields": {
+    "first_name": "Corbin",
+    "last_name": "Strong",
+    "country": "NZ",
+    "team": "NSN Cycling Team",
+    "birth_date": "2000-04-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 197,
+  "fields": {
+    "first_name": "Tom",
+    "last_name": "Van Asbroeck",
+    "country": "BE",
+    "team": "NSN Cycling Team",
+    "birth_date": "1990-04-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 198,
+  "fields": {
+    "first_name": "Floris",
+    "last_name": "Van Tricht",
+    "country": "BE",
+    "team": "NSN Cycling Team",
+    "birth_date": "2001-06-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 199,
+  "fields": {
+    "first_name": "Ethan",
+    "last_name": "Vernon",
+    "country": "GB",
+    "team": "NSN Cycling Team",
+    "birth_date": "2000-08-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 200,
+  "fields": {
+    "first_name": "Stephen",
+    "last_name": "Williams",
+    "country": "GB",
+    "team": "NSN Cycling Team",
+    "birth_date": "1996-06-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 201,
+  "fields": {
+    "first_name": "Giovanni",
+    "last_name": "Aleotti",
+    "country": "IT",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1999-05-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 202,
+  "fields": {
+    "first_name": "Adrien",
+    "last_name": "Boichis",
+    "country": "FR",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2003-01-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 203,
+  "fields": {
+    "first_name": "Mattia",
+    "last_name": "Cattaneo",
+    "country": "IT",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1990-10-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 204,
+  "fields": {
+    "first_name": "Nico",
+    "last_name": "Denz",
+    "country": "DE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1994-02-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 205,
+  "fields": {
+    "first_name": "Jarrad",
+    "last_name": "Drizners",
+    "country": "AU",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1999-05-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 206,
+  "fields": {
+    "first_name": "Haimar",
+    "last_name": "Etxeberria",
+    "country": "ES",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2003-09-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 207,
+  "fields": {
+    "first_name": "Remco",
+    "last_name": "Evenepoel",
+    "country": "BE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2000-01-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 208,
+  "fields": {
+    "first_name": "Finn",
+    "last_name": "Fisher-Black",
+    "country": "NZ",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2001-12-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 209,
+  "fields": {
+    "first_name": "Alexander",
+    "last_name": "Hajek",
+    "country": "AT",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2003-07-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 210,
+  "fields": {
+    "first_name": "Emil",
+    "last_name": "Herzog",
+    "country": "DE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2004-10-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 211,
+  "fields": {
+    "first_name": "Jai",
+    "last_name": "Hindley",
+    "country": "AU",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1996-05-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 212,
+  "fields": {
+    "first_name": "Florian",
+    "last_name": "Lipowitz",
+    "country": "DE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2000-09-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 213,
+  "fields": {
+    "first_name": "Arne",
+    "last_name": "Marit",
+    "country": "BE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1999-01-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 214,
+  "fields": {
+    "first_name": "Daniel",
+    "last_name": "Martínez",
+    "country": "CO",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1996-04-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 215,
+  "fields": {
+    "first_name": "Jordi",
+    "last_name": "Meeus",
+    "country": "BE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1998-07-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 216,
+  "fields": {
+    "first_name": "Gianni",
+    "last_name": "Moscon",
+    "country": "IT",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1994-04-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 217,
+  "fields": {
+    "first_name": "Giulio",
+    "last_name": "Pellizzari",
+    "country": "IT",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2003-11-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 218,
+  "fields": {
+    "first_name": "Laurence",
+    "last_name": "Pithie",
+    "country": "NZ",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2002-07-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 219,
+  "fields": {
+    "first_name": "Primož",
+    "last_name": "Roglič",
+    "country": "SI",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1989-10-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 220,
+  "fields": {
+    "first_name": "Callum",
+    "last_name": "Thornley",
+    "country": "GB",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2003-08-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 221,
+  "fields": {
+    "first_name": "Jan",
+    "last_name": "Tratnik",
+    "country": "SI",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1990-02-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 222,
+  "fields": {
+    "first_name": "Luke",
+    "last_name": "Tuckwell",
+    "country": "AU",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2004-06-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 223,
+  "fields": {
+    "first_name": "Mick",
+    "last_name": "van Dijke",
+    "country": "NL",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2000-03-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 224,
+  "fields": {
+    "first_name": "Tim",
+    "last_name": "van Dijke",
+    "country": "NL",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2000-03-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 225,
+  "fields": {
+    "first_name": "Maxim",
+    "last_name": "Van Gils",
+    "country": "BE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1999-11-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 226,
+  "fields": {
+    "first_name": "Danny",
+    "last_name": "van Poppel",
+    "country": "NL",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1993-07-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 227,
+  "fields": {
+    "first_name": "Gianni",
+    "last_name": "Vermeersch",
+    "country": "BE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1992-11-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 228,
+  "fields": {
+    "first_name": "Aleksandr",
+    "last_name": "Vlasov",
+    "country": "RU",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1996-04-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 229,
+  "fields": {
+    "first_name": "Frederik",
+    "last_name": "Wandahl",
+    "country": "DK",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "2001-05-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 230,
+  "fields": {
+    "first_name": "Ben",
+    "last_name": "Zwiehoff",
+    "country": "DE",
+    "team": "Red Bull–Bora–Hansgrohe",
+    "birth_date": "1994-02-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 231,
+  "fields": {
+    "first_name": "Ayco",
+    "last_name": "Bastiaens",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1996-06-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 232,
+  "fields": {
+    "first_name": "Steff",
+    "last_name": "Cras",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1996-02-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 233,
+  "fields": {
+    "first_name": "Alberto",
+    "last_name": "Dainese",
+    "country": "IT",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1998-03-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 234,
+  "fields": {
+    "first_name": "Pascal",
+    "last_name": "Eenkhoorn",
+    "country": "NL",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1997-02-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 235,
+  "fields": {
+    "first_name": "Gianmarco",
+    "last_name": "Garofoli",
+    "country": "IT",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2002-10-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 236,
+  "fields": {
+    "first_name": "Gil",
+    "last_name": "Gelders",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2002-12-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 237,
+  "fields": {
+    "first_name": "Ethan",
+    "last_name": "Hayter",
+    "country": "GB",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1998-09-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 238,
+  "fields": {
+    "first_name": "Yves",
+    "last_name": "Lampaert",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1991-04-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 239,
+  "fields": {
+    "first_name": "Mikel",
+    "last_name": "Landa",
+    "country": "ES",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1989-12-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 240,
+  "fields": {
+    "first_name": "Junior",
+    "last_name": "Lecerf",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2002-10-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 241,
+  "fields": {
+    "first_name": "Paul",
+    "last_name": "Magnier",
+    "country": "FR",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2004-04-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 242,
+  "fields": {
+    "first_name": "Tim",
+    "last_name": "Merlier",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1992-10-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 243,
+  "fields": {
+    "first_name": "Valentin",
+    "last_name": "Paret-Peintre",
+    "country": "FR",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2001-01-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 244,
+  "fields": {
+    "first_name": "Casper",
+    "last_name": "Pedersen",
+    "country": "DK",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1996-03-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 245,
+  "fields": {
+    "first_name": "Andrea",
+    "last_name": "Raccagni Noviero",
+    "country": "IT",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2004-01-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 246,
+  "fields": {
+    "first_name": "Pepijn",
+    "last_name": "Reinderink",
+    "country": "NL",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2002-05-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 247,
+  "fields": {
+    "first_name": "Laurenz",
+    "last_name": "Rex",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1999-12-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 248,
+  "fields": {
+    "first_name": "Maximilian",
+    "last_name": "Schachmann",
+    "country": "DE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1994-01-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 249,
+  "fields": {
+    "first_name": "Jasper",
+    "last_name": "Stuyven",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1992-04-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 250,
+  "fields": {
+    "first_name": "Martin",
+    "last_name": "Svrček",
+    "country": "SK",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2003-02-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 251,
+  "fields": {
+    "first_name": "Dylan",
+    "last_name": "van Baarle",
+    "country": "NL",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1992-05-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 252,
+  "fields": {
+    "first_name": "Fabio",
+    "last_name": "Van den Bossche",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2000-09-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 253,
+  "fields": {
+    "first_name": "Dries",
+    "last_name": "Van Gestel",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1994-09-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 254,
+  "fields": {
+    "first_name": "Bert",
+    "last_name": "Van Lerberghe",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1992-09-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 255,
+  "fields": {
+    "first_name": "Ilan",
+    "last_name": "Van Wilder",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2000-05-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 256,
+  "fields": {
+    "first_name": "Warre",
+    "last_name": "Vangheluwe",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2001-07-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 257,
+  "fields": {
+    "first_name": "Mauri",
+    "last_name": "Vansevenant",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1999-06-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 258,
+  "fields": {
+    "first_name": "Louis",
+    "last_name": "Vervaeke",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1993-10-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 259,
+  "fields": {
+    "first_name": "Jonathan",
+    "last_name": "Vervenne",
+    "country": "BE",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "2003-05-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 260,
+  "fields": {
+    "first_name": "Filippo",
+    "last_name": "Zana",
+    "country": "IT",
+    "team": "Soudal–Quick-Step",
+    "birth_date": "1999-03-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 261,
+  "fields": {
+    "first_name": "Warren",
+    "last_name": "Barguil",
+    "country": "FR",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1991-10-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 262,
+  "fields": {
+    "first_name": "Frits",
+    "last_name": "Biesterbos",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2002-02-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 263,
+  "fields": {
+    "first_name": "Pavel",
+    "last_name": "Bittner",
+    "country": "CZ",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2002-10-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 264,
+  "fields": {
+    "first_name": "Dillon",
+    "last_name": "Corkery",
+    "country": "IE",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1999-02-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 265,
+  "fields": {
+    "first_name": "Timo",
+    "last_name": "de Jong",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1999-03-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 266,
+  "fields": {
+    "first_name": "John",
+    "last_name": "Degenkolb",
+    "country": "DE",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1989-01-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 267,
+  "fields": {
+    "first_name": "Robbe",
+    "last_name": "Dhondt",
+    "country": "BE",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2004-06-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 268,
+  "fields": {
+    "first_name": "Matthew",
+    "last_name": "Dinham",
+    "country": "AU",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2000-04-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 269,
+  "fields": {
+    "first_name": "Nils",
+    "last_name": "Eekhoff",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1998-01-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 270,
+  "fields": {
+    "first_name": "Alexy",
+    "last_name": "Faure Prost",
+    "country": "FR",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2004-04-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 271,
+  "fields": {
+    "first_name": "Sean",
+    "last_name": "Flynn",
+    "country": "GB",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2000-03-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 272,
+  "fields": {
+    "first_name": "Mattia",
+    "last_name": "Gaffuri",
+    "country": "IT",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1999-07-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 273,
+  "fields": {
+    "first_name": "Chris",
+    "last_name": "Hamilton",
+    "country": "AU",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1995-05-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 274,
+  "fields": {
+    "first_name": "Fabio",
+    "last_name": "Jakobsen",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1996-08-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 275,
+  "fields": {
+    "first_name": "James",
+    "last_name": "Knox",
+    "country": "GB",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1995-11-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 276,
+  "fields": {
+    "first_name": "Bjoern",
+    "last_name": "Koerdt",
+    "country": "GB",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2004-07-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 277,
+  "fields": {
+    "first_name": "Gijs",
+    "last_name": "Leemreize",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1999-10-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 278,
+  "fields": {
+    "first_name": "Niklas",
+    "last_name": "Märkl",
+    "country": "DE",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1999-03-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 279,
+  "fields": {
+    "first_name": "Juan Guillermo",
+    "last_name": "Martínez",
+    "country": "CO",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2004-11-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 280,
+  "fields": {
+    "first_name": "Tim",
+    "last_name": "Naberman",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1999-05-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 281,
+  "fields": {
+    "first_name": "Oliver",
+    "last_name": "Peace",
+    "country": "GB",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2005-04-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 282,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "Poole",
+    "country": "GB",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2003-03-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 283,
+  "fields": {
+    "first_name": "Henri-François",
+    "last_name": "Renard-Haquin",
+    "country": "FR",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2002-12-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 284,
+  "fields": {
+    "first_name": "Timo",
+    "last_name": "Roosen",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1993-01-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 285,
+  "fields": {
+    "first_name": "Julius",
+    "last_name": "van den Berg",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1996-10-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 286,
+  "fields": {
+    "first_name": "Frank",
+    "last_name": "van den Broek",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2000-12-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 287,
+  "fields": {
+    "first_name": "Casper",
+    "last_name": "van Uden",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "2001-07-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 288,
+  "fields": {
+    "first_name": "Bram",
+    "last_name": "Welten",
+    "country": "NL",
+    "team": "Team Picnic–PostNL",
+    "birth_date": "1997-03-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 289,
+  "fields": {
+    "first_name": "Pascal",
+    "last_name": "Ackermann",
+    "country": "DE",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1994-01-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 290,
+  "fields": {
+    "first_name": "Koen",
+    "last_name": "Bouwman",
+    "country": "NL",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1993-12-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 291,
+  "fields": {
+    "first_name": "Amaury",
+    "last_name": "Capiot",
+    "country": "BE",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1993-06-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 292,
+  "fields": {
+    "first_name": "Filippo",
+    "last_name": "Conca",
+    "country": "IT",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1998-09-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 293,
+  "fields": {
+    "first_name": "Alessandro",
+    "last_name": "Covi",
+    "country": "IT",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1998-09-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 294,
+  "fields": {
+    "first_name": "Dries",
+    "last_name": "De Bondt",
+    "country": "BE",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1991-07-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 295,
+  "fields": {
+    "first_name": "Dries",
+    "last_name": "De Pooter",
+    "country": "BE",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2002-11-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 296,
+  "fields": {
+    "first_name": "Davide",
+    "last_name": "De Pretto",
+    "country": "IT",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2002-04-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 297,
+  "fields": {
+    "first_name": "Robert",
+    "last_name": "Donaldson",
+    "country": "GB",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2002-04-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 298,
+  "fields": {
+    "first_name": "Paul",
+    "last_name": "Double",
+    "country": "GB",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1996-06-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 299,
+  "fields": {
+    "first_name": "Luke",
+    "last_name": "Durbridge",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1991-04-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 300,
+  "fields": {
+    "first_name": "Felix",
+    "last_name": "Engelhardt",
+    "country": "DE",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2000-08-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 301,
+  "fields": {
+    "first_name": "Anders",
+    "last_name": "Foldager",
+    "country": "DK",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2001-07-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 302,
+  "fields": {
+    "first_name": "Patrick",
+    "last_name": "Gamper",
+    "country": "AT",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1997-02-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 303,
+  "fields": {
+    "first_name": "Alan",
+    "last_name": "Hatherly",
+    "country": "ZA",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1996-03-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 304,
+  "fields": {
+    "first_name": "Asbjørn",
+    "last_name": "Hellemose",
+    "country": "DK",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1999-01-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 305,
+  "fields": {
+    "first_name": "Christopher",
+    "last_name": "Juul-Jensen",
+    "country": "DK",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1989-07-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 306,
+  "fields": {
+    "first_name": "Jelte",
+    "last_name": "Krijnsen",
+    "country": "NL",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2001-05-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 307,
+  "fields": {
+    "first_name": "Michael",
+    "last_name": "Matthews",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1990-09-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 308,
+  "fields": {
+    "first_name": "Hamish",
+    "last_name": "McKenzie",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2004-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 309,
+  "fields": {
+    "first_name": "Luka",
+    "last_name": "Mezgec",
+    "country": "SI",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1988-06-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 310,
+  "fields": {
+    "first_name": "Kelland",
+    "last_name": "O'Brien",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1998-05-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 311,
+  "fields": {
+    "first_name": "Ben",
+    "last_name": "O'Connor",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1995-11-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 312,
+  "fields": {
+    "first_name": "Finlay",
+    "last_name": "Pickering",
+    "country": "GB",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2003-01-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 313,
+  "fields": {
+    "first_name": "Luke",
+    "last_name": "Plapp",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2000-12-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 314,
+  "fields": {
+    "first_name": "Rudy",
+    "last_name": "Porter",
+    "country": "AU",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "2000-12-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 315,
+  "fields": {
+    "first_name": "Mauro",
+    "last_name": "Schmid",
+    "country": "CH",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1999-12-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 316,
+  "fields": {
+    "first_name": "Jasha",
+    "last_name": "Sütterlin",
+    "country": "DE",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1992-11-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 317,
+  "fields": {
+    "first_name": "Andrea",
+    "last_name": "Vendrame",
+    "country": "IT",
+    "team": "Team Jayco–AlUla",
+    "birth_date": "1994-07-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 318,
+  "fields": {
+    "first_name": "Edoardo",
+    "last_name": "Affini",
+    "country": "IT",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1996-06-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 319,
+  "fields": {
+    "first_name": "Bruno",
+    "last_name": "Armirail",
+    "country": "FR",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1994-04-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 320,
+  "fields": {
+    "first_name": "Niklas",
+    "last_name": "Behrens",
+    "country": "DE",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2003-11-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 321,
+  "fields": {
+    "first_name": "Matthew",
+    "last_name": "Brennan",
+    "country": "GB",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2005-08-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 322,
+  "fields": {
+    "first_name": "Victor",
+    "last_name": "Campenaerts",
+    "country": "BE",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1991-10-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 323,
+  "fields": {
+    "first_name": "Owain",
+    "last_name": "Doull",
+    "country": "GB",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1993-05-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 324,
+  "fields": {
+    "first_name": "Filippo",
+    "last_name": "Fiorelli",
+    "country": "IT",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1994-11-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 325,
+  "fields": {
+    "first_name": "Tijmen",
+    "last_name": "Graat",
+    "country": "NL",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2003-01-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 326,
+  "fields": {
+    "first_name": "Per Strand",
+    "last_name": "Hagenes",
+    "country": "NO",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2003-07-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 327,
+  "fields": {
+    "first_name": "Menno",
+    "last_name": "Huising",
+    "country": "NL",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2004-04-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 328,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Jorgenson",
+    "country": "US",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1999-07-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 329,
+  "fields": {
+    "first_name": "Wilco",
+    "last_name": "Kelderman",
+    "country": "NL",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1991-03-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 330,
+  "fields": {
+    "first_name": "Timo",
+    "last_name": "Kielich",
+    "country": "BE",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1999-08-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 331,
+  "fields": {
+    "first_name": "Steven",
+    "last_name": "Kruijswijk",
+    "country": "NL",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1987-06-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 332,
+  "fields": {
+    "first_name": "Sepp",
+    "last_name": "Kuss",
+    "country": "US",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1994-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 333,
+  "fields": {
+    "first_name": "Christophe",
+    "last_name": "Laporte",
+    "country": "FR",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1992-12-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 334,
+  "fields": {
+    "first_name": "Bart",
+    "last_name": "Lemmen",
+    "country": "NL",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1995-10-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 335,
+  "fields": {
+    "first_name": "Pietro",
+    "last_name": "Mattio",
+    "country": "IT",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2004-06-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 336,
+  "fields": {
+    "first_name": "Jørgen",
+    "last_name": "Nordhagen",
+    "country": "NO",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2005-01-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 337,
+  "fields": {
+    "first_name": "Davide",
+    "last_name": "Piganzoli",
+    "country": "IT",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2002-07-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 338,
+  "fields": {
+    "first_name": "Tim",
+    "last_name": "Rex",
+    "country": "BE",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2004-04-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 339,
+  "fields": {
+    "first_name": "Anton",
+    "last_name": "Schiffer",
+    "country": "DE",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1999-09-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 340,
+  "fields": {
+    "first_name": "Ben",
+    "last_name": "Tulett",
+    "country": "GB",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2001-08-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 341,
+  "fields": {
+    "first_name": "Wout",
+    "last_name": "van Aert",
+    "country": "BE",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1994-09-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 342,
+  "fields": {
+    "first_name": "Loe",
+    "last_name": "van Belle",
+    "country": "NL",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "2002-01-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 343,
+  "fields": {
+    "first_name": "Jonas",
+    "last_name": "Vingegaard",
+    "country": "DK",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1996-12-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 344,
+  "fields": {
+    "first_name": "Simon",
+    "last_name": "Yates",
+    "country": "GB",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1992-08-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 345,
+  "fields": {
+    "first_name": "Axel",
+    "last_name": "Zingle",
+    "country": "FR",
+    "team": "Visma–Lease a Bike",
+    "birth_date": "1998-12-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 346,
+  "fields": {
+    "first_name": "João",
+    "last_name": "Almeida",
+    "country": "POR",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1998-08-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 347,
+  "fields": {
+    "first_name": "Igor",
+    "last_name": "Arrieta",
+    "country": "ESP",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2002-12-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 348,
+  "fields": {
+    "first_name": "Filippo",
+    "last_name": "Baroncini",
+    "country": "ITA",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2000-08-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 349,
+  "fields": {
+    "first_name": "Mikkel",
+    "last_name": "Bjerg",
+    "country": "DEN",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1998-11-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 350,
+  "fields": {
+    "first_name": "Jan",
+    "last_name": "Christen",
+    "country": "SUI",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2004-06-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 351,
+  "fields": {
+    "first_name": "Benoît",
+    "last_name": "Cosnefroy",
+    "country": "FRA",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1995-10-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 352,
+  "fields": {
+    "first_name": "Isaac",
+    "last_name": "del Toro",
+    "country": "MEX",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2003-11-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 353,
+  "fields": {
+    "first_name": "Felix",
+    "last_name": "Großschartner",
+    "country": "AUT",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1993-12-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 354,
+  "fields": {
+    "first_name": "Rune",
+    "last_name": "Herregodts",
+    "country": "BEL",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1998-07-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 355,
+  "fields": {
+    "first_name": "Julius",
+    "last_name": "Johansen",
+    "country": "DEN",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1999-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 356,
+  "fields": {
+    "first_name": "Vegard Stake",
+    "last_name": "Laengen",
+    "country": "NOR",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1989-02-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 357,
+  "fields": {
+    "first_name": "Brandon",
+    "last_name": "McNulty",
+    "country": "USA",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1998-04-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 358,
+  "fields": {
+    "first_name": "Juan Sebastián",
+    "last_name": "Molano",
+    "country": "COL",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1994-11-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 359,
+  "fields": {
+    "first_name": "António",
+    "last_name": "Morgado",
+    "country": "POR",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2004-01-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 360,
+  "fields": {
+    "first_name": "Jhonatan",
+    "last_name": "Narváez",
+    "country": "ECU",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1997-03-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 361,
+  "fields": {
+    "first_name": "Domen",
+    "last_name": "Novak",
+    "country": "SLO",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1995-07-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 362,
+  "fields": {
+    "first_name": "Ivo",
+    "last_name": "Oliveira",
+    "country": "POR",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1996-09-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 363,
+  "fields": {
+    "first_name": "Rui",
+    "last_name": "Oliveira",
+    "country": "POR",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1996-09-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 364,
+  "fields": {
+    "first_name": "Adrià",
+    "last_name": "Pericas",
+    "country": "ESP",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2006-05-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 365,
+  "fields": {
+    "first_name": "Tadej",
+    "last_name": "Pogačar",
+    "country": "SLO",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1998-09-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 366,
+  "fields": {
+    "first_name": "Nils",
+    "last_name": "Politt",
+    "country": "GER",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1994-03-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 367,
+  "fields": {
+    "first_name": "Pavel",
+    "last_name": "Sivakov",
+    "country": "FRA",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1997-07-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 368,
+  "fields": {
+    "first_name": "Marc",
+    "last_name": "Soler",
+    "country": "ESP",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1993-11-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 369,
+  "fields": {
+    "first_name": "Pablo",
+    "last_name": "Torres",
+    "country": "ESP",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2005-11-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 370,
+  "fields": {
+    "first_name": "Kevin",
+    "last_name": "Vermaerke",
+    "country": "USA",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "2000-10-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 371,
+  "fields": {
+    "first_name": "Florian",
+    "last_name": "Vermeersch",
+    "country": "BEL",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1999-03-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 372,
+  "fields": {
+    "first_name": "Jay",
+    "last_name": "Vine",
+    "country": "AUS",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1995-11-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 373,
+  "fields": {
+    "first_name": "Tim",
+    "last_name": "Wellens",
+    "country": "BEL",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1991-05-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 374,
+  "fields": {
+    "first_name": "Adam",
+    "last_name": "Yates",
+    "country": "GBR",
+    "team": "Uae Team Emirates Xrg",
+    "birth_date": "1992-08-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 375,
+  "fields": {
+    "first_name": "Jonas",
+    "last_name": "Abrahamsen",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1995-09-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 376,
+  "fields": {
+    "first_name": "Carl-Frederik",
+    "last_name": "Bévort",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "2003-11-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 377,
+  "fields": {
+    "first_name": "Erlend",
+    "last_name": "Blikra",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1997-01-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 378,
+  "fields": {
+    "first_name": "William",
+    "last_name": "Blume Levy",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "2001-01-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 379,
+  "fields": {
+    "first_name": "Sven Erik",
+    "last_name": "Bystrøm",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1992-01-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 380,
+  "fields": {
+    "first_name": "Anthon",
+    "last_name": "Charmig",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "1998-03-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 381,
+  "fields": {
+    "first_name": "Magnus",
+    "last_name": "Cort",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "1993-01-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 382,
+  "fields": {
+    "first_name": "Simon",
+    "last_name": "Dalby",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "2003-01-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 383,
+  "fields": {
+    "first_name": "Fredrik",
+    "last_name": "Dversnes",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1997-03-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 384,
+  "fields": {
+    "first_name": "Stian",
+    "last_name": "Fredheim",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2003-03-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 385,
+  "fields": {
+    "first_name": "Markus",
+    "last_name": "Hoelgaard",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1994-10-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 386,
+  "fields": {
+    "first_name": "Ådne",
+    "last_name": "Holter",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2000-07-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 387,
+  "fields": {
+    "first_name": "Jonas Iversby",
+    "last_name": "Hvideberg",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1999-02-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 388,
+  "fields": {
+    "first_name": "Storm",
+    "last_name": "Ingebrigtsen",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2005-02-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 389,
+  "fields": {
+    "first_name": "Anders Halland",
+    "last_name": "Johannessen",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1999-08-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 390,
+  "fields": {
+    "first_name": "Tobias Halland",
+    "last_name": "Johannessen",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1999-08-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 391,
+  "fields": {
+    "first_name": "Alexander",
+    "last_name": "Kamp",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "1993-12-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 392,
+  "fields": {
+    "first_name": "Andreas",
+    "last_name": "Kron",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "1998-06-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 393,
+  "fields": {
+    "first_name": "Johannes",
+    "last_name": "Kulset",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2004-04-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 394,
+  "fields": {
+    "first_name": "Andreas",
+    "last_name": "Leknessund",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1999-05-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 395,
+  "fields": {
+    "first_name": "Sakarias Koller",
+    "last_name": "Løland",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2001-09-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 396,
+  "fields": {
+    "first_name": "Henrik",
+    "last_name": "Pedersen",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "2004-12-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 397,
+  "fields": {
+    "first_name": "Erik Nordsæter",
+    "last_name": "Resell",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1996-09-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 398,
+  "fields": {
+    "first_name": "Anders",
+    "last_name": "Skaarseth",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1995-05-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 399,
+  "fields": {
+    "first_name": "Tobias",
+    "last_name": "Svarre",
+    "country": "DEN",
+    "team": "Uno X Mobility",
+    "birth_date": "2004-07-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 400,
+  "fields": {
+    "first_name": "Rasmus",
+    "last_name": "Tiller",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1996-07-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 401,
+  "fields": {
+    "first_name": "Martin",
+    "last_name": "Tjøtta",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2001-03-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 402,
+  "fields": {
+    "first_name": "Torstein",
+    "last_name": "Træen",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1995-07-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 403,
+  "fields": {
+    "first_name": "Martin",
+    "last_name": "Urianstad",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "1999-02-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 404,
+  "fields": {
+    "first_name": "Søren",
+    "last_name": "Wærenskjold",
+    "country": "NOR",
+    "team": "Uno X Mobility",
+    "birth_date": "2000-03-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 405,
+  "fields": {
+    "first_name": "Davide",
+    "last_name": "Ballerini",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1994-09-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 406,
+  "fields": {
+    "first_name": "Alberto",
+    "last_name": "Bettiol",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1993-10-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 407,
+  "fields": {
+    "first_name": "Clément",
+    "last_name": "Champoussin",
+    "country": "FRA",
+    "team": "Xds Astana Team",
+    "birth_date": "1998-05-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 408,
+  "fields": {
+    "first_name": "Nicola",
+    "last_name": "Conci",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1997-01-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 409,
+  "fields": {
+    "first_name": "Yevgeniy",
+    "last_name": "Fedorov",
+    "country": "KAZ",
+    "team": "Xds Astana Team",
+    "birth_date": "2000-02-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 410,
+  "fields": {
+    "first_name": "Lorenzo",
+    "last_name": "Fortunato",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1996-05-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 411,
+  "fields": {
+    "first_name": "Aaron",
+    "last_name": "Gate",
+    "country": "NZL",
+    "team": "Xds Astana Team",
+    "birth_date": "1990-11-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 412,
+  "fields": {
+    "first_name": "Lev",
+    "last_name": "Gonov",
+    "country": "RUS",
+    "team": "Xds Astana Team",
+    "birth_date": "2000-02-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 413,
+  "fields": {
+    "first_name": "Sergio",
+    "last_name": "Higuita",
+    "country": "COL",
+    "team": "Xds Astana Team",
+    "birth_date": "1997-08-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 414,
+  "fields": {
+    "first_name": "Florian Samuel",
+    "last_name": "Kajamini",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "2003-02-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 415,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "Kanter",
+    "country": "GER",
+    "team": "Xds Astana Team",
+    "birth_date": "1997-10-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 416,
+  "fields": {
+    "first_name": "Anton",
+    "last_name": "Kuzmin",
+    "country": "KAZ",
+    "team": "Xds Astana Team",
+    "birth_date": "1996-11-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 417,
+  "fields": {
+    "first_name": "Arjen",
+    "last_name": "Livyns",
+    "country": "BEL",
+    "team": "Xds Astana Team",
+    "birth_date": "1994-09-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 418,
+  "fields": {
+    "first_name": "Harold Martín",
+    "last_name": "López",
+    "country": "ECU",
+    "team": "Xds Astana Team",
+    "birth_date": "2000-12-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 419,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Malucelli",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1993-10-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 420,
+  "fields": {
+    "first_name": "Henok",
+    "last_name": "Mulubrhan",
+    "country": "ERI",
+    "team": "Xds Astana Team",
+    "birth_date": "1999-11-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 421,
+  "fields": {
+    "first_name": "Cristián",
+    "last_name": "Rodríguez",
+    "country": "ESP",
+    "team": "Xds Astana Team",
+    "birth_date": "1995-03-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 422,
+  "fields": {
+    "first_name": "Alessandro",
+    "last_name": "Romele",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "2003-08-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 423,
+  "fields": {
+    "first_name": "Christian",
+    "last_name": "Scaroni",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1997-10-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 424,
+  "fields": {
+    "first_name": "Marco",
+    "last_name": "Schrettl",
+    "country": "AUT",
+    "team": "Xds Astana Team",
+    "birth_date": "2003-09-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 425,
+  "fields": {
+    "first_name": "Guillermo Thomas",
+    "last_name": "Silva",
+    "country": "URU",
+    "team": "Xds Astana Team",
+    "birth_date": "2001-12-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 426,
+  "fields": {
+    "first_name": "Su",
+    "last_name": "Haoyu",
+    "country": "CHN",
+    "team": "Xds Astana Team",
+    "birth_date": "2000-10-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 427,
+  "fields": {
+    "first_name": "Gleb",
+    "last_name": "Syritsa",
+    "country": "RUS",
+    "team": "Xds Astana Team",
+    "birth_date": "2000-04-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 428,
+  "fields": {
+    "first_name": "Harold",
+    "last_name": "Tejada",
+    "country": "COL",
+    "team": "Xds Astana Team",
+    "birth_date": "1997-04-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 429,
+  "fields": {
+    "first_name": "Mike",
+    "last_name": "Teunissen",
+    "country": "NED",
+    "team": "Xds Astana Team",
+    "birth_date": "1992-08-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 430,
+  "fields": {
+    "first_name": "Davide",
+    "last_name": "Toneatti",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "2001-04-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 431,
+  "fields": {
+    "first_name": "Diego",
+    "last_name": "Ulissi",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1989-07-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 432,
+  "fields": {
+    "first_name": "Darren",
+    "last_name": "van Bekkum",
+    "country": "NED",
+    "team": "Xds Astana Team",
+    "birth_date": "2002-03-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 433,
+  "fields": {
+    "first_name": "Simone",
+    "last_name": "Velasco",
+    "country": "ITA",
+    "team": "Xds Astana Team",
+    "birth_date": "1995-12-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 434,
+  "fields": {
+    "first_name": "Nicolas",
+    "last_name": "Vinokurov",
+    "country": "KAZ",
+    "team": "Xds Astana Team",
+    "birth_date": "2002-07-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 435,
+  "fields": {
+    "first_name": "Mattia",
+    "last_name": "Agostinacchio",
+    "country": "IT",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2007-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 436,
+  "fields": {
+    "first_name": "Vincenzo",
+    "last_name": "Albanese",
+    "country": "IT",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1996-11-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 437,
+  "fields": {
+    "first_name": "Kasper",
+    "last_name": "Asgreen",
+    "country": "DK",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1995-02-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 438,
+  "fields": {
+    "first_name": "Samuele",
+    "last_name": "Battistella",
+    "country": "IT",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1998-11-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 439,
+  "fields": {
+    "first_name": "Alex",
+    "last_name": "Baudin",
+    "country": "FR",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2001-05-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 440,
+  "fields": {
+    "first_name": "Markel",
+    "last_name": "Beloki",
+    "country": "ES",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2005-07-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 441,
+  "fields": {
+    "first_name": "Richard",
+    "last_name": "Carapaz",
+    "country": "EC",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1993-05-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 442,
+  "fields": {
+    "first_name": "Jefferson Alexander",
+    "last_name": "Cepeda",
+    "country": "EC",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1998-06-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 443,
+  "fields": {
+    "first_name": "Ben",
+    "last_name": "Healy",
+    "country": "IE",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2000-09-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 444,
+  "fields": {
+    "first_name": "Noah",
+    "last_name": "Hobbs",
+    "country": "GB",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2004-07-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 445,
+  "fields": {
+    "first_name": "Mikkel Frølich",
+    "last_name": "Honoré",
+    "country": "DK",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1997-01-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 446,
+  "fields": {
+    "first_name": "Luke",
+    "last_name": "Lamperti",
+    "country": "US",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2002-12-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 447,
+  "fields": {
+    "first_name": "Michael",
+    "last_name": "Leonard",
+    "country": "CA",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2004-03-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 448,
+  "fields": {
+    "first_name": "Alastair",
+    "last_name": "Mackellar",
+    "country": "AU",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2002-01-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 449,
+  "fields": {
+    "first_name": "Madis",
+    "last_name": "Mihkels",
+    "country": "EE",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2003-05-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 450,
+  "fields": {
+    "first_name": "Lukas",
+    "last_name": "Nerurkar",
+    "country": "GB",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2003-11-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 451,
+  "fields": {
+    "first_name": "Neilson",
+    "last_name": "Powless",
+    "country": "US",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1996-09-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 452,
+  "fields": {
+    "first_name": "Sean",
+    "last_name": "Quinn",
+    "country": "US",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2000-05-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 453,
+  "fields": {
+    "first_name": "Darren",
+    "last_name": "Rafferty",
+    "country": "IE",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2003-07-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 454,
+  "fields": {
+    "first_name": "Archie",
+    "last_name": "Ryan",
+    "country": "IE",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2001-11-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 455,
+  "fields": {
+    "first_name": "Matthias",
+    "last_name": "Schwarzbacher",
+    "country": "SK",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2005-12-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 456,
+  "fields": {
+    "first_name": "James",
+    "last_name": "Shaw",
+    "country": "GB",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1996-06-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 457,
+  "fields": {
+    "first_name": "Colby",
+    "last_name": "Simmons",
+    "country": "US",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2003-10-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 458,
+  "fields": {
+    "first_name": "Georg",
+    "last_name": "Steinhauser",
+    "country": "DE",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2001-10-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 459,
+  "fields": {
+    "first_name": "Harry",
+    "last_name": "Sweeny",
+    "country": "AU",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1998-07-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 460,
+  "fields": {
+    "first_name": "Michael",
+    "last_name": "Valgren",
+    "country": "DK",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1992-02-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 461,
+  "fields": {
+    "first_name": "Marijn",
+    "last_name": "van den Berg",
+    "country": "NL",
+    "team": "EF Education–EasyPost",
+    "birth_date": "1999-07-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 462,
+  "fields": {
+    "first_name": "Jardi Christiaan",
+    "last_name": "van der Lee",
+    "country": "NL",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2001-08-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 463,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "Walker",
+    "country": "GB",
+    "team": "EF Education–EasyPost",
+    "birth_date": "2001-07-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 464,
+  "fields": {
+    "first_name": "Cyril",
+    "last_name": "Barthe",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1996-02-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 465,
+  "fields": {
+    "first_name": "Clément",
+    "last_name": "Berthet",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1997-08-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 466,
+  "fields": {
+    "first_name": "Lewis",
+    "last_name": "Bower",
+    "country": "NZ",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2004-10-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 467,
+  "fields": {
+    "first_name": "Clément",
+    "last_name": "Braz Afonso",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1999-11-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 468,
+  "fields": {
+    "first_name": "Rémi",
+    "last_name": "Cavagna",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1995-08-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 469,
+  "fields": {
+    "first_name": "Ewen",
+    "last_name": "Costiou",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2002-11-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 470,
+  "fields": {
+    "first_name": "Maxime",
+    "last_name": "Decomble",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2005-07-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 471,
+  "fields": {
+    "first_name": "Tom",
+    "last_name": "Donnenwirth",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1998-01-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 472,
+  "fields": {
+    "first_name": "Titouan",
+    "last_name": "Fontaine",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2005-06-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 473,
+  "fields": {
+    "first_name": "David",
+    "last_name": "Gaudu",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1996-10-10"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 474,
+  "fields": {
+    "first_name": "Kevin",
+    "last_name": "Geniets",
+    "country": "LU",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1997-01-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 475,
+  "fields": {
+    "first_name": "Lorenzo",
+    "last_name": "Germani",
+    "country": "IT",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2002-03-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 476,
+  "fields": {
+    "first_name": "Romain",
+    "last_name": "Grégoire",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2003-01-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 477,
+  "fields": {
+    "first_name": "Thibaud",
+    "last_name": "Gruel",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2004-05-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 478,
+  "fields": {
+    "first_name": "Axel",
+    "last_name": "Huens",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2001-09-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 479,
+  "fields": {
+    "first_name": "Johan",
+    "last_name": "Jacobs",
+    "country": "CH",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1997-03-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 480,
+  "fields": {
+    "first_name": "Josh",
+    "last_name": "Kench",
+    "country": "NZ",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2001-05-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 481,
+  "fields": {
+    "first_name": "Olivier",
+    "last_name": "Le Gac",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1993-08-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 482,
+  "fields": {
+    "first_name": "Valentin",
+    "last_name": "Madouas",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1996-07-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 483,
+  "fields": {
+    "first_name": "Guillaume",
+    "last_name": "Martin",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1993-06-09"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 484,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Milan",
+    "country": "IT",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2003-01-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 485,
+  "fields": {
+    "first_name": "Rudy",
+    "last_name": "Molard",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1989-09-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 486,
+  "fields": {
+    "first_name": "Quentin",
+    "last_name": "Pacher",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1992-01-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 487,
+  "fields": {
+    "first_name": "Enzo",
+    "last_name": "Paleni",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2002-05-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 488,
+  "fields": {
+    "first_name": "Paul",
+    "last_name": "Penhoët",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2001-12-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 489,
+  "fields": {
+    "first_name": "Rémy",
+    "last_name": "Rochas",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1996-05-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 490,
+  "fields": {
+    "first_name": "Brieuc",
+    "last_name": "Rolland",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2003-08-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 491,
+  "fields": {
+    "first_name": "Clément",
+    "last_name": "Russo",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "1995-01-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 492,
+  "fields": {
+    "first_name": "Bastien",
+    "last_name": "Tronchon",
+    "country": "FR",
+    "team": "Groupama–FDJ United",
+    "birth_date": "2002-03-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 493,
+  "fields": {
+    "first_name": "Thymen",
+    "last_name": "Arensman",
+    "country": "NL",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1999-12-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 494,
+  "fields": {
+    "first_name": "Andrew",
+    "last_name": "August",
+    "country": "US",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2005-10-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 495,
+  "fields": {
+    "first_name": "Egan",
+    "last_name": "Bernal",
+    "country": "CO",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1997-01-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 496,
+  "fields": {
+    "first_name": "Laurens",
+    "last_name": "De Plus",
+    "country": "BE",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1995-09-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 497,
+  "fields": {
+    "first_name": "Tobias",
+    "last_name": "Foss",
+    "country": "NO",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1997-05-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 498,
+  "fields": {
+    "first_name": "Filippo",
+    "last_name": "Ganna",
+    "country": "IT",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1996-07-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 499,
+  "fields": {
+    "first_name": "Dorian",
+    "last_name": "Godon",
+    "country": "FR",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1996-05-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 500,
+  "fields": {
+    "first_name": "Jack",
+    "last_name": "Haig",
+    "country": "AU",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1993-09-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 501,
+  "fields": {
+    "first_name": "Lucas",
+    "last_name": "Hamilton",
+    "country": "AU",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1996-02-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 502,
+  "fields": {
+    "first_name": "Kim",
+    "last_name": "Heiduk",
+    "country": "DE",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2000-03-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 503,
+  "fields": {
+    "first_name": "Bob",
+    "last_name": "Jungels",
+    "country": "LU",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1992-09-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 504,
+  "fields": {
+    "first_name": "Michał",
+    "last_name": "Kwiatkowski",
+    "country": "PL",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1990-06-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 505,
+  "fields": {
+    "first_name": "Victor",
+    "last_name": "Langellotti",
+    "country": "MC",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1995-06-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 506,
+  "fields": {
+    "first_name": "Axel",
+    "last_name": "Laurance",
+    "country": "FR",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2001-04-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 507,
+  "fields": {
+    "first_name": "Oscar",
+    "last_name": "Onley",
+    "country": "GB",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2002-10-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 508,
+  "fields": {
+    "first_name": "Brandon",
+    "last_name": "Rivera",
+    "country": "CO",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1996-03-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 509,
+  "fields": {
+    "first_name": "Carlos",
+    "last_name": "Rodríguez",
+    "country": "ES",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2001-02-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 510,
+  "fields": {
+    "first_name": "Óscar",
+    "last_name": "Rodríguez",
+    "country": "ES",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1995-05-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 511,
+  "fields": {
+    "first_name": "Magnus",
+    "last_name": "Sheffield",
+    "country": "US",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2002-04-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 512,
+  "fields": {
+    "first_name": "Artem",
+    "last_name": "Shmidt",
+    "country": "US",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2004-01-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 513,
+  "fields": {
+    "first_name": "Embret",
+    "last_name": "Svestad-Bårdseng",
+    "country": "NO",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2002-09-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 514,
+  "fields": {
+    "first_name": "Ben",
+    "last_name": "Swift",
+    "country": "GB",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1987-11-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 515,
+  "fields": {
+    "first_name": "Connor",
+    "last_name": "Swift",
+    "country": "GB",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1995-10-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 516,
+  "fields": {
+    "first_name": "Joshua",
+    "last_name": "Tarling",
+    "country": "GB",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2004-02-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 517,
+  "fields": {
+    "first_name": "Ben",
+    "last_name": "Turner",
+    "country": "GB",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1999-05-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 518,
+  "fields": {
+    "first_name": "Kévin",
+    "last_name": "Vauquelin",
+    "country": "FR",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2001-04-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 519,
+  "fields": {
+    "first_name": "Samuel",
+    "last_name": "Watson",
+    "country": "GB",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2001-09-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 520,
+  "fields": {
+    "first_name": "Sam",
+    "last_name": "Welsford",
+    "country": "AU",
+    "team": "Ineos Grenadiers",
+    "birth_date": "1996-01-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 521,
+  "fields": {
+    "first_name": "Peter",
+    "last_name": "Øxenberg",
+    "country": "DK",
+    "team": "Ineos Grenadiers",
+    "birth_date": "2005-10-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 522,
+  "fields": {
+    "first_name": "Bryan",
+    "last_name": "Coquard",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1992-04-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 523,
+  "fields": {
+    "first_name": "Ion",
+    "last_name": "Izagirre",
+    "country": "ES",
+    "team": "Cofidis",
+    "birth_date": "1989-02-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 524,
+  "fields": {
+    "first_name": "Dylan",
+    "last_name": "Teuns",
+    "country": "BE",
+    "team": "Cofidis",
+    "birth_date": "1992-03-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 525,
+  "fields": {
+    "first_name": "Benjamin",
+    "last_name": "Thomas",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1995-09-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 526,
+  "fields": {
+    "first_name": "Piet",
+    "last_name": "Allegaert",
+    "country": "BE",
+    "team": "Cofidis",
+    "birth_date": "1995-01-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 527,
+  "fields": {
+    "first_name": "Stanisław",
+    "last_name": "Aniołkowski",
+    "country": "PL",
+    "team": "Cofidis",
+    "birth_date": "1997-01-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 528,
+  "fields": {
+    "first_name": "Alex",
+    "last_name": "Aranburu",
+    "country": "ES",
+    "team": "Cofidis",
+    "birth_date": "1995-09-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 529,
+  "fields": {
+    "first_name": "Jenthe",
+    "last_name": "Biermans",
+    "country": "BE",
+    "team": "Cofidis",
+    "birth_date": "1995-10-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 530,
+  "fields": {
+    "first_name": "Emanuel",
+    "last_name": "Buchmann",
+    "country": "DE",
+    "team": "Cofidis",
+    "birth_date": "1992-11-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 531,
+  "fields": {
+    "first_name": "Simon",
+    "last_name": "Carr",
+    "country": "GB",
+    "team": "Cofidis",
+    "birth_date": "1998-08-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 532,
+  "fields": {
+    "first_name": "Camille",
+    "last_name": "Charret",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "2006-07-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 533,
+  "fields": {
+    "first_name": "Nicolas",
+    "last_name": "Debeaumarché",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1998-02-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 534,
+  "fields": {
+    "first_name": "Valentin",
+    "last_name": "Ferron",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1998-02-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 535,
+  "fields": {
+    "first_name": "Milan",
+    "last_name": "Fretin",
+    "country": "BE",
+    "team": "Cofidis",
+    "birth_date": "2001-03-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 536,
+  "fields": {
+    "first_name": "Clément",
+    "last_name": "Izquierdo",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "2002-02-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 537,
+  "fields": {
+    "first_name": "Yaël",
+    "last_name": "Joalland",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "2000-09-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 538,
+  "fields": {
+    "first_name": "Alex",
+    "last_name": "Kirsch",
+    "country": "LU",
+    "team": "Cofidis",
+    "birth_date": "1992-06-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 539,
+  "fields": {
+    "first_name": "Oliver",
+    "last_name": "Knight",
+    "country": "GB",
+    "team": "Cofidis",
+    "birth_date": "2001-01-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 540,
+  "fields": {
+    "first_name": "Jan",
+    "last_name": "Maas",
+    "country": "NL",
+    "team": "Cofidis",
+    "birth_date": "1996-02-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 541,
+  "fields": {
+    "first_name": "Sam",
+    "last_name": "Maisonobe",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "2003-09-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 542,
+  "fields": {
+    "first_name": "Jamie",
+    "last_name": "Meehan",
+    "country": "AU",
+    "team": "Cofidis",
+    "birth_date": "2003-09-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 543,
+  "fields": {
+    "first_name": "Sylvain",
+    "last_name": "Moniquet",
+    "country": "BE",
+    "team": "Cofidis",
+    "birth_date": "1998-01-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 544,
+  "fields": {
+    "first_name": "Paul",
+    "last_name": "Ourselin",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1994-04-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 545,
+  "fields": {
+    "first_name": "Hugo",
+    "last_name": "Page",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "2001-07-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 546,
+  "fields": {
+    "first_name": "Alexis",
+    "last_name": "Renard",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1999-06-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 547,
+  "fields": {
+    "first_name": "Ludovic",
+    "last_name": "Robeet",
+    "country": "BE",
+    "team": "Cofidis",
+    "birth_date": "1994-05-22"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 548,
+  "fields": {
+    "first_name": "Louis",
+    "last_name": "Rouland",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "2002-10-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 549,
+  "fields": {
+    "first_name": "Sergio",
+    "last_name": "Samitier",
+    "country": "ES",
+    "team": "Cofidis",
+    "birth_date": "1995-08-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 550,
+  "fields": {
+    "first_name": "Damien",
+    "last_name": "Touzé",
+    "country": "FR",
+    "team": "Cofidis",
+    "birth_date": "1996-07-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 551,
+  "fields": {
+    "first_name": "Edoardo",
+    "last_name": "Zamperini",
+    "country": "IT",
+    "team": "Cofidis",
+    "birth_date": "2003-03-19"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 552,
+  "fields": {
+    "first_name": "Julian",
+    "last_name": "Alaphilippe",
+    "country": "FR",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1992-06-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 553,
+  "fields": {
+    "first_name": "Will",
+    "last_name": "Barta",
+    "country": "US",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1996-01-04"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 554,
+  "fields": {
+    "first_name": "Marco",
+    "last_name": "Brenner",
+    "country": "DE",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2002-08-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 555,
+  "fields": {
+    "first_name": "Arvid",
+    "last_name": "de Kleijn",
+    "country": "NL",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1994-03-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 556,
+  "fields": {
+    "first_name": "Robin",
+    "last_name": "Donzé",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2003-11-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 557,
+  "fields": {
+    "first_name": "Jacob",
+    "last_name": "Eriksson",
+    "country": "SE",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1999-10-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 558,
+  "fields": {
+    "first_name": "Robin",
+    "last_name": "Froidevaux",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1998-10-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 559,
+  "fields": {
+    "first_name": "Marco",
+    "last_name": "Haller",
+    "country": "AT",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1991-04-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 560,
+  "fields": {
+    "first_name": "Marc",
+    "last_name": "Hirschi",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1998-08-24"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 561,
+  "fields": {
+    "first_name": "Petr",
+    "last_name": "Kelemen",
+    "country": "CZ",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2000-11-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 562,
+  "fields": {
+    "first_name": "Arthur",
+    "last_name": "Kluckers",
+    "country": "LU",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2000-03-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 563,
+  "fields": {
+    "first_name": "Sebastian",
+    "last_name": "Kolze Changizi",
+    "country": "DE",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2000-12-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 564,
+  "fields": {
+    "first_name": "Stefan",
+    "last_name": "Küng",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1993-11-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 565,
+  "fields": {
+    "first_name": "Fabian",
+    "last_name": "Lienhard",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1993-09-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 566,
+  "fields": {
+    "first_name": "Marius",
+    "last_name": "Mayrhofer",
+    "country": "DE",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2000-09-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 567,
+  "fields": {
+    "first_name": "Aivaras",
+    "last_name": "Mikutis",
+    "country": "LT",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2002-09-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 568,
+  "fields": {
+    "first_name": "Luca",
+    "last_name": "Mozzato",
+    "country": "IT",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1998-02-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 569,
+  "fields": {
+    "first_name": "Rick",
+    "last_name": "Pluimers",
+    "country": "NL",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2000-12-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 570,
+  "fields": {
+    "first_name": "Mathys",
+    "last_name": "Rondel",
+    "country": "FR",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2003-09-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 571,
+  "fields": {
+    "first_name": "Michael",
+    "last_name": "Storer",
+    "country": "AU",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1997-02-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 572,
+  "fields": {
+    "first_name": "Florian",
+    "last_name": "Stork",
+    "country": "DE",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1997-04-27"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 573,
+  "fields": {
+    "first_name": "Joel",
+    "last_name": "Suter",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1998-10-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 574,
+  "fields": {
+    "first_name": "Roland",
+    "last_name": "Thalmann",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1993-08-05"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 575,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Trentin",
+    "country": "IT",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1989-08-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 576,
+  "fields": {
+    "first_name": "Yannis",
+    "last_name": "Voisard",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1998-07-26"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 577,
+  "fields": {
+    "first_name": "Larry",
+    "last_name": "Warbasse",
+    "country": "US",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1990-06-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 578,
+  "fields": {
+    "first_name": "Fabian",
+    "last_name": "Weiss",
+    "country": "CH",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2002-04-11"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 579,
+  "fields": {
+    "first_name": "Hannes",
+    "last_name": "Wilksch",
+    "country": "DE",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "2001-10-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 580,
+  "fields": {
+    "first_name": "Luc",
+    "last_name": "Wirtgen",
+    "country": "LU",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1998-07-07"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 581,
+  "fields": {
+    "first_name": "Maikel",
+    "last_name": "Zijlaard",
+    "country": "NL",
+    "team": "Tudor Pro Cycling Team",
+    "birth_date": "1999-06-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 582,
+  "fields": {
+    "first_name": "Xabier",
+    "last_name": "Azparren Irurzun",
+    "country": "ES",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1999-11-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 583,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Badilatti",
+    "country": "CH",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1992-07-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 584,
+  "fields": {
+    "first_name": "Sjoerd",
+    "last_name": "Bax",
+    "country": "NL",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1996-01-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 585,
+  "fields": {
+    "first_name": "Sam",
+    "last_name": "Bennett",
+    "country": "IE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1990-10-16"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 586,
+  "fields": {
+    "first_name": "Walter",
+    "last_name": "Calzoni",
+    "country": "IT",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2001-08-08"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 587,
+  "fields": {
+    "first_name": "Marcel",
+    "last_name": "Camprubi Pijuan",
+    "country": "ES",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2001-09-15"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 588,
+  "fields": {
+    "first_name": "Fabio",
+    "last_name": "Christen",
+    "country": "CH",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2002-06-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 589,
+  "fields": {
+    "first_name": "Aimé",
+    "last_name": "De Gendt",
+    "country": "BE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1994-06-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 590,
+  "fields": {
+    "first_name": "David",
+    "last_name": "De La Cruz Melgarejo",
+    "country": "ES",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1989-05-06"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 591,
+  "fields": {
+    "first_name": "Mark",
+    "last_name": "Donovan",
+    "country": "GB",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1999-04-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 592,
+  "fields": {
+    "first_name": "Edward",
+    "last_name": "Dunbar",
+    "country": "IE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1996-09-01"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 593,
+  "fields": {
+    "first_name": "Frederik",
+    "last_name": "Frison",
+    "country": "BE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1992-07-28"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 594,
+  "fields": {
+    "first_name": "Thomas",
+    "last_name": "Gloag",
+    "country": "GB",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2001-09-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 595,
+  "fields": {
+    "first_name": "David",
+    "last_name": "Gonzalez Lopez",
+    "country": "ES",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1996-02-21"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 596,
+  "fields": {
+    "first_name": "Chris",
+    "last_name": "Harper",
+    "country": "AU",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1994-11-23"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 597,
+  "fields": {
+    "first_name": "Quinten",
+    "last_name": "Hermans",
+    "country": "BE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1995-07-29"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 598,
+  "fields": {
+    "first_name": "Emmanuel",
+    "last_name": "Houcou",
+    "country": "FR",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2003-02-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 599,
+  "fields": {
+    "first_name": "Damien",
+    "last_name": "Howson",
+    "country": "AU",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1992-08-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 600,
+  "fields": {
+    "first_name": "Emils",
+    "last_name": "Liepins",
+    "country": "LV",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1992-10-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 601,
+  "fields": {
+    "first_name": "Kamil",
+    "last_name": "Malecki",
+    "country": "PL",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1996-01-02"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 602,
+  "fields": {
+    "first_name": "Xandro",
+    "last_name": "Meurisse",
+    "country": "BE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1992-01-31"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 603,
+  "fields": {
+    "first_name": "Matteo",
+    "last_name": "Moschetti",
+    "country": "IT",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1996-08-14"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 604,
+  "fields": {
+    "first_name": "Nicolò",
+    "last_name": "Parisini",
+    "country": "IT",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2000-04-25"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 605,
+  "fields": {
+    "first_name": "Joseph",
+    "last_name": "Pidcock",
+    "country": "GB",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "2002-03-20"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 606,
+  "fields": {
+    "first_name": "Thomas",
+    "last_name": "Pidcock",
+    "country": "GB",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1999-07-30"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 607,
+  "fields": {
+    "first_name": "Milan",
+    "last_name": "Vader",
+    "country": "NL",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1996-02-18"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 608,
+  "fields": {
+    "first_name": "Brent",
+    "last_name": "Van Moer",
+    "country": "BE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1998-01-12"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 609,
+  "fields": {
+    "first_name": "Harm",
+    "last_name": "Vanhoucke",
+    "country": "BE",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1997-06-17"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 610,
+  "fields": {
+    "first_name": "Fred",
+    "last_name": "Wright",
+    "country": "GB",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1999-06-13"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 611,
+  "fields": {
+    "first_name": "Nickolas",
+    "last_name": "Zukowsky",
+    "country": "CA",
+    "team": "Q36.5 Pro Cycling Team",
+    "birth_date": "1998-06-03"
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 612,
+  "fields": {
+    "first_name": "Thomas",
+    "last_name": "Bonnet",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 613,
+  "fields": {
+    "first_name": "Geoffrey",
+    "last_name": "Bouchard",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 614,
+  "fields": {
+    "first_name": "Rayan",
+    "last_name": "Boulahoite",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 615,
+  "fields": {
+    "first_name": "Nicolas",
+    "last_name": "Breuillard",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 616,
+  "fields": {
+    "first_name": "Alexys",
+    "last_name": "Brunel",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 617,
+  "fields": {
+    "first_name": "Mathieu",
+    "last_name": "Burgaudeau",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 618,
+  "fields": {
+    "first_name": "Florian",
+    "last_name": "Dauphin",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 619,
+  "fields": {
+    "first_name": "Joris",
+    "last_name": "Delbove",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 620,
+  "fields": {
+    "first_name": "Alexandre",
+    "last_name": "Delettre",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 621,
+  "fields": {
+    "first_name": "Fabien",
+    "last_name": "Doubey",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 622,
+  "fields": {
+    "first_name": "Sandy",
+    "last_name": "Dujardin",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 623,
+  "fields": {
+    "first_name": "Thomas",
+    "last_name": "Gachignard",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 624,
+  "fields": {
+    "first_name": "Fabien",
+    "last_name": "Grellier",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 625,
+  "fields": {
+    "first_name": "Thibault",
+    "last_name": "Guernalec",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 626,
+  "fields": {
+    "first_name": "Emilien",
+    "last_name": "Jeannière",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 627,
+  "fields": {
+    "first_name": "Jordan",
+    "last_name": "Jegat",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 628,
+  "fields": {
+    "first_name": "Alan",
+    "last_name": "Jousseaume",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 629,
+  "fields": {
+    "first_name": "Mathis",
+    "last_name": "Le Berre",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 630,
+  "fields": {
+    "first_name": "Samuel",
+    "last_name": "Leroux",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 631,
+  "fields": {
+    "first_name": "Théo",
+    "last_name": "Lévêque",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 632,
+  "fields": {
+    "first_name": "Lorrenzo",
+    "last_name": "Manzin",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 633,
+  "fields": {
+    "first_name": "Nicola",
+    "last_name": "Marcerou",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 634,
+  "fields": {
+    "first_name": "Valentin",
+    "last_name": "Retailleau",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 635,
+  "fields": {
+    "first_name": "Jason",
+    "last_name": "Tesson",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 636,
+  "fields": {
+    "first_name": "Pierre",
+    "last_name": "Thierry",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 637,
+  "fields": {
+    "first_name": "Anthony",
+    "last_name": "Turgis",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 638,
+  "fields": {
+    "first_name": "Baptiste",
+    "last_name": "Vadic",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.rider",
+  "pk": 639,
+  "fields": {
+    "first_name": "Mattéo",
+    "last_name": "Vercher",
+    "country": "FR",
+    "team": "Team TotalEnergies",
+    "birth_date": null
+  }
+},
+{
+  "model": "races.onedayracetranslation",
+  "pk": 2,
+  "fields": {
+    "race": 1,
+    "language": "en",
+    "profile_text": ""
+  }
+},
+{
+  "model": "races.onedayracetranslation",
+  "pk": 3,
+  "fields": {
+    "race": 1,
+    "language": "it",
+    "profile_text": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 1,
+  "fields": {
+    "code": "WINNER_UNIT",
+    "name": "Vainqueur",
+    "description": "Tu as terminé 1er sur une course/étape.",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 2,
+  "fields": {
+    "code": "PODIUM_UNIT",
+    "name": "Podium",
+    "description": "Tu as terminé dans le top 3 sur une course/étape.",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 3,
+  "fields": {
+    "code": "TOP5_UNIT",
+    "name": "Top 5",
+    "description": "Tu as terminé dans le top 5 sur une course/étape.",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 4,
+  "fields": {
+    "code": "SEASON_FINISHER_2026",
+    "name": "Saison complète",
+    "description": "Tu as participé à toutes les courses d'un jour + au moins 1 étape de chaque tour (2026).",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 5,
+  "fields": {
+    "code": "MONUMENT_FINISHER_2026",
+    "name": "Monuments",
+    "description": "Tu as participé aux 5 Monuments (2026).",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 6,
+  "fields": {
+    "code": "GRANDTOUR_FINISHER_2026",
+    "name": "Grands Tours",
+    "description": "Tu as participé aux 3 Grands Tours (2026).",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 7,
+  "fields": {
+    "code": "FIRST_UNIT_PLAYED_2026",
+    "name": "Première participation",
+    "description": "Tu as validé au moins un Top5 sur la saison 2026.",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 8,
+  "fields": {
+    "code": "WIN_UNIT",
+    "name": "Vainqueur",
+    "description": "Tu as terminé 1er sur une course/étape.",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.badge",
+  "pk": 9,
+  "fields": {
+    "code": "FIRST_BET",
+    "name": "Premier prono",
+    "description": "Tu as validé ton tout premier Top 5.",
+    "icon": ""
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "badge": 1,
+    "awarded_at": "2025-12-31T18:01:56.286Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "badge": 2,
+    "awarded_at": "2025-12-31T18:01:56.286Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 3,
+  "fields": {
+    "user": 7,
+    "badge": 2,
+    "awarded_at": "2025-12-31T18:01:56.287Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "badge": 2,
+    "awarded_at": "2025-12-31T18:01:56.287Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.287Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 6,
+  "fields": {
+    "user": 7,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.287Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 7,
+  "fields": {
+    "user": 2,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.288Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 8,
+  "fields": {
+    "user": 4,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.288Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 9,
+  "fields": {
+    "user": 3,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.288Z",
+    "context": {
+      "kind": "one_day",
+      "unit_id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 10,
+  "fields": {
+    "user": 3,
+    "badge": 2,
+    "awarded_at": "2025-12-31T18:01:56.290Z",
+    "context": {
+      "kind": "stage",
+      "unit_id": 142
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 11,
+  "fields": {
+    "user": 5,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.291Z",
+    "context": {
+      "kind": "stage",
+      "unit_id": 142
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 12,
+  "fields": {
+    "user": 6,
+    "badge": 3,
+    "awarded_at": "2025-12-31T18:01:56.291Z",
+    "context": {
+      "kind": "stage",
+      "unit_id": 142
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "badge": 8,
+    "awarded_at": "2026-01-02T11:26:09.545Z",
+    "context": {
+      "type": "one_day",
+      "id": 22
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 14,
+  "fields": {
+    "user": 8,
+    "badge": 8,
+    "awarded_at": "2026-01-02T11:26:32.001Z",
+    "context": {
+      "type": "stage",
+      "id": 144
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 15,
+  "fields": {
+    "user": 2,
+    "badge": 7,
+    "awarded_at": "2026-01-02T11:37:05.299Z",
+    "context": {
+      "year": 2026
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 16,
+  "fields": {
+    "user": 10,
+    "badge": 9,
+    "awarded_at": "2026-01-02T11:40:32.345Z",
+    "context": {
+      "type": "global"
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 17,
+  "fields": {
+    "user": 10,
+    "badge": 7,
+    "awarded_at": "2026-01-02T11:40:32.348Z",
+    "context": {
+      "year": 2026
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "badge": 7,
+    "awarded_at": "2026-01-03T14:11:43.485Z",
+    "context": {
+      "year": 2026
+    }
+  }
+},
+{
+  "model": "badges.userbadge",
+  "pk": 19,
+  "fields": {
+    "user": 2,
+    "badge": 8,
+    "awarded_at": "2026-01-12T11:16:07.737Z",
+    "context": {
+      "type": "stage",
+      "id": 142
+    }
+  }
+}
+]
