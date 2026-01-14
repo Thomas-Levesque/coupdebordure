@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 21:33+0100\n"
+"POT-Creation-Date: 2026-01-14 21:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -315,6 +315,10 @@ msgstr ""
 #: templates/accounts/password_reset_complete.html:6
 #: templates/pages/home.html:9
 msgid "Se connecter"
+msgstr ""
+
+#: templates/accounts/login.html:39
+msgid "Mot de passe oublié ?"
 msgstr ""
 
 #: templates/accounts/password_reset_complete.html:5

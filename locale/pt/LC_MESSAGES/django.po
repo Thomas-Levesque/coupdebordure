@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 21:33+0100\n"
+"POT-Creation-Date: 2026-01-14 21:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -331,6 +331,12 @@ msgstr "Palavra-passe"
 msgid "Se connecter"
 msgstr "Iniciar sessão"
 
+#: templates/accounts/login.html:39
+#, fuzzy
+#| msgid "Mot de passe oublié"
+msgid "Mot de passe oublié ?"
+msgstr "Esqueceu a palavra-passe?"
+
 #: templates/accounts/password_reset_complete.html:5
 #, fuzzy
 #| msgid "Mot de passe"
@@ -356,7 +362,8 @@ msgid ""
 "Si un compte existe avec cet email, tu vas recevoir un lien de "
 "réinitialisation."
 msgstr ""
-"Se existir uma conta com este email, receberás um link para redefinir a palavra-passe."
+"Se existir uma conta com este email, receberás um link para redefinir a "
+"palavra-passe."
 
 #: templates/accounts/password_reset_form.html:3
 msgid "Mot de passe oublié"
@@ -367,7 +374,8 @@ msgid ""
 "Entre ton email : si un compte existe, on t’envoie un lien de "
 "réinitialisation."
 msgstr ""
-"Introduz o teu email: se existir uma conta, enviaremos um link para redefinir a palavra-passe."
+"Introduz o teu email: se existir uma conta, enviaremos um link para "
+"redefinir a palavra-passe."
 
 #: templates/accounts/password_reset_form.html:9
 #, fuzzy

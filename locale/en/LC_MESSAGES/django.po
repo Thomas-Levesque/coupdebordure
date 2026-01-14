@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Coup de Bordure\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 21:33+0100\n"
+"POT-Creation-Date: 2026-01-14 21:56+0100\n"
 "PO-Revision-Date: 2026-01-07 10:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -328,6 +328,12 @@ msgstr "Password"
 msgid "Se connecter"
 msgstr "Log in"
 
+#: templates/accounts/login.html:39
+#, fuzzy
+#| msgid "Mot de passe oublié"
+msgid "Mot de passe oublié ?"
+msgstr "Forgot password"
+
 #: templates/accounts/password_reset_complete.html:5
 #, fuzzy
 #| msgid "Mot de passe"
@@ -364,7 +370,14 @@ msgid ""
 "Entre ton email : si un compte existe, on t’envoie un lien de "
 "réinitialisation."
 msgstr ""
-"Enter your email address: if an account exists, we will send you a password reset link."
+"Enter your email address: if an account exists, we will send you a password "
+"reset link."
+
+#: templates/accounts/password_reset_form.html:9
+#, fuzzy
+#| msgid "Envoyer"
+msgid "Envoyer le lien"
+msgstr "Send"
 
 #: templates/accounts/signup.html:3 templates/accounts/signup.html:6
 #: templates/base.html:70
