@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Coup de Bordure\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 10:32+0100\n"
+"POT-Creation-Date: 2026-01-14 21:33+0100\n"
 "PO-Revision-Date: 2026-01-07 10:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accounts/views.py:30
+#: accounts/views.py:58
 msgid "Bienvenue sur Coup de Bordure !"
 msgstr "¡Bienvenido/a a Coup de Bordure!"
 
-#: accounts/views.py:32
+#: accounts/views.py:60
 #, python-format
 msgid ""
 "Bonjour %(username)s,\n"
@@ -37,11 +37,11 @@ msgstr ""
 "\n"
 "¡Hasta pronto!"
 
-#: accounts/views.py:50
+#: accounts/views.py:78
 msgid "Confirme ton email — Coup de Bordure"
 msgstr "Confirma tu correo — Coup de Bordure"
 
-#: accounts/views.py:52
+#: accounts/views.py:80
 #, python-format
 msgid ""
 "Bonjour %(username)s,\n"
@@ -52,36 +52,44 @@ msgstr ""
 "\n"
 "Haz clic en este enlace para confirmar tu correo electrónico:\n"
 
-#: accounts/views.py:62
+#: accounts/views.py:90
 msgid "Compte créé ✅ Confirme ton email (voir console) puis connecte-toi."
-msgstr "Cuenta creada ✅ Confirma tu correo (ver consola) y luego inicia sesión."
+msgstr ""
+"Cuenta creada ✅ Confirma tu correo (ver consola) y luego inicia sesión."
 
-#: coupdebordure/settings.py:86
+#: coupdebordure/settings.py:117
 msgid "Français"
 msgstr "Francés"
 
-#: coupdebordure/settings.py:87
+#: coupdebordure/settings.py:118
 msgid "English"
 msgstr "Inglés"
 
-#: coupdebordure/settings.py:88
+#: coupdebordure/settings.py:119
 msgid "Español"
 msgstr "Español"
 
-#: coupdebordure/settings.py:89
+#: coupdebordure/settings.py:120
 msgid "Nederlands"
 msgstr "Neerlandés"
 
-#: coupdebordure/settings.py:90
+#: coupdebordure/settings.py:121
 msgid "Deutsch"
 msgstr "Alemán"
+
+#: coupdebordure/settings.py:122
+msgid "Italiano"
+msgstr ""
+
+#: coupdebordure/settings.py:123
+msgid "Português"
+msgstr ""
 
 #: templates/accounts/_units_list.html:14
 msgid "Étape"
 msgstr "Etapa"
 
 #: templates/accounts/_units_list.html:19 templates/races/unit_detail.html:19
-#: templates/stats/my_stats.html:19
 msgid "Départ"
 msgstr "Salida"
 
@@ -93,7 +101,7 @@ msgstr "Finalizada"
 msgid "Verrouillée"
 msgstr "Bloqueada"
 
-#: templates/accounts/_units_list.html:31 templates/accounts/dashboard.html:35
+#: templates/accounts/_units_list.html:31 templates/accounts/dashboard.html:46
 msgid "À venir"
 msgstr "Próximamente"
 
@@ -162,7 +170,6 @@ msgid "Mon compte"
 msgstr "Mi cuenta"
 
 #: templates/accounts/account.html:12 templates/races/unit_detail.html:34
-#: templates/stats/my_stats.html:34
 msgid "Profil"
 msgstr "Perfil"
 
@@ -178,52 +185,48 @@ msgstr "Fecha de nacimiento"
 msgid "Pays"
 msgstr "País"
 
-#: templates/accounts/account.html:29 templates/accounts/signup.html:48
-msgid "Langue"
-msgstr "Idioma"
-
-#: templates/accounts/account.html:30 templates/accounts/signup.html:53
+#: templates/accounts/account.html:37 templates/accounts/signup.html:53
 msgid "Équipe préférée"
 msgstr "Equipo favorito"
 
-#: templates/accounts/account.html:32 templates/accounts/signup.html:58
+#: templates/accounts/account.html:39 templates/accounts/signup.html:58
 msgid "Coureur préféré"
 msgstr "Corredor favorito"
 
-#: templates/accounts/account.html:33 templates/accounts/signup.html:63
+#: templates/accounts/account.html:40 templates/accounts/signup.html:63
 msgid "Marque de vélo"
 msgstr "Marca de bicicleta"
 
-#: templates/accounts/account.html:35 templates/accounts/signup.html:68
+#: templates/accounts/account.html:42 templates/accounts/signup.html:68
 msgid "Avatar (liste)"
 msgstr "Avatar (lista)"
 
-#: templates/accounts/account.html:36
+#: templates/accounts/account.html:43
 msgid "Photo (upload)"
 msgstr "Foto (subir)"
 
-#: templates/accounts/account.html:37
+#: templates/accounts/account.html:44
 msgid "Badge affiché"
 msgstr "Insignia mostrada"
 
-#: templates/accounts/account.html:40 templates/accounts/account.html:78
+#: templates/accounts/account.html:47 templates/accounts/account.html:85
 #: templates/partials/_cookie_banner.html:67
 msgid "Enregistrer"
 msgstr "Guardar"
 
-#: templates/accounts/account.html:46
+#: templates/accounts/account.html:53
 msgid "Notifications"
 msgstr "Notificaciones"
 
-#: templates/accounts/account.html:50 templates/accounts/signup.html:35
+#: templates/accounts/account.html:57 templates/accounts/signup.html:35
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: templates/accounts/account.html:84
+#: templates/accounts/account.html:91
 msgid "Push (PWA)"
 msgstr "Push (PWA)"
 
-#: templates/accounts/account.html:86
+#: templates/accounts/account.html:93
 msgid ""
 "Active les notifications push sur cet appareil (nécessite l’installation PWA "
 "+ permission navigateur)."
@@ -231,27 +234,27 @@ msgstr ""
 "Activa las notificaciones push en este dispositivo (requiere instalar la PWA "
 "y permiso del navegador)."
 
-#: templates/accounts/account.html:89
+#: templates/accounts/account.html:96
 msgid "Activer notifications push"
 msgstr "Activar notificaciones push"
 
-#: templates/accounts/account.html:96
+#: templates/accounts/account.html:103
 msgid "Ma photo"
 msgstr "Mi foto"
 
-#: templates/accounts/account.html:105 templates/leagues/leagues_home.html:11
+#: templates/accounts/account.html:112 templates/leagues/leagues_home.html:11
 msgid "Mes ligues"
 msgstr "Mis ligas"
 
-#: templates/accounts/account.html:110
+#: templates/accounts/account.html:117
 msgid "Aucune ligue."
 msgstr "Ninguna liga."
 
-#: templates/accounts/account.html:114
+#: templates/accounts/account.html:121
 msgid "Mes badges"
 msgstr "Mis insignias"
 
-#: templates/accounts/account.html:127
+#: templates/accounts/account.html:130
 msgid "Aucun badge pour le moment."
 msgstr "Aún no tienes insignias."
 
@@ -264,7 +267,7 @@ msgstr "Panel"
 msgid "Bonjour"
 msgstr "Hola"
 
-#: templates/accounts/dashboard.html:13
+#: templates/accounts/dashboard.html:13 templates/stats/my_stats.html:21
 msgid "Score total"
 msgstr "Puntuación total"
 
@@ -272,56 +275,103 @@ msgstr "Puntuación total"
 msgid "Badges récents"
 msgstr "Insignias recientes"
 
-#: templates/accounts/dashboard.html:25
+#: templates/accounts/dashboard.html:36
 msgid "Aucun badge pour le moment"
 msgstr "Aún no hay insignias"
 
-#: templates/accounts/dashboard.html:31
+#: templates/accounts/dashboard.html:42
 msgid "Toutes les courses"
 msgstr "Todas las carreras"
 
-#: templates/accounts/dashboard.html:33
+#: templates/accounts/dashboard.html:44
 msgid ""
 "À venir / Verrouillées / Terminées — avec ton statut de Top5 et tes scores."
 msgstr ""
-"Próximas / Bloqueadas / Finalizadas — con tu estado de Top 5 y tus puntuaciones."
+"Próximas / Bloqueadas / Finalizadas — con tu estado de Top 5 y tus "
+"puntuaciones."
 
-#: templates/accounts/dashboard.html:36
+#: templates/accounts/dashboard.html:47
 msgid "Aucune course/étape à venir."
 msgstr "No hay carreras/etapas próximas."
 
-#: templates/accounts/dashboard.html:39
+#: templates/accounts/dashboard.html:50
 msgid "Verrouillées"
 msgstr "Bloqueadas"
 
-#: templates/accounts/dashboard.html:40
+#: templates/accounts/dashboard.html:51
 msgid "Aucune course/étape verrouillée."
 msgstr "No hay carreras/etapas bloqueadas."
 
-#: templates/accounts/dashboard.html:43
+#: templates/accounts/dashboard.html:54
 msgid "Terminées"
 msgstr "Finalizadas"
 
-#: templates/accounts/dashboard.html:44
+#: templates/accounts/dashboard.html:55
 msgid "Aucune course/étape terminée."
 msgstr "No hay carreras/etapas finalizadas."
 
-#: templates/accounts/login.html:3 templates/accounts/login.html:6
+#: templates/accounts/login.html:4 templates/accounts/login.html:7
 #: templates/base.html:69
 msgid "Connexion"
 msgstr "Iniciar sesión"
 
-#: templates/accounts/login.html:18
+#: templates/accounts/login.html:19
 msgid "Pseudo"
 msgstr "Nombre de usuario"
 
-#: templates/accounts/login.html:26 templates/accounts/signup.html:78
+#: templates/accounts/login.html:27 templates/accounts/signup.html:78
 msgid "Mot de passe"
 msgstr "Contraseña"
 
-#: templates/accounts/login.html:33 templates/pages/home.html:9
+#: templates/accounts/login.html:34
+#: templates/accounts/password_reset_complete.html:6
+#: templates/pages/home.html:9
 msgid "Se connecter"
 msgstr "Iniciar sesión"
+
+#: templates/accounts/password_reset_complete.html:5
+#, fuzzy
+#| msgid "Mot de passe"
+msgid "Mot de passe modifié"
+msgstr "Contraseña"
+
+#: templates/accounts/password_reset_confirm.html:6
+#, fuzzy
+#| msgid "Mot de passe"
+msgid "Nouveau mot de passe"
+msgstr "Contraseña"
+
+#: templates/accounts/password_reset_confirm.html:12
+msgid "Mettre à jour"
+msgstr "Actualizar"
+
+#: templates/accounts/password_reset_done.html:4
+msgid "Email envoyé"
+msgstr "Correo enviado"
+
+#: templates/accounts/password_reset_done.html:6
+msgid ""
+"Si un compte existe avec cet email, tu vas recevoir un lien de "
+"réinitialisation."
+msgstr ""
+"Si existe una cuenta con este correo electrónico, recibirás un enlace para restablecer la contraseña."
+
+#: templates/accounts/password_reset_form.html:3
+msgid "Mot de passe oublié"
+msgstr "¿Olvidaste tu contraseña?"
+
+#: templates/accounts/password_reset_form.html:4
+msgid ""
+"Entre ton email : si un compte existe, on t’envoie un lien de "
+"réinitialisation."
+msgstr ""
+"Introduce tu correo electrónico: si existe una cuenta, te enviaremos un enlace para restablecer la contraseña."
+
+#: templates/accounts/password_reset_form.html:9
+#, fuzzy
+#| msgid "Envoyer"
+msgid "Envoyer le lien"
+msgstr "Enviar"
 
 #: templates/accounts/signup.html:3 templates/accounts/signup.html:6
 #: templates/base.html:70
@@ -343,6 +393,10 @@ msgstr "Nombre"
 #: templates/accounts/signup.html:30 templates/leagues/league_create.html:7
 msgid "Nom"
 msgstr "Apellido"
+
+#: templates/accounts/signup.html:48
+msgid "Langue"
+msgstr "Idioma"
 
 #: templates/accounts/signup.html:73
 msgid "Photo de profil (upload)"
@@ -379,7 +433,8 @@ msgstr "Ligas"
 msgid "Déconnexion"
 msgstr "Cerrar sesión"
 
-#: templates/base.html:105
+#: templates/base.html:105 templates/stats/my_stats.html:4
+#: templates/stats/my_stats.html:7
 msgid "Stats"
 msgstr "Estadísticas"
 
@@ -415,15 +470,15 @@ msgstr "Aviso legal"
 msgid "Gérer les cookies"
 msgstr "Gestionar cookies"
 
-#: templates/base.html:139
+#: templates/base.html:141
 msgid "Emplacement pub (sidebar)"
 msgstr "Espacio publicitario (barra lateral)"
 
-#: templates/base.html:163
+#: templates/base.html:169
 msgid "Emplacement pub (haut)"
 msgstr "Espacio publicitario (arriba)"
 
-#: templates/base.html:181
+#: templates/base.html:190
 msgid "Emplacement pub (bas)"
 msgstr "Espacio publicitario (abajo)"
 
@@ -649,7 +704,9 @@ msgstr "Sin conexión"
 
 #: templates/pages/offline.html:7
 msgid "Impossible de contacter le serveur. Réessaie quand tu as du réseau."
-msgstr "No se puede contactar con el servidor. Inténtalo de nuevo cuando tengas conexión."
+msgstr ""
+"No se puede contactar con el servidor. Inténtalo de nuevo cuando tengas "
+"conexión."
 
 #: templates/partials/_cookie_banner.html:10
 msgid "Cookies & confidentialité"
@@ -667,7 +724,8 @@ msgid ""
 msgstr ""
 "\n"
 "            Utilizamos cookies necesarias para el funcionamiento del sitio.\n"
-"            Con tu consentimiento, también podemos usar cookies de medición de audiencia\n"
+"            Con tu consentimiento, también podemos usar cookies de medición "
+"de audiencia\n"
 "            y/o publicitarias.\n"
 "          "
 
@@ -753,7 +811,7 @@ msgstr ""
 msgid "Aucune étape."
 msgstr "No hay etapas."
 
-#: templates/races/unit_detail.html:12 templates/stats/my_stats.html:12
+#: templates/races/unit_detail.html:12
 #, python-format
 msgid ""
 "\n"
@@ -764,129 +822,221 @@ msgstr ""
 "      Vuelta: %(tour_name)s — Tipo: %(stage_type)s\n"
 "    "
 
-#: templates/races/unit_detail.html:25 templates/stats/my_stats.html:25
+#: templates/races/unit_detail.html:25
 msgid "Départ dans"
 msgstr "Salida en"
 
-#: templates/races/unit_detail.html:37 templates/stats/my_stats.html:37
+#: templates/races/unit_detail.html:37
 msgid "profil"
 msgstr "perfil"
 
-#: templates/races/unit_detail.html:52 templates/stats/my_stats.html:52
+#: templates/races/unit_detail.html:52
 msgid "Pronostics verrouillés ✅ (course/étape commencée)"
 msgstr "Pronósticos bloqueados ✅ (carrera/etapa iniciada)"
 
-#: templates/races/unit_detail.html:56 templates/stats/my_stats.html:56
+#: templates/races/unit_detail.html:56
 msgid "Modifier mon Top 5"
 msgstr "Modificar mi Top 5"
 
-#: templates/races/unit_detail.html:58 templates/stats/my_stats.html:58
+#: templates/races/unit_detail.html:58
 msgid "Faire mon Top 5"
 msgstr "Hacer mi Top 5"
 
-#: templates/races/unit_detail.html:65 templates/stats/my_stats.html:65
+#: templates/races/unit_detail.html:65
 msgid "Mon prono (Top 5)"
 msgstr "Mi pronóstico (Top 5)"
 
-#: templates/races/unit_detail.html:77 templates/stats/my_stats.html:77
-#, python-format
-msgid ""
-"\n"
-"      Validé le : %(submitted)s\n"
-"    "
+#: templates/races/unit_detail.html:97
+msgid "Validé le"
 msgstr ""
-"\n"
-"      Validado el: %(submitted)s\n"
-"    "
 
-#: templates/races/unit_detail.html:81 templates/stats/my_stats.html:81
+#: templates/races/unit_detail.html:99
 msgid "Score actuel"
 msgstr "Puntuación actual"
 
-#: templates/races/unit_detail.html:85 templates/stats/my_stats.html:85
+#: templates/races/unit_detail.html:103
 msgid "Aucun prono validé pour le moment."
 msgstr "Aún no hay pronóstico validado."
 
-#: templates/races/unit_detail.html:88 templates/stats/my_stats.html:88
+#: templates/races/unit_detail.html:107
 msgid "Coureurs engagés (Top 10 cotes)"
 msgstr "Corredores participantes (Top 10 cuotas)"
 
-#: templates/races/unit_detail.html:95 templates/stats/my_stats.html:95
-#, python-format
-msgid ""
-"\n"
-"          %(rider)s — cote %(odds)s\n"
-"        "
+#: templates/races/unit_detail.html:116 templates/races/unit_detail.html:138
+msgid "cote"
 msgstr ""
-"\n"
-"          %(rider)s — cuota %(odds)s\n"
-"        "
 
-#: templates/races/unit_detail.html:105 templates/stats/my_stats.html:105
-#, python-format
+#: templates/races/unit_detail.html:125
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "          Voir tous les coureurs (%(n)s)\n"
+#| "        "
 msgid ""
 "\n"
-"          Voir tous les coureurs (%(n)s)\n"
+"            Voir tous les coureurs (%(n)s)\n"
+"          "
+msgid_plural ""
+"\n"
+"            Voir tous les coureurs (%(n)s)\n"
+"          "
+msgstr[0] ""
+"\n"
+"          Ver todos los corredores (%(n)s)\n"
 "        "
-msgstr ""
+msgstr[1] ""
 "\n"
 "          Ver todos los corredores (%(n)s)\n"
 "        "
 
-#: templates/races/unit_detail.html:113 templates/stats/my_stats.html:113
-#, python-format
-msgid ""
-"\n"
-"              %(rider)s — cote %(odds)s\n"
-"            "
-msgstr ""
-"\n"
-"              %(rider)s — cuota %(odds)s\n"
-"            "
-
-#: templates/races/unit_detail.html:123 templates/stats/my_stats.html:123
+#: templates/races/unit_detail.html:146
 msgid "Aucun engagé."
 msgstr "No hay participantes."
 
-#: templates/races/unit_detail.html:126 templates/stats/my_stats.html:126
+#: templates/races/unit_detail.html:150
 msgid "Résultats"
 msgstr "Resultados"
 
-#: templates/races/unit_detail.html:132 templates/stats/my_stats.html:132
-#, python-format
-msgid ""
-"\n"
-"          #%(pos)s — %(rider)s\n"
-"        "
-msgstr ""
-"\n"
-"          #%(pos)s — %(rider)s\n"
-"        "
-
-#: templates/races/unit_detail.html:141 templates/stats/my_stats.html:141
+#: templates/races/unit_detail.html:166
 msgid "Voir le classement de cette"
 msgstr "Ver la clasificación de esta"
 
-#: templates/races/unit_detail.html:143 templates/stats/my_stats.html:143
+#: templates/races/unit_detail.html:168
 msgid "course"
 msgstr "carrera"
 
-#: templates/races/unit_detail.html:145 templates/stats/my_stats.html:145
+#: templates/races/unit_detail.html:170
 msgid "étape"
 msgstr "etapa"
 
-#: templates/races/unit_detail.html:150 templates/stats/my_stats.html:150
+#: templates/races/unit_detail.html:175
 msgid "Résultat non disponible."
 msgstr "Resultado no disponible."
 
-#: templates/races/unit_detail.html:160 templates/stats/my_stats.html:160
+#: templates/races/unit_detail.html:184
 msgid "Date invalide"
 msgstr "Fecha no válida"
 
-#: templates/races/unit_detail.html:161 templates/stats/my_stats.html:161
+#: templates/races/unit_detail.html:185
 msgid "Course/étape commencée (pronostics verrouillés)."
 msgstr "Carrera/etapa iniciada (pronósticos bloqueados)."
 
-#: templates/races/unit_detail.html:162 templates/stats/my_stats.html:162
+#: templates/races/unit_detail.html:186
 msgid "Tu peux encore modifier ton prono avant le départ."
 msgstr "Aún puedes modificar tu pronóstico antes de la salida."
+
+#: templates/stats/my_stats.html:10
+#, fuzzy
+#| msgid "Notifications"
+msgid "Participation"
+msgstr "Notificaciones"
+
+#: templates/stats/my_stats.html:12
+msgid "Pronostics joués"
+msgstr ""
+
+#: templates/stats/my_stats.html:13
+msgid "Unités totales"
+msgstr ""
+
+#: templates/stats/my_stats.html:14
+msgid "Taux de participation"
+msgstr ""
+
+#: templates/stats/my_stats.html:19
+#, fuzzy
+#| msgid "Score"
+msgid "Scores"
+msgstr "Puntuación"
+
+#: templates/stats/my_stats.html:22
+#, fuzzy
+#| msgid "Score total"
+msgid "Score moyen"
+msgstr "Puntuación total"
+
+#: templates/stats/my_stats.html:27
+msgid "Réussite (sur unités avec résultats)"
+msgstr ""
+
+#: templates/stats/my_stats.html:29
+msgid "Unités avec résultats"
+msgstr ""
+
+#: templates/stats/my_stats.html:31
+msgid "Pick #1 dans le Top 3"
+msgstr ""
+
+#: templates/stats/my_stats.html:34
+msgid "Au moins un pick dans le Top 3"
+msgstr ""
+
+#: templates/stats/my_stats.html:37
+msgid "Vainqueur exact (pick #1)"
+msgstr ""
+
+#: templates/stats/my_stats.html:40
+#, fuzzy
+#| msgid "Faire mon Top 5"
+msgid "Vainqueur dans ton Top 5"
+msgstr "Hacer mi Top 5"
+
+#: templates/stats/my_stats.html:46
+msgid "Favori (odds max) gagnant"
+msgstr ""
+
+#: templates/stats/my_stats.html:48
+msgid "Unités analysées"
+msgstr ""
+
+#: templates/stats/my_stats.html:49
+msgid "Favori gagnant"
+msgstr ""
+
+#: templates/stats/my_stats.html:50
+msgid "Taux"
+msgstr ""
+
+#: templates/stats/my_stats.html:51
+msgid "Tu avais le favori dans ton Top 5"
+msgstr ""
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "      Validé le : %(submitted)s\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "      Validado el: %(submitted)s\n"
+#~ "    "
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "          %(rider)s — cote %(odds)s\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "          %(rider)s — cuota %(odds)s\n"
+#~ "        "
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "              %(rider)s — cote %(odds)s\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "              %(rider)s — cuota %(odds)s\n"
+#~ "            "
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "          #%(pos)s — %(rider)s\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "          #%(pos)s — %(rider)s\n"
+#~ "        "
