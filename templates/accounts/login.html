@@ -35,8 +35,8 @@
 </form>
 
 <div style="margin-top:12px;">
-  <a class="btn2" href="{% url 'password_reset' %}" style="display:inline-flex;">
-    {% trans "Mot de passe oublié ?" %}
+  <a href="{% url 'password_reset' %}" style="display:inline-block; padding:10px; border:1px solid red;">
+    Mot de passe oublié ?
   </a>
 </div>
 {% endblock %}
